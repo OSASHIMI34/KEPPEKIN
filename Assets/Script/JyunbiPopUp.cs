@@ -25,6 +25,7 @@ public class JyunbiPopUp : MonoBehaviour
         StagePopUp stagePopUp = Instantiate(stagePopUpPrefab, canvasTransform, false);
         //kinImageはpulicで宣言されているのでいじれる
         stagePopUp.kinImage.sprite = Resources.Load<Sprite>("Image/" + kinName);
+        stagePopUp.kinName.GetComponent<Text>().text = kinName;
 
     }
 }

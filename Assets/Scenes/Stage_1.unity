@@ -126,6 +126,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1164349712}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &130414026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130414025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ddfb599385c42d7b84c0c5f2614938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rundomNum: 0
+  kinName: 
+  jyunbi: {fileID: 1433232953}
 --- !u!114 &130414029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,9 +184,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1433232953}
-        m_MethodName: CreatePopUp
-        m_Mode: 5
+      - m_Target: {fileID: 130414026}
+        m_MethodName: YobidashiCreatePop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -231,9 +246,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1433232953}
-        m_MethodName: CreatePopUp
-        m_Mode: 5
+      - m_Target: {fileID: 452332589}
+        m_MethodName: YobidashiCreatePop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -256,6 +271,21 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &452332589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452332584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ddfb599385c42d7b84c0c5f2614938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rundomNum: 0
+  kinName: 
+  jyunbi: {fileID: 1433232953}
 --- !u!1 &764418775 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6233574609812261374, guid: fff1d5e15e24d4fa39d604bdc0b6ce29,
@@ -317,9 +347,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1433232953}
-        m_MethodName: CreatePopUp
-        m_Mode: 5
+      - m_Target: {fileID: 764418780}
+        m_MethodName: YobidashiCreatePop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -330,6 +360,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &764418780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764418775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ddfb599385c42d7b84c0c5f2614938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rundomNum: 0
+  kinName: 
+  jyunbi: {fileID: 1433232953}
 --- !u!1001 &781641500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -449,6 +494,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f3bb564b03e1694f86937e1c849627d, type: 3}
+--- !u!1 &795709987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 795709989}
+  - component: {fileID: 795709988}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &795709988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795709987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52c01d642a9c4b71823d726221210a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBox: 
+  enemys: 3
+  kindata: {fileID: 11400000, guid: 71c7bc90adcf74b35a0c43924938f83a, type: 2}
+  silhouette:
+  - {fileID: 764418780}
+  - {fileID: 452332589}
+  - {fileID: 130414026}
+--- !u!4 &795709989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795709987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 476.92752, y: 634.96564, z: -5.7557173}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1164349712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -460,6 +555,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "\u30B9\u30C6\u30FC\u30B7\u3099\u753B\u9762_1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669320738508839233, guid: fff1d5e15e24d4fa39d604bdc0b6ce29,
+        type: 3}
+      propertyPath: m_Name
+      value: "\u30B7\u30EB\u30A8\u30C3\u30C8_3"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917690504839660434, guid: fff1d5e15e24d4fa39d604bdc0b6ce29,
+        type: 3}
+      propertyPath: m_Name
+      value: "\u30B7\u30EB\u30A8\u30C3\u30C8_2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233574609812261374, guid: fff1d5e15e24d4fa39d604bdc0b6ce29,
+        type: 3}
+      propertyPath: m_Name
+      value: "\u30B7\u30EB\u30A8\u30C3\u30C8_1"
       objectReference: {fileID: 0}
     - target: {fileID: 6171318024454633024, guid: fff1d5e15e24d4fa39d604bdc0b6ce29,
         type: 3}
@@ -570,21 +680,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bg_Image
-      objectReference: {fileID: 0}
-    - target: {fileID: 6233574609812261374, guid: fff1d5e15e24d4fa39d604bdc0b6ce29,
-        type: 3}
-      propertyPath: m_Name
-      value: "\u30B7\u30EB\u30A8\u30C3\u30C8_1"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6917690504839660434, guid: fff1d5e15e24d4fa39d604bdc0b6ce29,
-        type: 3}
-      propertyPath: m_Name
-      value: "\u30B7\u30EB\u30A8\u30C3\u30C8_2"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5669320738508839233, guid: fff1d5e15e24d4fa39d604bdc0b6ce29,
-        type: 3}
-      propertyPath: m_Name
-      value: "\u30B7\u30EB\u30A8\u30C3\u30C8_3"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff1d5e15e24d4fa39d604bdc0b6ce29, type: 3}
