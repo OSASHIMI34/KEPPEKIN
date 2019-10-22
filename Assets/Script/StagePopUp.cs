@@ -8,6 +8,7 @@ public class StagePopUp : MonoBehaviour
 {
     public GameObject backGround;
     public Image kinImage;
+    public Image typeImage;
     public GameObject kinName;
 
     public void ClosePopUp()

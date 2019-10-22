@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class JyunbiPopUp : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class JyunbiPopUp : MonoBehaviour
     public Transform canvasTransform;
 
 
-    public void CreatePopUp(string kinName)
+    public void CreatePopUp(string kinName,KIN_TYPE kinType)
     {
         //ゲームオブジェクト型でインスタンシエイトすると欲しい情報をわざわざGetcomponentしないといけなくなるが
         //StagePopUp stagePopUp =
@@ -26,6 +27,7 @@ public class JyunbiPopUp : MonoBehaviour
         //kinImageはpulicで宣言されているのでいじれる
         stagePopUp.kinImage.sprite = Resources.Load<Sprite>("Image/" + kinName);
         stagePopUp.kinName.GetComponent<Text>().text = kinName;
+        stagePopUp.typeImage.sprite = Resources.Load<Sprite>("Type/" + kinType);
 
     }
 }

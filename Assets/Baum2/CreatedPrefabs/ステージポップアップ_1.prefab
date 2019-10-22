@@ -475,6 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backGround: {fileID: 4493813298839198850}
   kinImage: {fileID: 3285605884670539733}
+  typeImage: {fileID: 992140148843416059}
   kinName: {fileID: 4282686753172307819}
 --- !u!1 &2049940021969388125
 GameObject:

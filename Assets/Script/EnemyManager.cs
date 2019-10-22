@@ -39,6 +39,7 @@ public class EnemyManager : MonoBehaviour
                 if (data.kinNum == silhouette[i].rundomNum)
                 {
                     silhouette[i].kinName = data.kinName;
+                    silhouette[i].type = data.kinType;
                 }
             }
 
