@@ -2,11 +2,11 @@
 {
     public class ItemData
     {
-        public string Message { get; }
+        public KinData.KinDataList Kindata { get; }
 
-        public ItemData(string message)
+        public ItemData(KinData.KinDataList kinDataList)
         {
-            Message = message;
+            Kindata = kinDataList;
         }
     }
 }

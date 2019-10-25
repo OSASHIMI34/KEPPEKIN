@@ -7,18 +7,15 @@ namespace FancyScrollView.Example02
     public class Example02 : MonoBehaviour
     {
         [SerializeField] ScrollView scrollView = default;
-        [SerializeField] Button prevCellButton = default;
-        [SerializeField] Button nextCellButton = default;
         [SerializeField] Text selectedItemInfo = default;
+        public KinData kindata;
 
         void Start()
         {
-            prevCellButton.onClick.AddListener(scrollView.SelectPrevCell);
-            nextCellButton.onClick.AddListener(scrollView.SelectNextCell);
             scrollView.OnSelectionChanged(OnSelectionChanged);
 
-            var items = Enumerable.Range(0, 20)
-                .Select(i => new ItemData($"Cell {i}"))
+            var items = Enumerable.Range(0, kindata.kinDataList.Count)
+                .Select(i => new ItemData(kindata.kinDataList[i]))
                 .ToArray();
 
             scrollView.UpdateData(items);
