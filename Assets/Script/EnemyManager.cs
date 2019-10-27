@@ -75,7 +75,7 @@ public class EnemyManager : MonoBehaviour
             int enemyNum = randomNumbers[random];
 
             //ランダムな値を記録するためにListに追加
-            results.Add(enemyNum);
+            results.Add(enemyNum);　//ランダムな値を追加
 
             //重複してランダムの値を取らないように使った値はListから除いておく
             randomNumbers.Remove(enemyNum); //重複回避用に引数を修正
@@ -111,6 +111,7 @@ public class EnemyManager : MonoBehaviour
                 if (data.kinNum == results[i])
                 {
                     //合致したデータの持つ値(名前、属性、イメージ)を生成したキンのデータに入れる
+                    silhouetteObj.rundomNum = data.kinNum;
                     silhouetteObj.kinName = data.kinName;
                     silhouetteObj.type = data.kinType;
                     silhouetteObj.kinMaskImage.sprite = Resources.Load<Sprite>("Image/" + data.kinName);
