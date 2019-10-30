@@ -12,6 +12,7 @@ public class StagePopUp : MonoBehaviour
     public GameObject kinName;
 
     public void ClosePopUp()
+
     {
         //シーケンス宣言して、Appendで順番に処理を書いていく、秒数の合計はDestroyの処理時間に合わせる
         Sequence sequence = DOTween.Sequence();
@@ -24,6 +25,5 @@ public class StagePopUp : MonoBehaviour
         //第二引数にfloat型で破壊されるまでの待ち時間を指定できる
         Destroy(gameObject, 0.35f);
     }
-
 
 }

@@ -129,7 +129,7 @@ public class EnemyManager : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
 
         //生成したキンのSiihouetteクラスの持つ、IdleAnimeImageメソッドを呼び出す
-        silhouetteObj.IdleAnimeImage();
+        StartCoroutine(silhouetteObj.IdleAnimeImage()); //コルーチン呼び出し
 
        
 
