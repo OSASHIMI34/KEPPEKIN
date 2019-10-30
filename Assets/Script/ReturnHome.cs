@@ -7,7 +7,8 @@ public class ReturnHome : MonoBehaviour
 {
     public void MoveHome()
     {
-        SceneManager.LoadScene("Home");
+        //SceneManager.LoadScene("Home");
+        SceneStateManager.instance.MoveHome();
     }
 
 }

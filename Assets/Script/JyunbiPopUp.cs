@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using DG.Tweening;
 
 public class JyunbiPopUp : MonoBehaviour
 {
@@ -28,6 +29,17 @@ public class JyunbiPopUp : MonoBehaviour
         stagePopUp.kinImage.sprite = Resources.Load<Sprite>("Image/" + kinName);
         stagePopUp.kinName.GetComponent<Text>().text = kinName;
         stagePopUp.typeImage.sprite = Resources.Load<Sprite>("Type/" + kinType);
+
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(stagePopUp.backGround.transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), 0.1f)).SetEase(Ease.InCirc);
+        sequence.Append(stagePopUp.backGround.transform.DOScale(new Vector3(0.8f, 0.8f, 0.8f), 0.3f)).SetEase(Ease.InCirc);
+        sequence.Join(stagePopUp.backGround.GetComponent<CanvasGroup>().DOFade(1, 0.4f).SetEase(Ease.InCirc));
+
+        //DOFade(アルファ値、秒数)　CanvasGroupにしか使えない
+        //CanvasGroupはUIの親的なやつ
+        //ここでいうCanvasGroupはBG_PopUpについているもの(BG_PopUpはStagePopUpのPrefabの中にある)
+
+
 
     }
 }
