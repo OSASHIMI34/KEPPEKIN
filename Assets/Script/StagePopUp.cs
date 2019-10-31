@@ -11,6 +11,20 @@ public class StagePopUp : MonoBehaviour
     public Image typeImage;
     public GameObject kinName;
 
+    public GameObject debugPanel;
+    public BattleDebug battleDebug;
+
+    public Button winButton;
+    public Button loseButton;
+
+    private void Start()
+    {
+        battleDebug = GameObject.FindGameObjectWithTag("Stage").GetComponent<BattleDebug>();
+        //ボタンに外からメソッドを登録できるonClickのスクリプト版
+        winButton.onClick.AddListener(battleDebug.Win);
+        loseButton.onClick.AddListener(battleDebug.Lose);
+    }
+
     public void ClosePopUp()
 
     {
@@ -24,6 +38,18 @@ public class StagePopUp : MonoBehaviour
         //backGround.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 1.0f);
         //第二引数にfloat型で破壊されるまでの待ち時間を指定できる
         Destroy(gameObject, 0.35f);
+    }
+
+    public void OnClickBattleButton()
+    {
+        debugPanel.SetActive(true);
+
+    } 
+
+    public void CloseDebugPanel()
+    {
+        debugPanel.SetActive(false);
+        ClosePopUp();
     }
 
 }
