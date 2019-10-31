@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 7300514875056635335}
   - component: {fileID: 7266149606955060222}
   m_Layer: 0
-  m_Name: "\u30B9\u30C6\u30FC\u30B7\u3099\u753B\u9762_1"
+  m_Name: "\u30B9\u30C6\u30FC\u30B8\u753B\u9762_1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

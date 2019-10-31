@@ -280,5 +280,45 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 525129053350738575, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3169642511846997232, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.83000183
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719005899618667987, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719005899618667987, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719005899618667987, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010118193283834727, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010118193283834727, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876636356213375359, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75acdde976da44757ab2395b455736ff, type: 3}
