@@ -18,6 +18,12 @@ public class Silhouette : MonoBehaviour
     [Header("キンのイメージ = データから参照するので始めは空")]
     public Image kinMaskImage;
 
+    [Header("キンの強さ")]
+    public int level;
+
+    [Header("キンの珍しさ")]
+    public int rarelity;
+
 
     private JyunbiPopUp jyunbi; //StagePopUpを開くための紐付け
 
@@ -33,7 +39,7 @@ public class Silhouette : MonoBehaviour
     /// </summary>
     public void YobidashiCreatePop()
     {
-        jyunbi.CreatePopUp(kinName,type);
+        jyunbi.CreatePopUp(kinName,type, level, rarelity);
 
     }
 

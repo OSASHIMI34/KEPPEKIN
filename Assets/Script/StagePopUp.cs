@@ -10,6 +10,12 @@ public class StagePopUp : MonoBehaviour
     public Image kinImage;
     public Image typeImage;
     public GameObject kinName;
+    public GameObject levelImagePrefab;
+    public GameObject rarelityImagePrefab;
+
+    public Transform levelPlace;
+    public Transform rarelityPlace;
+
 
     public GameObject debugPanel;
     public BattleDebug battleDebug;
@@ -24,6 +30,24 @@ public class StagePopUp : MonoBehaviour
         winButton.onClick.AddListener(battleDebug.Win);
         loseButton.onClick.AddListener(battleDebug.Lose);
     }
+
+    /// <summary>
+    /// 強さとレアリティの値に応じてイメージを生成する
+    /// </summary>
+    public void SetUp(int level, int rarelity)
+    {
+        for (int i = 0; i<level; i++)
+        {
+            Instantiate(levelImagePrefab, levelPlace, false);
+        }
+
+        for (int i =0; i<rarelity; i++)
+        {
+            Instantiate(rarelityImagePrefab, rarelityPlace, false);
+        }
+    }
+
+
 
     public void ClosePopUp()
 

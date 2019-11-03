@@ -13,7 +13,7 @@ public class JyunbiPopUp : MonoBehaviour
     public Transform canvasTransform;
 
 
-    public void CreatePopUp(string kinName,KIN_TYPE kinType)
+    public void CreatePopUp(string kinName,KIN_TYPE kinType, int level, int rarelity)
     {
         //ゲームオブジェクト型でインスタンシエイトすると欲しい情報をわざわざGetcomponentしないといけなくなるが
         //StagePopUp stagePopUp =
@@ -29,6 +29,9 @@ public class JyunbiPopUp : MonoBehaviour
         stagePopUp.kinImage.sprite = Resources.Load<Sprite>("Image/" + kinName);
         stagePopUp.kinName.GetComponent<Text>().text = kinName;
         stagePopUp.typeImage.sprite = Resources.Load<Sprite>("Type/" + kinType);
+        //強さと珍しさのイメージを作る
+        stagePopUp.SetUp(level, rarelity);
+
 
         Sequence sequence = DOTween.Sequence();
         sequence.Append(stagePopUp.backGround.transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), 0.1f)).SetEase(Ease.InCirc);
