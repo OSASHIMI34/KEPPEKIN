@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneStateManager : MonoBehaviour
 {
+
+    public Image expGage;
+    public static int rank;
+    public static int exp;
+
 
     //シングルトン...この作り方をするとシーン中に一個しか存在しない
     //staticはシーンをまたげる
@@ -41,6 +47,11 @@ public class SceneStateManager : MonoBehaviour
         SceneManager.LoadScene("UI", LoadSceneMode.Additive);
     }
 
+    public void UpdateGage()
+    {
+        expGage.fillAmount = (float) exp / 100;
+        Debug.Log(exp);
+    }
 
 
 }

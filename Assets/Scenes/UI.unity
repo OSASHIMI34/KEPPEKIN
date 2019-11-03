@@ -163,6 +163,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de21e01dc0414c8f92bb030c76c57af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expGage: {fileID: 1601908562}
+--- !u!114 &1601908562 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3876636356213375359, guid: 75acdde976da44757ab2395b455736ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 525129052774285706}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &525129052774285706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,6 +187,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'UI_Canvas '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876636356213375359, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876636356213375359, guid: 75acdde976da44757ab2395b455736ff,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 525129053350738572, guid: 75acdde976da44757ab2395b455736ff,
         type: 3}
@@ -314,11 +337,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3876636356213375359, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75acdde976da44757ab2395b455736ff, type: 3}
