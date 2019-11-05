@@ -16,6 +16,7 @@
 #include <stdint.h>
 
 #include "codegen/il2cpp-codegen.h"
+#include "icalls/mscorlib/System/Math.h"
 #include "icalls/mscorlib/System/MissingMemberException.h"
 #include "icalls/mscorlib/System/MonoCustomAttrs.h"
 #include "icalls/mscorlib/System/Number.h"
@@ -914,7 +915,9 @@ IL2CPP_EXTERN_C const uint32_t MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E0
 IL2CPP_EXTERN_C const uint32_t MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E01C858B1C9AF_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Math_AbsHelper_mBB53E92A37FF9A4AD65D354BBAC103F935C20802_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Math_Abs_m7F5374AE27F11C3FFBB648DA0EE075317C37C097_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Math_InternalTruncate_mAE5DE69F993E1DF43433F66135A2A80CEF0AC7C2_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Math_Log_m5C457D6A666677B3E260C571049528D5BE93B7AF_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t Math_Truncate_m44E272770DC7ED9901329E1FC8D0D1F0731C9011_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Math__cctor_m74DAC117CAF47A5126D22880C729D8B4991DC62E_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t MemberAccessException__ctor_mDD27777FCB5B591E3A785846CB00EC52CBDEA4D7_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t MethodAccessException__ctor_mA04BCF385465A563D2B65C08391624EAE14C33C8_MetadataUsageId;
@@ -12070,6 +12073,10 @@ inline void Dictionary_2__ctor_mF0DECB37208B782E5DC487657101B9FBFA2491C8 (Dictio
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocalDataStoreMgr_FreeDataSlot_mD32D43F69A116AAE4F0233FD8DE999D81B3643FA (LocalDataStoreMgr_t1964DDB9F2BE154BE3159A7507D0D0CCBF8FDCA9 * __this, int32_t ___slot0, int64_t ___cookie1, const RuntimeMethod* method);
 // System.Void System.NotSupportedException::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_mA121DE1CAC8F25277DEB489DC7771209D91CAE33 (NotSupportedException_tE75B318D6590A02A5D9B29FD97409B1750FA0010 * __this, const RuntimeMethod* method);
+// System.Double System.Math::SplitFractionDouble(System.Double*)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_SplitFractionDouble_m88260C271374C2523447550FAB21BC5EEA603216 (double* ___value0, const RuntimeMethod* method);
+// System.Double System.Math::InternalTruncate(System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_InternalTruncate_mAE5DE69F993E1DF43433F66135A2A80CEF0AC7C2 (double ___d0, const RuntimeMethod* method);
 // System.Int32 System.Math::AbsHelper(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_AbsHelper_mBB53E92A37FF9A4AD65D354BBAC103F935C20802 (int32_t ___value0, const RuntimeMethod* method);
 // System.Void System.OverflowException::.ctor(System.String)
@@ -15767,6 +15774,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * MarshalByRefObject_Initialize
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Double System.Math::Acos(System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Acos_mA015FB00E4C265D5FAD2D17E52C16A828472D666 (double ___d0)
+{
+	return acos(___d0);
+}
+// System.Double System.Math::Asin(System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Asin_mA845DF9FFC82CF7284C09A4D6A598F714219D792 (double ___d0)
+{
+	return asin(___d0);
+}
 // System.Double System.Math::Ceiling(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Ceiling_m379E37FEB7C1DC30F53CBFA8896E0DD0804C44C7 (double ___a0)
 {
@@ -15782,6 +15799,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Floor_mC3101A845FDA61AA1E9D4AC3C6
 {
 	return floor(___d0);
 }
+// System.Double System.Math::InternalTruncate(System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_InternalTruncate_mAE5DE69F993E1DF43433F66135A2A80CEF0AC7C2 (double ___d0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Math_InternalTruncate_mAE5DE69F993E1DF43433F66135A2A80CEF0AC7C2_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
+		Math_SplitFractionDouble_m88260C271374C2523447550FAB21BC5EEA603216((double*)(double*)(((uintptr_t)(&___d0))), /*hidden argument*/NULL);
+		double L_0 = ___d0;
+		return L_0;
+	}
+}
 // System.Double System.Math::Sin(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Sin_m70D30E020E871902B8610553CD000D7826B8B1DF (double ___a0)
 {
@@ -15791,6 +15824,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Sin_m70D30E020E871902B8610553CD00
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Round_m92CC19B936A3FC72826AD3950A90E5D9EB7513FE (double ___a0)
 {
 	return bankers_round(___a0);
+}
+// System.Double System.Math::SplitFractionDouble(System.Double*)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_SplitFractionDouble_m88260C271374C2523447550FAB21BC5EEA603216 (double* ___value0, const RuntimeMethod* method)
+{
+	typedef double (*Math_SplitFractionDouble_m88260C271374C2523447550FAB21BC5EEA603216_ftn) (double*);
+	using namespace il2cpp::icalls;
+	return  ((Math_SplitFractionDouble_m88260C271374C2523447550FAB21BC5EEA603216_ftn)mscorlib::System::Math::SplitFractionDouble) (___value0);
+}
+// System.Double System.Math::Truncate(System.Double)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Truncate_m44E272770DC7ED9901329E1FC8D0D1F0731C9011 (double ___d0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Math_Truncate_m44E272770DC7ED9901329E1FC8D0D1F0731C9011_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		double L_0 = ___d0;
+		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
+		double L_1 = Math_InternalTruncate_mAE5DE69F993E1DF43433F66135A2A80CEF0AC7C2(L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
 }
 // System.Double System.Math::Sqrt(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Sqrt_mB2008A97F28A0FC333E8DA31C6B1731D015BF5D2 (double ___d0)
@@ -32658,6 +32714,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_Equals_mEEF0C9AADB29464A832CCA4B9
 	{
 		RuntimeObject * L_0 = ___obj0;
 		return (bool)((((RuntimeObject*)(RuntimeObject *)__this) == ((RuntimeObject*)(RuntimeObject *)L_0))? 1 : 0);
+	}
+}
+// System.Boolean System.Object::Equals(System.Object,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_Equals_mD98CD6D19C28ADC48B8468F78F94D38E203D0521 (RuntimeObject * ___objA0, RuntimeObject * ___objB1, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___objA0;
+		RuntimeObject * L_1 = ___objB1;
+		if ((!(((RuntimeObject*)(RuntimeObject *)L_0) == ((RuntimeObject*)(RuntimeObject *)L_1))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_0006:
+	{
+		RuntimeObject * L_2 = ___objA0;
+		if (!L_2)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		RuntimeObject * L_3 = ___objB1;
+		if (L_3)
+		{
+			goto IL_000e;
+		}
+	}
+
+IL_000c:
+	{
+		return (bool)0;
+	}
+
+IL_000e:
+	{
+		RuntimeObject * L_4 = ___objA0;
+		RuntimeObject * L_5 = ___objB1;
+		NullCheck(L_4);
+		bool L_6 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, L_4, L_5);
+		return L_6;
 	}
 }
 // System.Void System.Object::.ctor()

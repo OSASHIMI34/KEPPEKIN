@@ -504,6 +504,8 @@ struct RankException_t85F27ECAFB95F8FC0E72E5EA676169A3CE9B4B6F;
 struct Assembly_t;
 // System.Reflection.Assembly/ResolveEventHolder
 struct ResolveEventHolder_t5267893EB7CB9C12F7B9B463FD4C221BEA03326E;
+// System.Reflection.Assembly[]
+struct AssemblyU5BU5D_t90BF014AA048450526A42C74F9583341A138DE58;
 // System.Reflection.Binder
 struct Binder_t4D5CB06963501D32847C057B57157D6DC49CA759;
 // System.Reflection.MemberFilter
@@ -1333,6 +1335,7 @@ struct DirectoryInfoU5BU5D_t365312EA5C7DEF9B29E106B79B228EA64C29C6AF;
 struct Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83;
 struct Int64U5BU5D_tE04A3DEF6AF1C852A43B98A24EFB715806B37F5F;
 struct ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A;
+struct AssemblyU5BU5D_t90BF014AA048450526A42C74F9583341A138DE58;
 struct StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E;
 struct TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F;
 
@@ -13878,6 +13881,43 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
+// System.Reflection.Assembly[]
+struct AssemblyU5BU5D_t90BF014AA048450526A42C74F9583341A138DE58  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Assembly_t * m_Items[1];
+
+public:
+	inline Assembly_t * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Assembly_t ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Assembly_t * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Assembly_t * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Assembly_t ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Assembly_t * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 
 
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
@@ -14861,6 +14901,8 @@ inline Exception_t * ReadOnlyCollection_1_get_Item_mFD009BA0F3153526E49D9E99C0C9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mF68EE0DEC1AA5ADE9DFEF9AE0508E428FBB10EFD (RuntimeObject* ___provider0, String_t* ___format1, ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ___args2, const RuntimeMethod* method);
 // System.AppDomain System.AppDomain::getCurDomain()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppDomain_t1B59572328F60585904DF52A59FE47CF5B5FFFF8 * AppDomain_getCurDomain_mD7B43429B7B7D7AE59D29F5394B870C170EF53CC (const RuntimeMethod* method);
+// System.Reflection.Assembly[] System.AppDomain::GetAssemblies(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssemblyU5BU5D_t90BF014AA048450526A42C74F9583341A138DE58* AppDomain_GetAssemblies_m67CCC578A7586632778C0AF4B70C0C3576C4A2C1 (AppDomain_t1B59572328F60585904DF52A59FE47CF5B5FFFF8 * __this, bool ___refOnly0, const RuntimeMethod* method);
 // System.Reflection.Assembly System.AppDomain::Load(System.String,System.Security.Policy.Evidence,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Assembly_t * AppDomain_Load_mA402057C7C1056F7186F6EDD5CAF6905F156E979 (AppDomain_t1B59572328F60585904DF52A59FE47CF5B5FFFF8 * __this, String_t* ___assemblyString0, Evidence_t58C8D73D9B4FC7DD3BDDEE37E3C283678BFDC307 * ___assemblySecurity1, bool ___refonly2, const RuntimeMethod* method);
 // System.Reflection.Assembly System.AppDomain::LoadAssembly(System.String,System.Security.Policy.Evidence,System.Boolean)
@@ -39293,6 +39335,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AppDomain_t1B59572328F60585904DF52A59FE47CF5B
 {
 	{
 		AppDomain_t1B59572328F60585904DF52A59FE47CF5B5FFFF8 * L_0 = AppDomain_getCurDomain_mD7B43429B7B7D7AE59D29F5394B870C170EF53CC(/*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// System.Reflection.Assembly[] System.AppDomain::GetAssemblies(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssemblyU5BU5D_t90BF014AA048450526A42C74F9583341A138DE58* AppDomain_GetAssemblies_m67CCC578A7586632778C0AF4B70C0C3576C4A2C1 (AppDomain_t1B59572328F60585904DF52A59FE47CF5B5FFFF8 * __this, bool ___refOnly0, const RuntimeMethod* method)
+{
+	typedef AssemblyU5BU5D_t90BF014AA048450526A42C74F9583341A138DE58* (*AppDomain_GetAssemblies_m67CCC578A7586632778C0AF4B70C0C3576C4A2C1_ftn) (AppDomain_t1B59572328F60585904DF52A59FE47CF5B5FFFF8 *, bool);
+	using namespace il2cpp::icalls;
+	return  ((AppDomain_GetAssemblies_m67CCC578A7586632778C0AF4B70C0C3576C4A2C1_ftn)mscorlib::System::AppDomain::GetAssemblies) (__this, ___refOnly0);
+}
+// System.Reflection.Assembly[] System.AppDomain::GetAssemblies()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssemblyU5BU5D_t90BF014AA048450526A42C74F9583341A138DE58* AppDomain_GetAssemblies_mF1A63ADFC80562168DF846017BB72CAB09298A23 (AppDomain_t1B59572328F60585904DF52A59FE47CF5B5FFFF8 * __this, const RuntimeMethod* method)
+{
+	{
+		AssemblyU5BU5D_t90BF014AA048450526A42C74F9583341A138DE58* L_0 = AppDomain_GetAssemblies_m67CCC578A7586632778C0AF4B70C0C3576C4A2C1(__this, (bool)0, /*hidden argument*/NULL);
 		return L_0;
 	}
 }

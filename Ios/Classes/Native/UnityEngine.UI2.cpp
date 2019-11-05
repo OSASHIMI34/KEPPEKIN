@@ -426,9 +426,9 @@ struct MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429;
 // UnityEngine.Object
 struct Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0;
 // UnityEngine.RaycastHit2D[]
-struct RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8;
+struct RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165;
 // UnityEngine.RaycastHit[]
-struct RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24;
+struct RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57;
 // UnityEngine.RectTransform
 struct RectTransform_t285CBD8775B25174B75164F10618F8B9728E1B20;
 // UnityEngine.RectTransform/ReapplyDrivenProperties
@@ -609,8 +609,8 @@ IL2CPP_EXTERN_C RuntimeClass* Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2_il2c
 IL2CPP_EXTERN_C RuntimeClass* Raycast2DCallback_tE99ABF9ABC3A380677949E8C05A3E477889B82BE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Raycast3DCallback_t83483916473C9710AEDB316A65CBE62C58935C5F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReapplyDrivenProperties_t431F4FBD9C59AE097FE33C4354CC6251B01B527D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RectTransformUtility_t9B90669A72B05A33DD88BEBB817BC9CDBB614BBA_il2cpp_TypeInfo_var;
@@ -815,8 +815,8 @@ IL2CPP_EXTERN_C const RuntimeType* Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2
 IL2CPP_EXTERN_C const RuntimeType* Raycast2DCallback_tE99ABF9ABC3A380677949E8C05A3E477889B82BE_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Raycast3DCallback_t83483916473C9710AEDB316A65CBE62C58935C5F_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE_0_0_0_var;
-IL2CPP_EXTERN_C const RuntimeType* RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8_0_0_0_var;
-IL2CPP_EXTERN_C const RuntimeType* RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Vector2_tA85D2DD88578276CA8A8796756458277E72D073D_0_0_0_var;
@@ -1066,8 +1066,8 @@ struct Exception_t_marshaled_pinvoke;
 struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86;
 struct ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A;
 struct TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F;
-struct RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8;
-struct RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24;
+struct RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165;
+struct RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57;
 struct SelectableU5BU5D_t98F7C5A863B20CD5DBE49CE288038BA954C83F02;
 struct UIVertexU5BU5D_tB560F9F9269864891FCE1677971F603A08AA857A;
 struct Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28;
@@ -9396,7 +9396,7 @@ public:
 	}
 };
 // UnityEngine.RaycastHit2D[]
-struct RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8  : public RuntimeArray
+struct RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165  : public RuntimeArray
 {
 public:
 	ALIGN_FIELD (8) RaycastHit2D_t5E8A7F96317BAF2033362FC780F4D72DC72764BE  m_Items[1];
@@ -9468,7 +9468,7 @@ public:
 	}
 };
 // UnityEngine.RaycastHit[]
-struct RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24  : public RuntimeArray
+struct RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57  : public RuntimeArray
 {
 public:
 	ALIGN_FIELD (8) RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3  m_Items[1];
@@ -18159,7 +18159,7 @@ IL_01dc:
 		ArrayElementTypeCheck (L_82, L_84);
 		(L_82)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_84);
 		TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* L_85 = L_82;
-		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_86 = { reinterpret_cast<intptr_t> (RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8_0_0_0_var) };
+		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_86 = { reinterpret_cast<intptr_t> (RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165_0_0_0_var) };
 		Type_t * L_87 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_86, /*hidden argument*/NULL);
 		NullCheck(L_85);
 		ArrayElementTypeCheck (L_85, L_87);
@@ -18207,7 +18207,7 @@ IL_024f:
 		ArrayElementTypeCheck (L_103, L_105);
 		(L_103)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_105);
 		TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* L_106 = L_103;
-		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_107 = { reinterpret_cast<intptr_t> (RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24_0_0_0_var) };
+		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_107 = { reinterpret_cast<intptr_t> (RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57_0_0_0_var) };
 		Type_t * L_108 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_107, /*hidden argument*/NULL);
 		NullCheck(L_106);
 		ArrayElementTypeCheck (L_106, L_108);
@@ -18308,7 +18308,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReflectionMethodsCache__cctor_mFC4F8CA1D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C  RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* DelegatePInvokeWrapper_GetRayIntersectionAllCallback_t68C2581CCF05E868297EBD3F3361274954845095 (GetRayIntersectionAllCallback_t68C2581CCF05E868297EBD3F3361274954845095 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, float ___f1, int32_t ___i2, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* DelegatePInvokeWrapper_GetRayIntersectionAllCallback_t68C2581CCF05E868297EBD3F3361274954845095 (GetRayIntersectionAllCallback_t68C2581CCF05E868297EBD3F3361274954845095 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, float ___f1, int32_t ___i2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18323,10 +18323,10 @@ IL2CPP_EXTERN_C  RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* D
 	RaycastHit2D_t5E8A7F96317BAF2033362FC780F4D72DC72764BE * returnValue = il2cppPInvokeFunc(___r0, ___f1, ___i2);
 
 	// Marshaling of return value back from native representation
-	RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* _returnValue_unmarshaled = NULL;
+	RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* _returnValue_unmarshaled = NULL;
 	if (returnValue != NULL)
 	{
-		_returnValue_unmarshaled = reinterpret_cast<RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*>((RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*)SZArrayNew(RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8_il2cpp_TypeInfo_var, 1));
+		_returnValue_unmarshaled = reinterpret_cast<RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*>((RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*)SZArrayNew(RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165_il2cpp_TypeInfo_var, 1));
 		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(1); i++)
 		{
 			(_returnValue_unmarshaled)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (returnValue)[i]);
@@ -18347,9 +18347,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetRayIntersectionAllCallback__ctor_mDEC
 	__this->set_m_target_2(___object0);
 }
 // UnityEngine.RaycastHit2D[] UnityEngine.UI.ReflectionMethodsCache_GetRayIntersectionAllCallback::Invoke(UnityEngine.Ray,System.Single,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* GetRayIntersectionAllCallback_Invoke_m71D07917A72FF1D02C6FF4119E432BE63FFCDD06 (GetRayIntersectionAllCallback_t68C2581CCF05E868297EBD3F3361274954845095 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, float ___f1, int32_t ___i2, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* GetRayIntersectionAllCallback_Invoke_m71D07917A72FF1D02C6FF4119E432BE63FFCDD06 (GetRayIntersectionAllCallback_t68C2581CCF05E868297EBD3F3361274954845095 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, float ___f1, int32_t ___i2, const RuntimeMethod* method)
 {
-	RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* result = NULL;
+	RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* result = NULL;
 	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
 	Delegate_t** delegatesToInvoke;
 	il2cpp_array_size_t length;
@@ -18381,13 +18381,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit2DU5BU5D_t06431062CF438D12908F0B933
 			if (___parameterCount == 3)
 			{
 				// open
-				typedef RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
+				typedef RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(___r0, ___f1, ___i2, targetMethod);
 			}
 			else
 			{
 				// closed
-				typedef RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
+				typedef RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___r0, ___f1, ___i2, targetMethod);
 			}
 		}
@@ -18398,27 +18398,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit2DU5BU5D_t06431062CF438D12908F0B933
 			{
 				if (targetThis == NULL)
 				{
-					typedef RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
+					typedef RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)(___r0, ___f1, ___i2, targetMethod);
 				}
 				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker3< RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___f1, ___i2);
+						result = GenericInterfaceFuncInvoker3< RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___f1, ___i2);
 					else
-						result = GenericVirtFuncInvoker3< RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___f1, ___i2);
+						result = GenericVirtFuncInvoker3< RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___f1, ___i2);
 				}
 				else
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker3< RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___r0, ___f1, ___i2);
+						result = InterfaceFuncInvoker3< RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___r0, ___f1, ___i2);
 					else
-						result = VirtFuncInvoker3< RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___r0, ___f1, ___i2);
+						result = VirtFuncInvoker3< RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___r0, ___f1, ___i2);
 				}
 			}
 			else
 			{
-				typedef RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
+				typedef RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___r0, ___f1, ___i2, targetMethod);
 			}
 		}
@@ -18441,10 +18441,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetRayIntersectionAllCallback_
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
 }
 // UnityEngine.RaycastHit2D[] UnityEngine.UI.ReflectionMethodsCache_GetRayIntersectionAllCallback::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* GetRayIntersectionAllCallback_EndInvoke_m4BAEE2BB03070D4D2FAA42E6D7537FC8A7D1941A (GetRayIntersectionAllCallback_t68C2581CCF05E868297EBD3F3361274954845095 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* GetRayIntersectionAllCallback_EndInvoke_m4BAEE2BB03070D4D2FAA42E6D7537FC8A7D1941A (GetRayIntersectionAllCallback_t68C2581CCF05E868297EBD3F3361274954845095 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return (RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*)__result;
+	return (RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*)__result;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -18454,7 +18454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHit2DU5BU5D_t06431062CF438D12908F0B933
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper_GetRayIntersectionAllNonAllocCallback_tAD7508D45DB6679B6394983579AD18D967CC2AD4 (GetRayIntersectionAllNonAllocCallback_tAD7508D45DB6679B6394983579AD18D967CC2AD4 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* ___results1, float ___f2, int32_t ___i3, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper_GetRayIntersectionAllNonAllocCallback_tAD7508D45DB6679B6394983579AD18D967CC2AD4 (GetRayIntersectionAllNonAllocCallback_tAD7508D45DB6679B6394983579AD18D967CC2AD4 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* ___results1, float ___f2, int32_t ___i3, const RuntimeMethod* method)
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc)(Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2D_t5E8A7F96317BAF2033362FC780F4D72DC72764BE *, float, int32_t);
 	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
@@ -18479,7 +18479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetRayIntersectionAllNonAllocCallback__c
 	__this->set_m_target_2(___object0);
 }
 // System.Int32 UnityEngine.UI.ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback::Invoke(UnityEngine.Ray,UnityEngine.RaycastHit2D[],System.Single,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRayIntersectionAllNonAllocCallback_Invoke_mE8C1C89478AFE338F0607231CAE10362D7076FCE (GetRayIntersectionAllNonAllocCallback_tAD7508D45DB6679B6394983579AD18D967CC2AD4 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* ___results1, float ___f2, int32_t ___i3, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRayIntersectionAllNonAllocCallback_Invoke_mE8C1C89478AFE338F0607231CAE10362D7076FCE (GetRayIntersectionAllNonAllocCallback_tAD7508D45DB6679B6394983579AD18D967CC2AD4 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* ___results1, float ___f2, int32_t ___i3, const RuntimeMethod* method)
 {
 	int32_t result = 0;
 	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
@@ -18513,13 +18513,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRayIntersectionAllNonAllocCallback
 			if (___parameterCount == 4)
 			{
 				// open
-				typedef int32_t (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, float, int32_t, const RuntimeMethod*);
+				typedef int32_t (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(___r0, ___results1, ___f2, ___i3, targetMethod);
 			}
 			else
 			{
 				// closed
-				typedef int32_t (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, float, int32_t, const RuntimeMethod*);
+				typedef int32_t (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___r0, ___results1, ___f2, ___i3, targetMethod);
 			}
 		}
@@ -18530,27 +18530,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRayIntersectionAllNonAllocCallback
 			{
 				if (targetThis == NULL)
 				{
-					typedef int32_t (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, float, int32_t, const RuntimeMethod*);
+					typedef int32_t (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, float, int32_t, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)(___r0, ___results1, ___f2, ___i3, targetMethod);
 				}
 				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___results1, ___f2, ___i3);
+						result = GenericInterfaceFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___results1, ___f2, ___i3);
 					else
-						result = GenericVirtFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___results1, ___f2, ___i3);
+						result = GenericVirtFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___results1, ___f2, ___i3);
 				}
 				else
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___r0, ___results1, ___f2, ___i3);
+						result = InterfaceFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___r0, ___results1, ___f2, ___i3);
 					else
-						result = VirtFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___r0, ___results1, ___f2, ___i3);
+						result = VirtFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___r0, ___results1, ___f2, ___i3);
 				}
 			}
 			else
 			{
-				typedef int32_t (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8*, float, int32_t, const RuntimeMethod*);
+				typedef int32_t (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___r0, ___results1, ___f2, ___i3, targetMethod);
 			}
 		}
@@ -18558,7 +18558,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRayIntersectionAllNonAllocCallback
 	return result;
 }
 // System.IAsyncResult UnityEngine.UI.ReflectionMethodsCache_GetRayIntersectionAllNonAllocCallback::BeginInvoke(UnityEngine.Ray,UnityEngine.RaycastHit2D[],System.Single,System.Int32,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetRayIntersectionAllNonAllocCallback_BeginInvoke_mFE60577F4CFE854DF555E6B18F41C159199F7682 (GetRayIntersectionAllNonAllocCallback_tAD7508D45DB6679B6394983579AD18D967CC2AD4 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHit2DU5BU5D_t06431062CF438D12908F0B93305795CB645DCCA8* ___results1, float ___f2, int32_t ___i3, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback4, RuntimeObject * ___object5, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetRayIntersectionAllNonAllocCallback_BeginInvoke_mFE60577F4CFE854DF555E6B18F41C159199F7682 (GetRayIntersectionAllNonAllocCallback_tAD7508D45DB6679B6394983579AD18D967CC2AD4 * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165* ___results1, float ___f2, int32_t ___i3, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback4, RuntimeObject * ___object5, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18587,7 +18587,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRayIntersectionAllNonAllocCallback
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper_GetRaycastNonAllocCallback_tC13D9767CFF00EAB26E9FCC4BDD505F0721A2B4D (GetRaycastNonAllocCallback_tC13D9767CFF00EAB26E9FCC4BDD505F0721A2B4D * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* ___results1, float ___f2, int32_t ___i3, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper_GetRaycastNonAllocCallback_tC13D9767CFF00EAB26E9FCC4BDD505F0721A2B4D (GetRaycastNonAllocCallback_tC13D9767CFF00EAB26E9FCC4BDD505F0721A2B4D * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* ___results1, float ___f2, int32_t ___i3, const RuntimeMethod* method)
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc)(Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 *, float, int32_t);
 	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_method_pointer(((RuntimeDelegate*)__this)->method));
@@ -18612,7 +18612,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetRaycastNonAllocCallback__ctor_m73752B
 	__this->set_m_target_2(___object0);
 }
 // System.Int32 UnityEngine.UI.ReflectionMethodsCache_GetRaycastNonAllocCallback::Invoke(UnityEngine.Ray,UnityEngine.RaycastHit[],System.Single,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRaycastNonAllocCallback_Invoke_mB4F2F90265BCD10AF00FF81133D674F666DB7C88 (GetRaycastNonAllocCallback_tC13D9767CFF00EAB26E9FCC4BDD505F0721A2B4D * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* ___results1, float ___f2, int32_t ___i3, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRaycastNonAllocCallback_Invoke_mB4F2F90265BCD10AF00FF81133D674F666DB7C88 (GetRaycastNonAllocCallback_tC13D9767CFF00EAB26E9FCC4BDD505F0721A2B4D * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* ___results1, float ___f2, int32_t ___i3, const RuntimeMethod* method)
 {
 	int32_t result = 0;
 	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
@@ -18646,13 +18646,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRaycastNonAllocCallback_Invoke_mB4
 			if (___parameterCount == 4)
 			{
 				// open
-				typedef int32_t (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, float, int32_t, const RuntimeMethod*);
+				typedef int32_t (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(___r0, ___results1, ___f2, ___i3, targetMethod);
 			}
 			else
 			{
 				// closed
-				typedef int32_t (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, float, int32_t, const RuntimeMethod*);
+				typedef int32_t (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___r0, ___results1, ___f2, ___i3, targetMethod);
 			}
 		}
@@ -18663,27 +18663,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRaycastNonAllocCallback_Invoke_mB4
 			{
 				if (targetThis == NULL)
 				{
-					typedef int32_t (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, float, int32_t, const RuntimeMethod*);
+					typedef int32_t (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, float, int32_t, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)(___r0, ___results1, ___f2, ___i3, targetMethod);
 				}
 				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___results1, ___f2, ___i3);
+						result = GenericInterfaceFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___results1, ___f2, ___i3);
 					else
-						result = GenericVirtFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___results1, ___f2, ___i3);
+						result = GenericVirtFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___results1, ___f2, ___i3);
 				}
 				else
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___r0, ___results1, ___f2, ___i3);
+						result = InterfaceFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___r0, ___results1, ___f2, ___i3);
 					else
-						result = VirtFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___r0, ___results1, ___f2, ___i3);
+						result = VirtFuncInvoker4< int32_t, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___r0, ___results1, ___f2, ___i3);
 				}
 			}
 			else
 			{
-				typedef int32_t (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, float, int32_t, const RuntimeMethod*);
+				typedef int32_t (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___r0, ___results1, ___f2, ___i3, targetMethod);
 			}
 		}
@@ -18691,7 +18691,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GetRaycastNonAllocCallback_Invoke_mB4
 	return result;
 }
 // System.IAsyncResult UnityEngine.UI.ReflectionMethodsCache_GetRaycastNonAllocCallback::BeginInvoke(UnityEngine.Ray,UnityEngine.RaycastHit[],System.Single,System.Int32,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetRaycastNonAllocCallback_BeginInvoke_mDBE7E69D77ED2B0AF5B590E725DC0BC7FA84E3A7 (GetRaycastNonAllocCallback_tC13D9767CFF00EAB26E9FCC4BDD505F0721A2B4D * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* ___results1, float ___f2, int32_t ___i3, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback4, RuntimeObject * ___object5, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetRaycastNonAllocCallback_BeginInvoke_mDBE7E69D77ED2B0AF5B590E725DC0BC7FA84E3A7 (GetRaycastNonAllocCallback_tC13D9767CFF00EAB26E9FCC4BDD505F0721A2B4D * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* ___results1, float ___f2, int32_t ___i3, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback4, RuntimeObject * ___object5, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18976,7 +18976,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Raycast3DCallback_EndInvoke_mEE3F8016449
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C  RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* DelegatePInvokeWrapper_RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE (RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, float ___f1, int32_t ___i2, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* DelegatePInvokeWrapper_RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE (RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, float ___f1, int32_t ___i2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18991,10 +18991,10 @@ IL2CPP_EXTERN_C  RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* Del
 	RaycastHit_t19695F18F9265FE5425062BBA6A4D330480538C3 * returnValue = il2cppPInvokeFunc(___r0, ___f1, ___i2);
 
 	// Marshaling of return value back from native representation
-	RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* _returnValue_unmarshaled = NULL;
+	RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* _returnValue_unmarshaled = NULL;
 	if (returnValue != NULL)
 	{
-		_returnValue_unmarshaled = reinterpret_cast<RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*>((RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*)SZArrayNew(RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24_il2cpp_TypeInfo_var, 1));
+		_returnValue_unmarshaled = reinterpret_cast<RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*>((RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*)SZArrayNew(RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57_il2cpp_TypeInfo_var, 1));
 		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(1); i++)
 		{
 			(_returnValue_unmarshaled)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (returnValue)[i]);
@@ -19015,9 +19015,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RaycastAllCallback__ctor_mF30FF6ED5AAB4B
 	__this->set_m_target_2(___object0);
 }
 // UnityEngine.RaycastHit[] UnityEngine.UI.ReflectionMethodsCache_RaycastAllCallback::Invoke(UnityEngine.Ray,System.Single,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* RaycastAllCallback_Invoke_m1C5BC50A8B21548971D4D3F48CECDDF4F8D2CAD4 (RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, float ___f1, int32_t ___i2, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* RaycastAllCallback_Invoke_m1C5BC50A8B21548971D4D3F48CECDDF4F8D2CAD4 (RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE * __this, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2  ___r0, float ___f1, int32_t ___i2, const RuntimeMethod* method)
 {
-	RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* result = NULL;
+	RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* result = NULL;
 	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
 	Delegate_t** delegatesToInvoke;
 	il2cpp_array_size_t length;
@@ -19049,13 +19049,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C
 			if (___parameterCount == 3)
 			{
 				// open
-				typedef RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
+				typedef RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(___r0, ___f1, ___i2, targetMethod);
 			}
 			else
 			{
 				// closed
-				typedef RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
+				typedef RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___r0, ___f1, ___i2, targetMethod);
 			}
 		}
@@ -19066,27 +19066,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C
 			{
 				if (targetThis == NULL)
 				{
-					typedef RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
+					typedef RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* (*FunctionPointerType) (Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)(___r0, ___f1, ___i2, targetMethod);
 				}
 				else if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker3< RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___f1, ___i2);
+						result = GenericInterfaceFuncInvoker3< RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___f1, ___i2);
 					else
-						result = GenericVirtFuncInvoker3< RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___f1, ___i2);
+						result = GenericVirtFuncInvoker3< RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(targetMethod, targetThis, ___r0, ___f1, ___i2);
 				}
 				else
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker3< RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___r0, ___f1, ___i2);
+						result = InterfaceFuncInvoker3< RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___r0, ___f1, ___i2);
 					else
-						result = VirtFuncInvoker3< RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___r0, ___f1, ___i2);
+						result = VirtFuncInvoker3< RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___r0, ___f1, ___i2);
 				}
 			}
 			else
 			{
-				typedef RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
+				typedef RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* (*FunctionPointerType) (void*, Ray_tE2163D4CB3E6B267E29F8ABE41684490E4A614B2 , float, int32_t, const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___r0, ___f1, ___i2, targetMethod);
 			}
 		}
@@ -19109,10 +19109,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RaycastAllCallback_BeginInvoke
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
 }
 // UnityEngine.RaycastHit[] UnityEngine.UI.ReflectionMethodsCache_RaycastAllCallback::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24* RaycastAllCallback_EndInvoke_m1DB016EE5E5197383DE81060D894473B1649A939 (RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57* RaycastAllCallback_EndInvoke_m1DB016EE5E5197383DE81060D894473B1649A939 (RaycastAllCallback_t751407A44270E02FAA43D0846A58EE6A8C4AE1CE * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return (RaycastHitU5BU5D_t1A4178BC101181F03D17B7D9D3C88203414ACB24*)__result;
+	return (RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*)__result;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

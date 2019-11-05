@@ -436,6 +436,8 @@ struct AdjustmentRule_tD07790AF71973358AF86152413749426B28D6204;
 struct TIME_ZONE_INFORMATION_tE8C6F24D5D50D01E03E52B00DDF74849F3DE9811;
 // System.TimeZoneNotFoundException
 struct TimeZoneNotFoundException_t44EC55B0AAD26AD0E0B659D308CBF90E5C81B388;
+// System.TimeoutException
+struct TimeoutException_t15A6E9A2A5819966712B5CFAF756BAEA40E3B1B7;
 // System.Type
 struct Type_t;
 // System.TypeIdentifier
@@ -663,6 +665,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB4E34B56A9437FD11B5764C22789947A48B35EA5
 IL2CPP_EXTERN_C String_t* _stringLiteralB6589FC6AB0DC82CF12099D1C2D40AB994E8410C;
 IL2CPP_EXTERN_C String_t* _stringLiteralB69220CE564D3318A9EEF1120FC119174ADBDEEA;
 IL2CPP_EXTERN_C String_t* _stringLiteralBB589D0621E5472F470FA3425A234C74B1E202E8;
+IL2CPP_EXTERN_C String_t* _stringLiteralBE3F306A5E0BA5DC2F76020448FB66EB734EF545;
 IL2CPP_EXTERN_C String_t* _stringLiteralC0EE32D825D6DDB4025AB74AF0609969ECC419C8;
 IL2CPP_EXTERN_C String_t* _stringLiteralC10B7D725CE2223CDFE7B945291104E7C0ACE1D9;
 IL2CPP_EXTERN_C String_t* _stringLiteralC85C60695430CEA397A21E8BE862BFEA63409E51;
@@ -830,6 +833,7 @@ IL2CPP_EXTERN_C const uint32_t ThrowStub_ThrowNotSupportedException_mA248D7D7856
 IL2CPP_EXTERN_C const uint32_t TimeZoneNotFoundException__ctor_m13C5CB453D2842823AA85B9B4E422C42D659FA19_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TimeZoneNotFoundException__ctor_m38A84B100985F5907DE77F71A3B98CD3BF1D9CD3_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TimeZoneNotFoundException__ctor_mA8D2277188E55C2B6EA52CEB57A8AD18243CECDE_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t TimeoutException__ctor_mB870CBFE33BA657A6C7FBFAB77984096ADCA62CF_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TransitionTime_Equals_m8A0240236B27E6EE75B5FA2F96A1C992F835B010_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TransitionTime_Equals_mB551A5FE7A3347F0090F98E80401CC9204C3D191_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t TransitionTime_System_Runtime_Serialization_IDeserializationCallback_OnDeserialization_m6FD2B88D2632C765F64AD7DA885D92B919264460_MetadataUsageId;
@@ -5725,6 +5729,15 @@ public:
 };
 
 
+// System.TimeoutException
+struct  TimeoutException_t15A6E9A2A5819966712B5CFAF756BAEA40E3B1B7  : public SystemException_t5380468142AA850BE4A341D7AF3EAB9C78746782
+{
+public:
+
+public:
+};
+
+
 // System.TokenType
 struct  TokenType_t192580F19CFCC8A71F0BD44B8BE1056BA64D869A 
 {
@@ -9371,6 +9384,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exception__ctor_m62590BC1925B7B354EBFD85
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exception__ctor_mBFF5996A1B65FCEEE0054A95A652BA3DD6366618 (Exception_t * __this, SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * ___info0, StreamingContext_t2CCDC54E0E8D078AF4A50E3A8B921B828A900034  ___context1, const RuntimeMethod* method);
 // System.Void System.Exception::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exception__ctor_m5FEC89FBFACEEDCEE29CCFD44A85D72FC28EB0D1 (Exception_t * __this, const RuntimeMethod* method);
+// System.Void System.SystemException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SystemException__ctor_mF67B7FA639B457BDFB2103D7C21C8059E806175A (SystemException_t5380468142AA850BE4A341D7AF3EAB9C78746782 * __this, String_t* ___message0, const RuntimeMethod* method);
+// System.Void System.Exception::SetErrorCode(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exception_SetErrorCode_m742C1E687C82E56F445893685007EF4FC017F4A7 (Exception_t * __this, int32_t ___hr0, const RuntimeMethod* method);
+// System.Void System.SystemException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SystemException__ctor_mB0550111A1A8D18B697B618F811A5B20C160D949 (SystemException_t5380468142AA850BE4A341D7AF3EAB9C78746782 * __this, SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * ___info0, StreamingContext_t2CCDC54E0E8D078AF4A50E3A8B921B828A900034  ___context1, const RuntimeMethod* method);
 // System.Int32 System.Tuple::CombineHashCodes(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tuple_CombineHashCodes_m45A9FAE45051A42186BE7E768E8482DFC17730E1 (int32_t ___h10, int32_t ___h21, const RuntimeMethod* method);
 // System.Void System.Reflection.MemberInfo::.ctor()
@@ -9479,14 +9498,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ATypeName__ctor_mB865CB8CFBAD77532030E15
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Display_GetInternalName_m9B890BB08D3AE39E9CF2AAF14D5F33C759CC6C36 (Display_t0222D7CB4CF0F85131FC5E26328FE94E0A27F5E5 * __this, const RuntimeMethod* method);
 // System.String System.TypeSpec::UnescapeInternalName(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TypeSpec_UnescapeInternalName_m7B3F1C73984FAF9159F89F62C97AF144EDC4347E (String_t* ___displayName0, const RuntimeMethod* method);
-// System.Void System.SystemException::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SystemException__ctor_mF67B7FA639B457BDFB2103D7C21C8059E806175A (SystemException_t5380468142AA850BE4A341D7AF3EAB9C78746782 * __this, String_t* ___message0, const RuntimeMethod* method);
-// System.Void System.Exception::SetErrorCode(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exception_SetErrorCode_m742C1E687C82E56F445893685007EF4FC017F4A7 (Exception_t * __this, int32_t ___hr0, const RuntimeMethod* method);
 // System.Void System.SystemException::.ctor(System.String,System.Exception)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SystemException__ctor_mA18D2EA5642C066F35CB8C965398F9A542C33B0A (SystemException_t5380468142AA850BE4A341D7AF3EAB9C78746782 * __this, String_t* ___message0, Exception_t * ___innerException1, const RuntimeMethod* method);
-// System.Void System.SystemException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SystemException__ctor_mB0550111A1A8D18B697B618F811A5B20C160D949 (SystemException_t5380468142AA850BE4A341D7AF3EAB9C78746782 * __this, SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * ___info0, StreamingContext_t2CCDC54E0E8D078AF4A50E3A8B921B828A900034  ___context1, const RuntimeMethod* method);
 // System.String System.Runtime.Serialization.SerializationInfo::GetString(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SerializationInfo_GetString_m06805A4E368E0B98D5FA70A9333B277CBDD84CF4 (SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * __this, String_t* ___name0, const RuntimeMethod* method);
 // System.Void System.Exception::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
@@ -10046,6 +10059,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SerializationInfo_GetBoolean_m5CAA35E19A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GCHandle_get_IsAllocated_m91323BCB568B1150F90515EF862B00F193E77808 (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, const RuntimeMethod* method);
 // System.Object System.Runtime.InteropServices.GCHandle::get_Target()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * GCHandle_get_Target_mDBDEA6883245CF1EF963D9FA945569B2D59DCCF8 (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, const RuntimeMethod* method);
+// System.Void System.Runtime.InteropServices.GCHandle::set_Target(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GCHandle_set_Target_mFE24B2555ECDBA46AC76D6DB79505B2F4238D913 (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, RuntimeObject * ___value0, const RuntimeMethod* method);
 // System.Void System.Runtime.InteropServices.GCHandle::Free()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GCHandle_Free_m392ECC9B1058E35A0FD5CF21A65F212873FC26F0 (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, const RuntimeMethod* method);
 // System.Void System.Object::Finalize()
@@ -11628,6 +11643,50 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeZoneNotFoundException__ctor_m13C5CB4
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Exception_t_il2cpp_TypeInfo_var);
 		Exception__ctor_m5FEC89FBFACEEDCEE29CCFD44A85D72FC28EB0D1(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.TimeoutException::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeoutException__ctor_mB870CBFE33BA657A6C7FBFAB77984096ADCA62CF (TimeoutException_t15A6E9A2A5819966712B5CFAF756BAEA40E3B1B7 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TimeoutException__ctor_mB870CBFE33BA657A6C7FBFAB77984096ADCA62CF_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = Environment_GetResourceString_m2C75C2AF268F01E2BF34AD1C2E1352CF4BA51AD9(_stringLiteralBE3F306A5E0BA5DC2F76020448FB66EB734EF545, /*hidden argument*/NULL);
+		SystemException__ctor_mF67B7FA639B457BDFB2103D7C21C8059E806175A(__this, L_0, /*hidden argument*/NULL);
+		Exception_SetErrorCode_m742C1E687C82E56F445893685007EF4FC017F4A7(__this, ((int32_t)-2146233083), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.TimeoutException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeoutException__ctor_mF1C60F8EDC528DD4115617C3A3ED34CB20175F1A (TimeoutException_t15A6E9A2A5819966712B5CFAF756BAEA40E3B1B7 * __this, String_t* ___message0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___message0;
+		SystemException__ctor_mF67B7FA639B457BDFB2103D7C21C8059E806175A(__this, L_0, /*hidden argument*/NULL);
+		Exception_SetErrorCode_m742C1E687C82E56F445893685007EF4FC017F4A7(__this, ((int32_t)-2146233083), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.TimeoutException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeoutException__ctor_m18609AA35D5F9E6B53E125B2B00D37EBBAB1DB65 (TimeoutException_t15A6E9A2A5819966712B5CFAF756BAEA40E3B1B7 * __this, SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * ___info0, StreamingContext_t2CCDC54E0E8D078AF4A50E3A8B921B828A900034  ___context1, const RuntimeMethod* method)
+{
+	{
+		SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * L_0 = ___info0;
+		StreamingContext_t2CCDC54E0E8D078AF4A50E3A8B921B828A900034  L_1 = ___context1;
+		SystemException__ctor_mB0550111A1A8D18B697B618F811A5B20C160D949(__this, L_0, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -22462,6 +22521,16 @@ IL_000f:
 		return L_3;
 	}
 }
+// System.Void System.WeakReference::set_Target(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeakReference_set_Target_mF6E89E1F816A61EF8E8FFABE07CFFEF35E518635 (WeakReference_t0495CC81CD6403E662B7700B802443F6F730E39D * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * L_0 = __this->get_address_of_gcHandle_1();
+		RuntimeObject * L_1 = ___value0;
+		GCHandle_set_Target_mFE24B2555ECDBA46AC76D6DB79505B2F4238D913((GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 *)L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Boolean System.WeakReference::get_TrackResurrection()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WeakReference_get_TrackResurrection_m047E08E5BE894FCF92A620D86FDB77C9DA559D56 (WeakReference_t0495CC81CD6403E662B7700B802443F6F730E39D * __this, const RuntimeMethod* method)
 {
@@ -22542,7 +22611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeakReference_GetObjectData_m1DBED399F8C
 IL_000e:
 	{
 		SerializationInfo_t1BB80E9C9DEA52DBF464487234B045E2930ADA26 * L_2 = ___info0;
-		bool L_3 = VirtFuncInvoker0< bool >::Invoke(6 /* System.Boolean System.WeakReference::get_TrackResurrection() */, __this);
+		bool L_3 = VirtFuncInvoker0< bool >::Invoke(7 /* System.Boolean System.WeakReference::get_TrackResurrection() */, __this);
 		NullCheck(L_2);
 		SerializationInfo_AddValue_m1229CE68F507974EBA0DA9C7C728A09E611D18B1(L_2, _stringLiteralA9914DA9D64B4FCE39273016F570714425122C67, L_3, /*hidden argument*/NULL);
 	}

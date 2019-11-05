@@ -15577,7 +15577,7 @@ IL_0056:
 
 IL_0075:
 	{
-		String_t* L_19 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Exception::get_StackTrace() */, __this);
+		String_t* L_19 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Exception::get_StackTrace() */, __this);
 		if (!L_19)
 		{
 			goto IL_008f;
@@ -15586,7 +15586,7 @@ IL_0075:
 	{
 		String_t* L_20 = V_0;
 		String_t* L_21 = Environment_get_NewLine_m5D4F4667FA5D1E2DBDD4DF9696D0CE76C83EF318(/*hidden argument*/NULL);
-		String_t* L_22 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Exception::get_StackTrace() */, __this);
+		String_t* L_22 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Exception::get_StackTrace() */, __this);
 		String_t* L_23 = String_Concat_mF4626905368D6558695A823466A1AF65EADB9923(L_20, L_21, L_22, /*hidden argument*/NULL);
 		V_0 = L_23;
 	}
@@ -15989,7 +15989,7 @@ IL_0056:
 
 IL_0075:
 	{
-		String_t* L_19 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Exception::get_StackTrace() */, __this);
+		String_t* L_19 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Exception::get_StackTrace() */, __this);
 		if (!L_19)
 		{
 			goto IL_008f;
@@ -15998,7 +15998,7 @@ IL_0075:
 	{
 		String_t* L_20 = V_0;
 		String_t* L_21 = Environment_get_NewLine_m5D4F4667FA5D1E2DBDD4DF9696D0CE76C83EF318(/*hidden argument*/NULL);
-		String_t* L_22 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Exception::get_StackTrace() */, __this);
+		String_t* L_22 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Exception::get_StackTrace() */, __this);
 		String_t* L_23 = String_Concat_mF4626905368D6558695A823466A1AF65EADB9923(L_20, L_21, L_22, /*hidden argument*/NULL);
 		V_0 = L_23;
 	}
