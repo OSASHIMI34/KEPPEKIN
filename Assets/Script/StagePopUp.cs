@@ -23,14 +23,6 @@ public class StagePopUp : MonoBehaviour
     public Button winButton;
     public Button loseButton;
 
-    private void Start()
-    {
-        battleDebug = GameObject.FindGameObjectWithTag("Stage").GetComponent<BattleDebug>();
-        //ボタンに外からメソッドを登録できるonClickのスクリプト版
-        winButton.onClick.AddListener(battleDebug.Win);
-        loseButton.onClick.AddListener(battleDebug.Lose);
-    }
-
     /// <summary>
     /// 強さとレアリティの値に応じてイメージを生成する
     /// </summary>
@@ -45,6 +37,18 @@ public class StagePopUp : MonoBehaviour
         {
             Instantiate(rarelityImagePrefab, rarelityPlace, false);
         }
+
+        //BattleDebugを探して紐付けする
+        battleDebug = GameObject.FindGameObjectWithTag("Stage").GetComponent<BattleDebug>();
+
+        //ボタンに外からメソッドを登録できるonClickのスクリプト版
+        //AddListenerに登録できるメソッドは引数を持ってないメソッドだけ
+        //登録したい場合は　AddListener(() => battleDebug.Win(level, rarelity))のようにする(ラムダ式)
+        //private void Test () {    //  () => の部分
+        //battleDebug.Win(level, rarelity);
+        //}
+    winButton.onClick.AddListener(() => battleDebug.Win(level, rarelity));
+        loseButton.onClick.AddListener(battleDebug.Lose);
     }
 
 

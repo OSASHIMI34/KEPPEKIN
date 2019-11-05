@@ -425,6 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d52c01d642a9c4b71823d726221210a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weights: 41000000190000000a000000
   enemys: 3
   kindata: {fileID: 11400000, guid: 71c7bc90adcf74b35a0c43924938f83a, type: 2}
   silhouettesImageBox: []
@@ -1262,9 +1263,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dirtyGage: {fileID: 1861386542}
+  sliderGauge: {fileID: 688740842}
   maxDirtyPoint: 100
   currentDirtyPoint: 0
-  debugPanel: {fileID: 0}
+  uiManager: {fileID: 0}
 --- !u!224 &6171318023437412176 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4637831891646977908, guid: 9be13a81e782247eb83f3d642e173af4,

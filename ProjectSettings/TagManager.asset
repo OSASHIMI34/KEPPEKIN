@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PopUpManager
   - Stage
+  - UICanvas
+  - EXPGage
+  - EXPSlider
   layers:
   - Default
   - TransparentFX
