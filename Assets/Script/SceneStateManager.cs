@@ -33,6 +33,11 @@ public class SceneStateManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        SceneManager.LoadScene("Home", LoadSceneMode.Additive);
+    }
+
     public void MoveStage()
     {
         SceneManager.LoadScene("Stage_1");
