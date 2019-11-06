@@ -24800,6 +24800,13 @@ void* RuntimeInvoker_TrueMatrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA (Il
 	return Box(il2cpp_codegen_class_from_type (il2cpp_codegen_method_return_type(methodMetadata)), &ret);
 }
 
+void* RuntimeInvoker_TrueVoid_t22962CB4C05B1D89B55A6E1139F0E87A90987017_Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_Int32_t585191389E07734F19F3156FF88FB3EF4800D102 (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  p1, int32_t p2, const RuntimeMethod* method);
+	((Func)methodPointer)(obj, *((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)args[0]), *((int32_t*)args[1]), methodMetadata);
+	return NULL;
+}
+
 void* RuntimeInvoker_FalseVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_RuntimeObject (Il2CppMethodPointer methodPointer, const RuntimeMethod* methodMetadata, void* obj, void** args)
 {
 	typedef Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  (*Func)(RuntimeObject * p1, const RuntimeMethod* method);
@@ -34377,7 +34384,7 @@ void* RuntimeInvoker_FalseRuntimeObject_FloatTween_tF6BB24C266F36BD80E20C91AED45
 }
 
 extern const InvokerMethod g_Il2CppInvokerPointers[];
-const InvokerMethod g_Il2CppInvokerPointers[2575] = 
+const InvokerMethod g_Il2CppInvokerPointers[2576] = 
 {
 	RuntimeInvoker_FalseRuntimeObject_RuntimeObject,
 	RuntimeInvoker_FalseRuntimeObject_RuntimeObject_RuntimeObject,
@@ -35586,6 +35593,7 @@ const InvokerMethod g_Il2CppInvokerPointers[2575] =
 	RuntimeInvoker_TrueQuaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357,
 	RuntimeInvoker_TrueVoid_t22962CB4C05B1D89B55A6E1139F0E87A90987017_Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357,
 	RuntimeInvoker_TrueMatrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA,
+	RuntimeInvoker_TrueVoid_t22962CB4C05B1D89B55A6E1139F0E87A90987017_Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_Int32_t585191389E07734F19F3156FF88FB3EF4800D102,
 	RuntimeInvoker_FalseVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_RuntimeObject,
 	RuntimeInvoker_FalseVector2_tA85D2DD88578276CA8A8796756458277E72D073D_RuntimeObject,
 	RuntimeInvoker_TrueVector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E,
