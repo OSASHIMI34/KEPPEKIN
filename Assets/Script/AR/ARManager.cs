@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class ARManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class ARManager : MonoBehaviour
     private ARRaycastManager raycastManager;
     private List<ARRaycastHit> raycastHitList = new List<ARRaycastHit>();
 
-    public Button returnBtn;
+    
     GameObject obj;
     public Camera arCamera;
 
@@ -34,17 +35,22 @@ public class ARManager : MonoBehaviour
                 return;
             }
 
-            if (raycastManager.Raycast (touch.position, raycastHitList, TrackableType.All))
+            if (obj == null)
             {
-                Debug.Log("RayCast成功");
-                obj = Instantiate(objectPrefab, raycastHitList[0].pose.position, raycastHitList[0].pose.rotation);
-            }
-            else
-            {
-                Debug.Log("Raycast失敗");
-            }
 
+                if (raycastManager.Raycast(touch.position, raycastHitList, TrackableType.All))
+                {
+                    Debug.Log("RayCast成功");
+                    obj = Instantiate(objectPrefab, raycastHitList[0].pose.position, raycastHitList[0].pose.rotation);
+                }
+                else
+                {
+                    Debug.Log("Raycast失敗");
+                }
+
+            }
         }
+
         //objが入ったら下の処理が動く
         if (obj != null)
         {
@@ -53,10 +59,4 @@ public class ARManager : MonoBehaviour
 
         
     }
-
-    public void OnclickReturnHome()
-    {
-        SceneStateManager.instance.MoveHome();
-    }
-
 }
