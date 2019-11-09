@@ -29,6 +29,8 @@
       <key>NSAllowsArbitraryLoads</key>
       <true />
     </dict>
+    <key>NSCameraUsageDescription</key>
+    <string>カメラを使う</string>
     <key>UIApplicationExitsOnSuspend</key>
     <false />
     <key>UILaunchStoryboardName~ipad</key>
@@ -42,6 +44,7 @@
     <key>UIRequiredDeviceCapabilities</key>
     <array>
       <string>armv7</string>
+      <string>arkit</string>
     </array>
     <key>UIRequiresFullScreen</key>
     <true />
@@ -61,8 +64,8 @@
     <key>Unity_LoadingActivityIndicatorStyle</key>
     <integer>-1</integer>
     <key>UnityCloudProjectID</key>
-    <string />
+    <string></string>
     <key>UnityCrashSubmissionURL</key>
-    <string />
+    <string></string>
   </dict>
 </plist>

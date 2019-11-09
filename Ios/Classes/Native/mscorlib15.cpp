@@ -9884,6 +9884,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Number_FormatUInt64_m04004F09D1913C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_mF0E40B7459C207B89A1C8C04CE7F183AC0E6D672 (uint64_t* __this, const RuntimeMethod* method);
 // System.String System.UInt64::ToString(System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_m6CBBC10ABBA0EE36F5E72F926A38F6CD7F497A55 (uint64_t* __this, RuntimeObject* ___provider0, const RuntimeMethod* method);
+// System.String System.UInt64::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_m46B46DBB5F74DCDC6082A8AC8C695E2295925E71 (uint64_t* __this, String_t* ___format0, const RuntimeMethod* method);
 // System.String System.UInt64::ToString(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_mF6F94603E535C161BBD87AC747A1F403C274E8CD (uint64_t* __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method);
 // System.UInt64 System.Number::ParseUInt64(System.String,System.Globalization.NumberStyles,System.Globalization.NumberFormatInfo)
@@ -19178,6 +19180,22 @@ IL2CPP_EXTERN_C  String_t* UInt64_ToString_m6CBBC10ABBA0EE36F5E72F926A38F6CD7F49
 {
 	uint64_t* _thisAdjusted = reinterpret_cast<uint64_t*>(__this + 1);
 	return UInt64_ToString_m6CBBC10ABBA0EE36F5E72F926A38F6CD7F497A55(_thisAdjusted, ___provider0, method);
+}
+// System.String System.UInt64::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_m46B46DBB5F74DCDC6082A8AC8C695E2295925E71 (uint64_t* __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	{
+		int64_t L_0 = *((int64_t*)__this);
+		String_t* L_1 = ___format0;
+		NumberFormatInfo_tFDF57037EBC5BC833D0A53EF0327B805994860A8 * L_2 = NumberFormatInfo_get_CurrentInfo_m595DF03E32E0C5B01F1EC45F7264B2BD09BA61C9(/*hidden argument*/NULL);
+		String_t* L_3 = Number_FormatUInt64_m04004F09D1913C13C59635153D0F45AF37F8248A(L_0, L_1, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+IL2CPP_EXTERN_C  String_t* UInt64_ToString_m46B46DBB5F74DCDC6082A8AC8C695E2295925E71_AdjustorThunk (RuntimeObject * __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	uint64_t* _thisAdjusted = reinterpret_cast<uint64_t*>(__this + 1);
+	return UInt64_ToString_m46B46DBB5F74DCDC6082A8AC8C695E2295925E71(_thisAdjusted, ___format0, method);
 }
 // System.String System.UInt64::ToString(System.String,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_mF6F94603E535C161BBD87AC747A1F403C274E8CD (uint64_t* __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method)
