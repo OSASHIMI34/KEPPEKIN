@@ -60,6 +60,8 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ARManager" preserve="nothing"/>
 		<type fullname="BattleDebug" preserve="nothing"/>
+		<type fullname="BattleMenuPopUp" preserve="nothing"/>
+		<type fullname="BattleUIManager" preserve="nothing"/>
 		<type fullname="Baum2.Cache" preserve="nothing"/>
 		<type fullname="Baum2.UIRoot" preserve="nothing"/>
 		<type fullname="EnemyManager" preserve="nothing"/>
@@ -85,6 +87,7 @@
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
+		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.XR.ARFoundation">
 		<type fullname="UnityEngine.XR.ARFoundation.ARCameraBackground" preserve="nothing"/>
@@ -99,6 +102,10 @@
 		<type fullname="UnityEngine.XR.ARFoundation.ARRaycastManager" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.ARFoundation.ARSession" preserve="nothing"/>
 		<type fullname="UnityEngine.XR.ARFoundation.ARSessionOrigin" preserve="nothing"/>
+		<type fullname="UnityEngine.XR.ARFoundation.ARTrackedImageManager" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Unity.XR.ARSubsystems">
+		<type fullname="UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEditor.Graphs">
 		<type fullname="UnityEditor.Graphs.AnimationBlendTree.Graph" preserve="nothing"/>

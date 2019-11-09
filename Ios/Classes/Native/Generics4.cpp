@@ -1367,7 +1367,7 @@ public:
 
 
 // System.Collections.Generic.DictionaryKeyCollectionDebugView`2<System.Object,System.Object>
-struct  DictionaryKeyCollectionDebugView_2_t290B73308A6569615BC95607120E5BD32F560CA8  : public RuntimeObject
+struct  DictionaryKeyCollectionDebugView_2_tE2001632545DCAD157DB38A935C22828ADC0F9C1  : public RuntimeObject
 {
 public:
 
@@ -1376,7 +1376,7 @@ public:
 
 
 // System.Collections.Generic.DictionaryKeyCollectionDebugView`2<System.Object,System.Object>
-struct  DictionaryKeyCollectionDebugView_2_tE2001632545DCAD157DB38A935C22828ADC0F9C1  : public RuntimeObject
+struct  DictionaryKeyCollectionDebugView_2_t290B73308A6569615BC95607120E5BD32F560CA8  : public RuntimeObject
 {
 public:
 

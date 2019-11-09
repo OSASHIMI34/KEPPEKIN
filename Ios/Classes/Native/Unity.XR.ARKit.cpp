@@ -167,6 +167,8 @@ struct Promise_1_tE8B65103AAD59FA1265B1977CE59DC6DA5220626;
 struct XRCameraSubsystem_t60344763BCE87679E570A4AD0BB068B74DBF20AF;
 // UnityEngine.XR.ARSubsystems.XRCameraSubsystem/IProvider
 struct IProvider_t5D7A855308E0C5E8F9175CA7CDEE91F929A5185C;
+// UnityEngine.XR.ARSubsystems.XRCameraSubsystem/OnImageRequestCompleteDelegate
+struct OnImageRequestCompleteDelegate_t54E5A2AAFBB0CEA262736B0CB4EDF5AEEA6229DE;
 // UnityEngine.XR.ARSubsystems.XRDepthSubsystem
 struct XRDepthSubsystem_tA1188AEE9FA009EAF2BDA064BEA1482FF4CD8AD7;
 // UnityEngine.XR.ARSubsystems.XRDepthSubsystem/IDepthApi
@@ -1588,6 +1590,54 @@ public:
 	inline void set_identityQuaternion_4(Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  value)
 	{
 		___identityQuaternion_4 = value;
+	}
+};
+
+
+// UnityEngine.RectInt
+struct  RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A 
+{
+public:
+	// System.Int32 UnityEngine.RectInt::m_XMin
+	int32_t ___m_XMin_0;
+	// System.Int32 UnityEngine.RectInt::m_YMin
+	int32_t ___m_YMin_1;
+	// System.Int32 UnityEngine.RectInt::m_Width
+	int32_t ___m_Width_2;
+	// System.Int32 UnityEngine.RectInt::m_Height
+	int32_t ___m_Height_3;
+
+public:
+	inline static int32_t get_offset_of_m_XMin_0() { return static_cast<int32_t>(offsetof(RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A, ___m_XMin_0)); }
+	inline int32_t get_m_XMin_0() const { return ___m_XMin_0; }
+	inline int32_t* get_address_of_m_XMin_0() { return &___m_XMin_0; }
+	inline void set_m_XMin_0(int32_t value)
+	{
+		___m_XMin_0 = value;
+	}
+
+	inline static int32_t get_offset_of_m_YMin_1() { return static_cast<int32_t>(offsetof(RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A, ___m_YMin_1)); }
+	inline int32_t get_m_YMin_1() const { return ___m_YMin_1; }
+	inline int32_t* get_address_of_m_YMin_1() { return &___m_YMin_1; }
+	inline void set_m_YMin_1(int32_t value)
+	{
+		___m_YMin_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Width_2() { return static_cast<int32_t>(offsetof(RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A, ___m_Width_2)); }
+	inline int32_t get_m_Width_2() const { return ___m_Width_2; }
+	inline int32_t* get_address_of_m_Width_2() { return &___m_Width_2; }
+	inline void set_m_Width_2(int32_t value)
+	{
+		___m_Width_2 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Height_3() { return static_cast<int32_t>(offsetof(RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A, ___m_Height_3)); }
+	inline int32_t get_m_Height_3() const { return ___m_Height_3; }
+	inline int32_t* get_address_of_m_Height_3() { return &___m_Height_3; }
+	inline void set_m_Height_3(int32_t value)
+	{
+		___m_Height_3 = value;
 	}
 };
 
@@ -3243,6 +3293,24 @@ public:
 };
 
 
+// UnityEngine.XR.ARSubsystems.AsyncCameraImageConversionStatus
+struct  AsyncCameraImageConversionStatus_tBB2E4F87A7456F29F7A329BE72CC3B671E3C625D 
+{
+public:
+	// System.Int32 UnityEngine.XR.ARSubsystems.AsyncCameraImageConversionStatus::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AsyncCameraImageConversionStatus_tBB2E4F87A7456F29F7A329BE72CC3B671E3C625D, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // UnityEngine.XR.ARSubsystems.CameraFocusMode
 struct  CameraFocusMode_t004A78F37B73E0A13307FBF88BF32191115F1B28 
 {
@@ -3270,6 +3338,24 @@ public:
 
 public:
 	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(CameraImageFormat_t6EC146C99F9FFEB0021560550350562050312BD9, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// UnityEngine.XR.ARSubsystems.CameraImageTransformation
+struct  CameraImageTransformation_t89BD7FC86526C731D32C36190C5317C9A7E1D24C 
+{
+public:
+	// System.Int32 UnityEngine.XR.ARSubsystems.CameraImageTransformation::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(CameraImageTransformation_t89BD7FC86526C731D32C36190C5317C9A7E1D24C, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -3593,6 +3679,54 @@ public:
 	inline void set_m_Resolution_2(Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905  value)
 	{
 		___m_Resolution_2 = value;
+	}
+};
+
+
+// UnityEngine.XR.ARSubsystems.XRCameraSubsystem_CameraImagePlaneCinfo
+struct  CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380 
+{
+public:
+	// System.IntPtr UnityEngine.XR.ARSubsystems.XRCameraSubsystem_CameraImagePlaneCinfo::m_DataPtr
+	intptr_t ___m_DataPtr_0;
+	// System.Int32 UnityEngine.XR.ARSubsystems.XRCameraSubsystem_CameraImagePlaneCinfo::m_DataLength
+	int32_t ___m_DataLength_1;
+	// System.Int32 UnityEngine.XR.ARSubsystems.XRCameraSubsystem_CameraImagePlaneCinfo::m_RowStride
+	int32_t ___m_RowStride_2;
+	// System.Int32 UnityEngine.XR.ARSubsystems.XRCameraSubsystem_CameraImagePlaneCinfo::m_PixelStride
+	int32_t ___m_PixelStride_3;
+
+public:
+	inline static int32_t get_offset_of_m_DataPtr_0() { return static_cast<int32_t>(offsetof(CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380, ___m_DataPtr_0)); }
+	inline intptr_t get_m_DataPtr_0() const { return ___m_DataPtr_0; }
+	inline intptr_t* get_address_of_m_DataPtr_0() { return &___m_DataPtr_0; }
+	inline void set_m_DataPtr_0(intptr_t value)
+	{
+		___m_DataPtr_0 = value;
+	}
+
+	inline static int32_t get_offset_of_m_DataLength_1() { return static_cast<int32_t>(offsetof(CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380, ___m_DataLength_1)); }
+	inline int32_t get_m_DataLength_1() const { return ___m_DataLength_1; }
+	inline int32_t* get_address_of_m_DataLength_1() { return &___m_DataLength_1; }
+	inline void set_m_DataLength_1(int32_t value)
+	{
+		___m_DataLength_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_RowStride_2() { return static_cast<int32_t>(offsetof(CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380, ___m_RowStride_2)); }
+	inline int32_t get_m_RowStride_2() const { return ___m_RowStride_2; }
+	inline int32_t* get_address_of_m_RowStride_2() { return &___m_RowStride_2; }
+	inline void set_m_RowStride_2(int32_t value)
+	{
+		___m_RowStride_2 = value;
+	}
+
+	inline static int32_t get_offset_of_m_PixelStride_3() { return static_cast<int32_t>(offsetof(CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380, ___m_PixelStride_3)); }
+	inline int32_t get_m_PixelStride_3() const { return ___m_PixelStride_3; }
+	inline int32_t* get_address_of_m_PixelStride_3() { return &___m_PixelStride_3; }
+	inline void set_m_PixelStride_3(int32_t value)
+	{
+		___m_PixelStride_3 = value;
 	}
 };
 
@@ -4992,6 +5126,54 @@ public:
 };
 
 
+// UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams
+struct  XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5 
+{
+public:
+	// UnityEngine.RectInt UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams::m_InputRect
+	RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A  ___m_InputRect_0;
+	// UnityEngine.Vector2Int UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams::m_OutputDimensions
+	Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905  ___m_OutputDimensions_1;
+	// UnityEngine.TextureFormat UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams::m_Format
+	int32_t ___m_Format_2;
+	// UnityEngine.XR.ARSubsystems.CameraImageTransformation UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams::m_Transformation
+	int32_t ___m_Transformation_3;
+
+public:
+	inline static int32_t get_offset_of_m_InputRect_0() { return static_cast<int32_t>(offsetof(XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5, ___m_InputRect_0)); }
+	inline RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A  get_m_InputRect_0() const { return ___m_InputRect_0; }
+	inline RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A * get_address_of_m_InputRect_0() { return &___m_InputRect_0; }
+	inline void set_m_InputRect_0(RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A  value)
+	{
+		___m_InputRect_0 = value;
+	}
+
+	inline static int32_t get_offset_of_m_OutputDimensions_1() { return static_cast<int32_t>(offsetof(XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5, ___m_OutputDimensions_1)); }
+	inline Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905  get_m_OutputDimensions_1() const { return ___m_OutputDimensions_1; }
+	inline Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905 * get_address_of_m_OutputDimensions_1() { return &___m_OutputDimensions_1; }
+	inline void set_m_OutputDimensions_1(Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905  value)
+	{
+		___m_OutputDimensions_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Format_2() { return static_cast<int32_t>(offsetof(XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5, ___m_Format_2)); }
+	inline int32_t get_m_Format_2() const { return ___m_Format_2; }
+	inline int32_t* get_address_of_m_Format_2() { return &___m_Format_2; }
+	inline void set_m_Format_2(int32_t value)
+	{
+		___m_Format_2 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Transformation_3() { return static_cast<int32_t>(offsetof(XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5, ___m_Transformation_3)); }
+	inline int32_t get_m_Transformation_3() const { return ___m_Transformation_3; }
+	inline int32_t* get_address_of_m_Transformation_3() { return &___m_Transformation_3; }
+	inline void set_m_Transformation_3(int32_t value)
+	{
+		___m_Transformation_3 = value;
+	}
+};
+
+
 // UnityEngine.XR.ARSubsystems.XRCameraParams
 struct  XRCameraParams_t7D7BD73FED17232F00E62B75053F66F7A110099B 
 {
@@ -6058,6 +6240,15 @@ public:
 };
 
 
+// UnityEngine.XR.ARSubsystems.XRCameraSubsystem_OnImageRequestCompleteDelegate
+struct  OnImageRequestCompleteDelegate_t54E5A2AAFBB0CEA262736B0CB4EDF5AEEA6229DE  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
 // UnityEngine.XR.ARSubsystems.XRDepthSubsystem
 struct  XRDepthSubsystem_tA1188AEE9FA009EAF2BDA064BEA1482FF4CD8AD7  : public TrackingSubsystem_2_t70B6F8BBDCEA193299D7F4FC34F9D63A1996CE0C
 {
@@ -6608,8 +6799,26 @@ inline NativeArray_1_tDAF0F4880AF8B000465CDA62C8389E82D86A9BC4  NativeCopyUtilit
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeApi_UnityARKit_Camera_ReleaseTextureDescriptors_m8B5EE88F8D4CF31503E5EBACF063CF5904CC0108 (void* ___descriptors0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_TryAcquireLatestImage(UnityEngine.XR.ARSubsystems.XRCameraSubsystem/CameraImageCinfo&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryAcquireLatestImage_m9174F7405E1162DF108D1DB316933A92C9420A11 (CameraImageCinfo_t25990F3278BB5799F03950B02EBA229BF901E532 * ___cameraImageCinfo0, const RuntimeMethod* method);
+// UnityEngine.XR.ARSubsystems.AsyncCameraImageConversionStatus UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_GetAsyncRequestStatus(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeApi_UnityARKit_Camera_GetAsyncRequestStatus_m88E63E732657FA59FBF609884AF0A60F2C3A6EDF (int32_t ___requestId0, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_DisposeImage(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeApi_UnityARKit_Camera_DisposeImage_m22DC931E2C8FA2223BE52A6D988CB2FB4676B28D (int32_t ___nativeHandle0, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_DisposeAsyncRequest(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeApi_UnityARKit_Camera_DisposeAsyncRequest_mCBC84D48CF9A746344BD0476F799E04E207591D5 (int32_t ___requestHandle0, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_TryGetPlane(System.Int32,System.Int32,UnityEngine.XR.ARSubsystems.XRCameraSubsystem/CameraImagePlaneCinfo&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryGetPlane_m2018486A381CC028176733592D9B2371145FA68C (int32_t ___nativeHandle0, int32_t ___planeIndex1, CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380 * ___planeCinfo2, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_HandleValid(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_HandleValid_mD27B3477A5E0E9C91151FD31AC2EC784F9260636 (int32_t ___nativeHandle0, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_TryGetConvertedDataSize(System.Int32,UnityEngine.Vector2Int,UnityEngine.TextureFormat,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryGetConvertedDataSize_m6D2C5713839DF1EA0F50808DDE8691A316A287BA (int32_t ___nativeHandle0, Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905  ___dimensions1, int32_t ___format2, int32_t* ___size3, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_TryConvert(System.Int32,UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams,System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryConvert_mE2D42671304E461935D38632A325B1C6BC989FF7 (int32_t ___nativeHandle0, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  ___conversionParams1, intptr_t ___buffer2, int32_t ___bufferLength3, const RuntimeMethod* method);
+// System.Int32 UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_CreateAsyncConversionRequest(System.Int32,UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeApi_UnityARKit_Camera_CreateAsyncConversionRequest_m0DA594B8B70A890AC675C23C1E76DDAD8BB69FD9 (int32_t ___nativeHandle0, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  ___conversionParams1, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_TryGetAsyncRequestData(System.Int32,System.IntPtr&,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryGetAsyncRequestData_m0370402F8E80EA0F6052BA72CB1CF23D3259A158 (int32_t ___requestHandle0, intptr_t* ___dataPtr1, int32_t* ___dataLength2, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.ARKit.ARKitCameraSubsystem/NativeApi::UnityARKit_Camera_CreateAsyncConversionRequestWithCallback(System.Int32,UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams,UnityEngine.XR.ARSubsystems.XRCameraSubsystem/OnImageRequestCompleteDelegate,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeApi_UnityARKit_Camera_CreateAsyncConversionRequestWithCallback_m77158A265140AF9F6EE80624532E88085ED82941 (int32_t ___nativeHandle0, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  ___conversionParams1, OnImageRequestCompleteDelegate_t54E5A2AAFBB0CEA262736B0CB4EDF5AEEA6229DE * ___callback2, intptr_t ___context3, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Shader::PropertyToID(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Shader_PropertyToID_m831E5B48743620DB9E3E3DD15A8DEA483981DD45 (String_t* p0, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.ARSubsystems.XREnvironmentProbeSubsystemCinfo::set_id(System.String)
@@ -6657,6 +6866,8 @@ inline void TrackableChanges_1__ctor_mA5EBEA61571F0A7B407FA704C570562260D560FE (
 }
 // System.Void UnityEngine.XR.ARKit.EnvironmentProbeApi::UnityARKit_EnvironmentProbeProvider_ReleaseChanges(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentProbeApi_UnityARKit_EnvironmentProbeProvider_ReleaseChanges_m91EDC854866ADB48A88A94473BE0BFD3744C8B0E (intptr_t ___context0, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.ARKit.EnvironmentProbeApi::UnityARKit_EnvironmentProbeProvider_IsSupported()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EnvironmentProbeApi_UnityARKit_EnvironmentProbeProvider_IsSupported_m9D6E7ABA6028CCEFB0C85979D96A18AC219C3942 (const RuntimeMethod* method);
 // System.String UnityEngine.iOS.Device::get_systemVersion()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Device_get_systemVersion_m2FAF59069686B57244F90EFBAA9E5042301C716E (const RuntimeMethod* method);
 // UnityEngine.XR.ARKit.OSVersion UnityEngine.XR.ARKit.OSVersion::Parse(System.String)
@@ -6841,6 +7052,8 @@ inline Promise_1_t7E6FC51116CF1FB8FFF9D4D6621E5F7231AE9A6B * Promise_1_CreateRes
 }
 // System.Void System.NotSupportedException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_mD023A89A5C1F740F43F0A9CD6C49DC21230B3CEE (NotSupportedException_tE75B318D6590A02A5D9B29FD97409B1750FA0010 * __this, String_t* p0, const RuntimeMethod* method);
+// System.IntPtr UnityEngine.XR.ARKit.ARKitSessionSubsystem/NativeApi::UnityARKit_session_getNativePtr()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t NativeApi_UnityARKit_session_getNativePtr_mCDFB6C8F44A9D81FB2EF4037E64AB07A06AE8404 (const RuntimeMethod* method);
 // UnityEngine.XR.ARSubsystems.TrackingState UnityEngine.XR.ARKit.ARKitSessionSubsystem/NativeApi::UnityARKit_session_getTrackingState()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeApi_UnityARKit_session_getTrackingState_mC556510D36A2A09FD80AB564EF433A9740EEEF60 (const RuntimeMethod* method);
 // UnityEngine.XR.ARSubsystems.NotTrackingReason UnityEngine.XR.ARKit.ARKitSessionSubsystem/NativeApi::UnityARKit_session_getNotTrackingReason()
@@ -7344,6 +7557,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryAcquireLa
 	return static_cast<bool>(returnValue);
 }
 #if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL UnityARKit_Camera_GetAsyncRequestStatus(int32_t);
+#endif
+// UnityEngine.XR.ARSubsystems.AsyncCameraImageConversionStatus UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_GetAsyncRequestStatus(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeApi_UnityARKit_Camera_GetAsyncRequestStatus_m88E63E732657FA59FBF609884AF0A60F2C3A6EDF (int32_t ___requestId0, const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t);
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_GetAsyncRequestStatus)(___requestId0);
+
+	return returnValue;
+}
+#if !FORCE_PINVOKE_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL UnityARKit_Camera_DisposeImage(int32_t);
 #endif
 // System.Void UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_DisposeImage(System.Int32)
@@ -7353,6 +7579,112 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeApi_UnityARKit_Camera_DisposeImage
 
 	// Native function invocation
 	reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_DisposeImage)(___nativeHandle0);
+
+}
+#if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C void DEFAULT_CALL UnityARKit_Camera_DisposeAsyncRequest(int32_t);
+#endif
+// System.Void UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_DisposeAsyncRequest(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeApi_UnityARKit_Camera_DisposeAsyncRequest_mCBC84D48CF9A746344BD0476F799E04E207591D5 (int32_t ___requestHandle0, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_DisposeAsyncRequest)(___requestHandle0);
+
+}
+#if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL UnityARKit_Camera_TryGetPlane(int32_t, int32_t, CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380 *);
+#endif
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_TryGetPlane(System.Int32,System.Int32,UnityEngine.XR.ARSubsystems.XRCameraSubsystem_CameraImagePlaneCinfo&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryGetPlane_m2018486A381CC028176733592D9B2371145FA68C (int32_t ___nativeHandle0, int32_t ___planeIndex1, CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380 * ___planeCinfo2, const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, int32_t, CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380 *);
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_TryGetPlane)(___nativeHandle0, ___planeIndex1, ___planeCinfo2);
+
+	return static_cast<bool>(returnValue);
+}
+#if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL UnityARKit_Camera_HandleValid(int32_t);
+#endif
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_HandleValid(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_HandleValid_mD27B3477A5E0E9C91151FD31AC2EC784F9260636 (int32_t ___nativeHandle0, const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t);
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_HandleValid)(___nativeHandle0);
+
+	return static_cast<bool>(returnValue);
+}
+#if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL UnityARKit_Camera_TryGetConvertedDataSize(int32_t, Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905 , int32_t, int32_t*);
+#endif
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_TryGetConvertedDataSize(System.Int32,UnityEngine.Vector2Int,UnityEngine.TextureFormat,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryGetConvertedDataSize_m6D2C5713839DF1EA0F50808DDE8691A316A287BA (int32_t ___nativeHandle0, Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905  ___dimensions1, int32_t ___format2, int32_t* ___size3, const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905 , int32_t, int32_t*);
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_TryGetConvertedDataSize)(___nativeHandle0, ___dimensions1, ___format2, ___size3);
+
+	return static_cast<bool>(returnValue);
+}
+#if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL UnityARKit_Camera_TryConvert(int32_t, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5 , intptr_t, int32_t);
+#endif
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_TryConvert(System.Int32,UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams,System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryConvert_mE2D42671304E461935D38632A325B1C6BC989FF7 (int32_t ___nativeHandle0, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  ___conversionParams1, intptr_t ___buffer2, int32_t ___bufferLength3, const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5 , intptr_t, int32_t);
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_TryConvert)(___nativeHandle0, ___conversionParams1, ___buffer2, ___bufferLength3);
+
+	return static_cast<bool>(returnValue);
+}
+#if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL UnityARKit_Camera_CreateAsyncConversionRequest(int32_t, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5 );
+#endif
+// System.Int32 UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_CreateAsyncConversionRequest(System.Int32,UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeApi_UnityARKit_Camera_CreateAsyncConversionRequest_m0DA594B8B70A890AC675C23C1E76DDAD8BB69FD9 (int32_t ___nativeHandle0, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  ___conversionParams1, const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5 );
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_CreateAsyncConversionRequest)(___nativeHandle0, ___conversionParams1);
+
+	return returnValue;
+}
+#if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL UnityARKit_Camera_TryGetAsyncRequestData(int32_t, intptr_t*, int32_t*);
+#endif
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_TryGetAsyncRequestData(System.Int32,System.IntPtr&,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_UnityARKit_Camera_TryGetAsyncRequestData_m0370402F8E80EA0F6052BA72CB1CF23D3259A158 (int32_t ___requestHandle0, intptr_t* ___dataPtr1, int32_t* ___dataLength2, const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, intptr_t*, int32_t*);
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_TryGetAsyncRequestData)(___requestHandle0, ___dataPtr1, ___dataLength2);
+
+	return static_cast<bool>(returnValue);
+}
+#if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C void DEFAULT_CALL UnityARKit_Camera_CreateAsyncConversionRequestWithCallback(int32_t, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5 , Il2CppMethodPointer, intptr_t);
+#endif
+// System.Void UnityEngine.XR.ARKit.ARKitCameraSubsystem_NativeApi::UnityARKit_Camera_CreateAsyncConversionRequestWithCallback(System.Int32,UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams,UnityEngine.XR.ARSubsystems.XRCameraSubsystem_OnImageRequestCompleteDelegate,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeApi_UnityARKit_Camera_CreateAsyncConversionRequestWithCallback_m77158A265140AF9F6EE80624532E88085ED82941 (int32_t ___nativeHandle0, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  ___conversionParams1, OnImageRequestCompleteDelegate_t54E5A2AAFBB0CEA262736B0CB4EDF5AEEA6229DE * ___callback2, intptr_t ___context3, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (int32_t, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5 , Il2CppMethodPointer, intptr_t);
+
+	// Marshaling of parameter '___callback2' to native representation
+	Il2CppMethodPointer ____callback2_marshaled = NULL;
+	____callback2_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___callback2));
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(UnityARKit_Camera_CreateAsyncConversionRequestWithCallback)(___nativeHandle0, ___conversionParams1, ____callback2_marshaled, ___context3);
 
 }
 #ifdef __clang__
@@ -7705,12 +8037,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Provider_TryAcquireLatestImage_m36480B58
 		return L_1;
 	}
 }
+// UnityEngine.XR.ARSubsystems.AsyncCameraImageConversionStatus UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::GetAsyncRequestStatus(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Provider_GetAsyncRequestStatus_m6ACF8476D45C84C51FB7E359E4BF22D0FFA14A18 (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___requestId0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___requestId0;
+		int32_t L_1 = NativeApi_UnityARKit_Camera_GetAsyncRequestStatus_m88E63E732657FA59FBF609884AF0A60F2C3A6EDF(L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
 // System.Void UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::DisposeImage(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Provider_DisposeImage_m0FE7A83ADDE64DDE7A21893352658FFC65DE7AEF (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___nativeHandle0, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = ___nativeHandle0;
 		NativeApi_UnityARKit_Camera_DisposeImage_m22DC931E2C8FA2223BE52A6D988CB2FB4676B28D(L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::DisposeAsyncRequest(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Provider_DisposeAsyncRequest_mEBE51339A642FFADAA73638B1F91C7C771FBE340 (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___requestId0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___requestId0;
+		NativeApi_UnityARKit_Camera_DisposeAsyncRequest_mCBC84D48CF9A746344BD0476F799E04E207591D5(L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::TryGetPlane(System.Int32,System.Int32,UnityEngine.XR.ARSubsystems.XRCameraSubsystem_CameraImagePlaneCinfo&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Provider_TryGetPlane_m3190B843C9CF55E55CAD2B81BBFA2B2E169E0D96 (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___nativeHandle0, int32_t ___planeIndex1, CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380 * ___planeCinfo2, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___nativeHandle0;
+		int32_t L_1 = ___planeIndex1;
+		CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380 * L_2 = ___planeCinfo2;
+		bool L_3 = NativeApi_UnityARKit_Camera_TryGetPlane_m2018486A381CC028176733592D9B2371145FA68C(L_0, L_1, (CameraImagePlaneCinfo_t46214C1E1C011799B428E373165D65F66ADD1380 *)L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::NativeHandleValid(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Provider_NativeHandleValid_mD204608A43DB7140975855DA80FDA6EDE23C1809 (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___nativeHandle0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___nativeHandle0;
+		bool L_1 = NativeApi_UnityARKit_Camera_HandleValid_mD27B3477A5E0E9C91151FD31AC2EC784F9260636(L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::TryGetConvertedDataSize(System.Int32,UnityEngine.Vector2Int,UnityEngine.TextureFormat,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Provider_TryGetConvertedDataSize_m4F9A4DF8C8725E68B5BE2D2DDFF94CD79627D7C2 (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___nativeHandle0, Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905  ___dimensions1, int32_t ___format2, int32_t* ___size3, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___nativeHandle0;
+		Vector2Int_t339DA203C037FA6BCFC926C36DC2194D52D5F905  L_1 = ___dimensions1;
+		int32_t L_2 = ___format2;
+		int32_t* L_3 = ___size3;
+		bool L_4 = NativeApi_UnityARKit_Camera_TryGetConvertedDataSize_m6D2C5713839DF1EA0F50808DDE8691A316A287BA(L_0, L_1, L_2, (int32_t*)L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::TryConvert(System.Int32,UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams,System.IntPtr,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Provider_TryConvert_m4AD5A817689CAE787A81D040577DF3D8034DB456 (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___nativeHandle0, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  ___conversionParams1, intptr_t ___destinationBuffer2, int32_t ___bufferLength3, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___nativeHandle0;
+		XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  L_1 = ___conversionParams1;
+		intptr_t L_2 = ___destinationBuffer2;
+		int32_t L_3 = ___bufferLength3;
+		bool L_4 = NativeApi_UnityARKit_Camera_TryConvert_mE2D42671304E461935D38632A325B1C6BC989FF7(L_0, L_1, (intptr_t)L_2, L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
+// System.Int32 UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::ConvertAsync(System.Int32,UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Provider_ConvertAsync_m6B04716400461E42B77E47D81807975575E16668 (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___nativeHandle0, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  ___conversionParams1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___nativeHandle0;
+		XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  L_1 = ___conversionParams1;
+		int32_t L_2 = NativeApi_UnityARKit_Camera_CreateAsyncConversionRequest_m0DA594B8B70A890AC675C23C1E76DDAD8BB69FD9(L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Boolean UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::TryGetAsyncRequestData(System.Int32,System.IntPtr&,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Provider_TryGetAsyncRequestData_m734119D2592F5F1E11F936AAF6DB4ECB2A608418 (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___requestId0, intptr_t* ___dataPtr1, int32_t* ___dataLength2, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___requestId0;
+		intptr_t* L_1 = ___dataPtr1;
+		int32_t* L_2 = ___dataLength2;
+		bool L_3 = NativeApi_UnityARKit_Camera_TryGetAsyncRequestData_m0370402F8E80EA0F6052BA72CB1CF23D3259A158(L_0, (intptr_t*)L_1, (int32_t*)L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.Void UnityEngine.XR.ARKit.ARKitCameraSubsystem_Provider::ConvertAsync(System.Int32,UnityEngine.XR.ARSubsystems.XRCameraImageConversionParams,UnityEngine.XR.ARSubsystems.XRCameraSubsystem_OnImageRequestCompleteDelegate,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Provider_ConvertAsync_m4B590DEFD9673667A0AA459F382B2AB71CD5749C (Provider_t10F5BFB8A0883F5ABFC689F55DC4B6DFA0E9535E * __this, int32_t ___nativeHandle0, XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  ___conversionParams1, OnImageRequestCompleteDelegate_t54E5A2AAFBB0CEA262736B0CB4EDF5AEEA6229DE * ___callback2, intptr_t ___context3, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___nativeHandle0;
+		XRCameraImageConversionParams_t94D5A9992C6D9C03637B14C4399D4CAE35F899C5  L_1 = ___conversionParams1;
+		OnImageRequestCompleteDelegate_t54E5A2AAFBB0CEA262736B0CB4EDF5AEEA6229DE * L_2 = ___callback2;
+		intptr_t L_3 = ___context3;
+		NativeApi_UnityARKit_Camera_CreateAsyncConversionRequestWithCallback_m77158A265140AF9F6EE80624532E88085ED82941(L_0, L_1, L_2, (intptr_t)L_3, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -7964,6 +8391,14 @@ IL_0041:
 	{
 		TrackableChanges_1_t5B1E235F751BB96851611F0EE82810617DA588C7  L_15 = V_8;
 		return L_15;
+	}
+}
+// System.Boolean UnityEngine.XR.ARKit.ARKitEnvironmentProbeSubsystem_Provider::get_supported()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Provider_get_supported_mE46D27C6158554F44CC025002F31FD0709E32CBA (Provider_tB0A7AD26F93889AA6B6BC88229A3EBCB638EFA91 * __this, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = EnvironmentProbeApi_UnityARKit_EnvironmentProbeProvider_IsSupported_m9D6E7ABA6028CCEFB0C85979D96A18AC219C3942(/*hidden argument*/NULL);
+		return L_0;
 	}
 }
 #ifdef __clang__
@@ -8962,6 +9397,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitSessionSubsystem__ctor_mB2A7973492E
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 #if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C intptr_t DEFAULT_CALL UnityARKit_session_getNativePtr();
+#endif
+// System.IntPtr UnityEngine.XR.ARKit.ARKitSessionSubsystem_NativeApi::UnityARKit_session_getNativePtr()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t NativeApi_UnityARKit_session_getNativePtr_mCDFB6C8F44A9D81FB2EF4037E64AB07A06AE8404 (const RuntimeMethod* method)
+{
+	typedef intptr_t (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(UnityARKit_session_getNativePtr)();
+
+	return returnValue;
+}
+#if !FORCE_PINVOKE_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL UnityARKit_session_getAvailability();
 #endif
 // UnityEngine.XR.ARKit.ARKitSessionSubsystem_NativeApi_Availability UnityEngine.XR.ARKit.ARKitSessionSubsystem_NativeApi::UnityARKit_session_getAvailability()
@@ -9339,6 +9787,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Promise_1_tE8B65103AAD59FA1265B1977CE59DC6DA5
 		NotSupportedException_tE75B318D6590A02A5D9B29FD97409B1750FA0010 * L_0 = (NotSupportedException_tE75B318D6590A02A5D9B29FD97409B1750FA0010 *)il2cpp_codegen_object_new(NotSupportedException_tE75B318D6590A02A5D9B29FD97409B1750FA0010_il2cpp_TypeInfo_var);
 		NotSupportedException__ctor_mD023A89A5C1F740F43F0A9CD6C49DC21230B3CEE(L_0, _stringLiteral01A8E649C2EE0F2F0E7111E059615E0D2F569454, /*hidden argument*/NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, NULL, Provider_InstallAsync_mC34CC35BE9F77D036C194822AF2C94ADABCEA322_RuntimeMethod_var);
+	}
+}
+// System.IntPtr UnityEngine.XR.ARKit.ARKitSessionSubsystem_Provider::get_nativePtr()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Provider_get_nativePtr_m29500C45FE9C32C46DA66B103E83C8F22F192E88 (Provider_t475F303CC6F0955D8B266D4CD5B7022F3658389B * __this, const RuntimeMethod* method)
+{
+	{
+		intptr_t L_0 = NativeApi_UnityARKit_session_getNativePtr_mCDFB6C8F44A9D81FB2EF4037E64AB07A06AE8404(/*hidden argument*/NULL);
+		return (intptr_t)L_0;
 	}
 }
 // UnityEngine.XR.ARSubsystems.TrackingState UnityEngine.XR.ARKit.ARKitSessionSubsystem_Provider::get_trackingState()
@@ -10709,6 +11165,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnvironmentProbeApi_UnityARKit_Environme
 	// Native function invocation
 	reinterpret_cast<PInvokeFunc>(UnityARKit_EnvironmentProbeProvider_ReleaseChanges)(___context0);
 
+}
+#if !FORCE_PINVOKE_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL UnityARKit_EnvironmentProbeProvider_IsSupported();
+#endif
+// System.Boolean UnityEngine.XR.ARKit.EnvironmentProbeApi::UnityARKit_EnvironmentProbeProvider_IsSupported()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EnvironmentProbeApi_UnityARKit_EnvironmentProbeProvider_IsSupported_m9D6E7ABA6028CCEFB0C85979D96A18AC219C3942 (const RuntimeMethod* method)
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) ();
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(UnityARKit_EnvironmentProbeProvider_IsSupported)();
+
+	return static_cast<bool>(returnValue);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

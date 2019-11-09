@@ -15904,10 +15904,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SystemException__ctor_mB0550111A1A8D18B6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t IntPtr_op_Explicit_mD69722A4C61D33FE70E790325C6E0DC690F9494F (intptr_t ___value0, const RuntimeMethod* method);
 // System.Void System.Runtime.InteropServices.GCHandle::.ctor(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GCHandle__ctor_mDA8459715B19E4244699A93A833D6CB535ACCE86 (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, intptr_t ___h0, const RuntimeMethod* method);
-// System.Int32 System.Runtime.InteropServices.GCHandle::GetTargetHandle(System.Object,System.Int32,System.Runtime.InteropServices.GCHandleType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GCHandle_GetTargetHandle_m861E5BB34BE3928E315FA8091830D1F5E55596A6 (RuntimeObject * ___obj0, int32_t ___handle1, int32_t ___type2, const RuntimeMethod* method);
 // System.Void System.Runtime.InteropServices.GCHandle::.ctor(System.Object,System.Runtime.InteropServices.GCHandleType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GCHandle__ctor_m778D815E149206CA068A7A97DD0E585D4D19B083 (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, RuntimeObject * ___value0, int32_t ___type1, const RuntimeMethod* method);
+// System.Void System.Runtime.InteropServices.GCHandle::.ctor(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GCHandle__ctor_m3274AF08C31ED57698DDC8280BA0EE79E3870CEB (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method);
+// System.Int32 System.Runtime.InteropServices.GCHandle::GetTargetHandle(System.Object,System.Int32,System.Runtime.InteropServices.GCHandleType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GCHandle_GetTargetHandle_m861E5BB34BE3928E315FA8091830D1F5E55596A6 (RuntimeObject * ___obj0, int32_t ___handle1, int32_t ___type2, const RuntimeMethod* method);
 // System.Boolean System.Runtime.InteropServices.GCHandle::get_IsAllocated()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GCHandle_get_IsAllocated_m91323BCB568B1150F90515EF862B00F193E77808 (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, const RuntimeMethod* method);
 // System.String Locale::GetText(System.String)
@@ -15946,6 +15948,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int32_GetHashCode_m245C424ECE351E5FE3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GCHandle_GetHashCode_m0C73120676471953CF783E404B248C0206F5671D (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, const RuntimeMethod* method);
 // System.Runtime.InteropServices.GCHandle System.Runtime.InteropServices.GCHandle::op_Explicit(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  GCHandle_op_Explicit_m12AF9B7126A0899E8011F1CCDCB877AAA56A0C8C (intptr_t ___value0, const RuntimeMethod* method);
+// System.IntPtr System.Runtime.InteropServices.GCHandle::op_Explicit(System.Runtime.InteropServices.GCHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GCHandle_op_Explicit_mDDDE375E679609F240EF76F20E982C5B73A7D6BA (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  ___value0, const RuntimeMethod* method);
 // System.Void System.Runtime.InteropServices.Marshal::copy_from_unmanaged(System.IntPtr,System.Int32,System.Array,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_copy_from_unmanaged_m6155CAC4E5EC6C94D165E01CFBB583B79EF25AC4 (intptr_t ___source0, int32_t ___startIndex1, RuntimeArray * ___destination2, int32_t ___length3, const RuntimeMethod* method);
 // System.Void System.ArgumentException::.ctor(System.String,System.String)
@@ -19291,6 +19295,20 @@ IL2CPP_EXTERN_C  void GCHandle__ctor_mDA8459715B19E4244699A93A833D6CB535ACCE86_A
 	GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * _thisAdjusted = reinterpret_cast<GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 *>(__this + 1);
 	GCHandle__ctor_mDA8459715B19E4244699A93A833D6CB535ACCE86(_thisAdjusted, ___h0, method);
 }
+// System.Void System.Runtime.InteropServices.GCHandle::.ctor(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GCHandle__ctor_m3274AF08C31ED57698DDC8280BA0EE79E3870CEB (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___obj0;
+		GCHandle__ctor_m778D815E149206CA068A7A97DD0E585D4D19B083((GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 *)__this, L_0, 2, /*hidden argument*/NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void GCHandle__ctor_m3274AF08C31ED57698DDC8280BA0EE79E3870CEB_AdjustorThunk (RuntimeObject * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
+{
+	GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * _thisAdjusted = reinterpret_cast<GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 *>(__this + 1);
+	GCHandle__ctor_m3274AF08C31ED57698DDC8280BA0EE79E3870CEB(_thisAdjusted, ___obj0, method);
+}
 // System.Void System.Runtime.InteropServices.GCHandle::.ctor(System.Object,System.Runtime.InteropServices.GCHandleType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GCHandle__ctor_m778D815E149206CA068A7A97DD0E585D4D19B083 (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * __this, RuntimeObject * ___value0, int32_t ___type1, const RuntimeMethod* method)
 {
@@ -19456,6 +19474,17 @@ IL2CPP_EXTERN_C  intptr_t GCHandle_AddrOfPinnedObject_mA20090CB8274F28D087A6E8AD
 	GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * _thisAdjusted = reinterpret_cast<GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 *>(__this + 1);
 	return GCHandle_AddrOfPinnedObject_mA20090CB8274F28D087A6E8AD36D3230B6741EA5(_thisAdjusted, method);
 }
+// System.Runtime.InteropServices.GCHandle System.Runtime.InteropServices.GCHandle::Alloc(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  GCHandle_Alloc_m5BF9DC23B533B904BFEA61136B92916683B46B0F (RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		GCHandle__ctor_m3274AF08C31ED57698DDC8280BA0EE79E3870CEB((&L_1), L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
 // System.Runtime.InteropServices.GCHandle System.Runtime.InteropServices.GCHandle::Alloc(System.Object,System.Runtime.InteropServices.GCHandleType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  GCHandle_Alloc_m30DAF14F75E3A692C594965CE6724E2454DE9A2E (RuntimeObject * ___value0, int32_t ___type1, const RuntimeMethod* method)
 {
@@ -19514,6 +19543,16 @@ IL2CPP_EXTERN_C  void GCHandle_Free_m392ECC9B1058E35A0FD5CF21A65F212873FC26F0_Ad
 {
 	GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 * _thisAdjusted = reinterpret_cast<GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3 *>(__this + 1);
 	GCHandle_Free_m392ECC9B1058E35A0FD5CF21A65F212873FC26F0(_thisAdjusted, method);
+}
+// System.IntPtr System.Runtime.InteropServices.GCHandle::op_Explicit(System.Runtime.InteropServices.GCHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GCHandle_op_Explicit_mDDDE375E679609F240EF76F20E982C5B73A7D6BA (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  ___value0, const RuntimeMethod* method)
+{
+	{
+		GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  L_0 = ___value0;
+		int32_t L_1 = L_0.get_handle_0();
+		intptr_t L_2 = IntPtr_op_Explicit_m62A5ED7757661C8DB6AEF4816829ED92A1929F91(L_1, /*hidden argument*/NULL);
+		return (intptr_t)L_2;
+	}
 }
 // System.Runtime.InteropServices.GCHandle System.Runtime.InteropServices.GCHandle::op_Explicit(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  GCHandle_op_Explicit_m12AF9B7126A0899E8011F1CCDCB877AAA56A0C8C (intptr_t ___value0, const RuntimeMethod* method)
@@ -19663,6 +19702,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GCHandle_t39FAEE3EA592432C93B574A31DD83B87F18
 		intptr_t L_0 = ___value0;
 		GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  L_1 = GCHandle_op_Explicit_m12AF9B7126A0899E8011F1CCDCB877AAA56A0C8C((intptr_t)L_0, /*hidden argument*/NULL);
 		return L_1;
+	}
+}
+// System.IntPtr System.Runtime.InteropServices.GCHandle::ToIntPtr(System.Runtime.InteropServices.GCHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GCHandle_ToIntPtr_m8CF7D07846B0C741B04A2A4E5E9B5D505F4B3CCE (GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  ___value0, const RuntimeMethod* method)
+{
+	{
+		GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  L_0 = ___value0;
+		intptr_t L_1 = GCHandle_op_Explicit_mDDDE375E679609F240EF76F20E982C5B73A7D6BA(L_0, /*hidden argument*/NULL);
+		return (intptr_t)L_1;
 	}
 }
 #ifdef __clang__
