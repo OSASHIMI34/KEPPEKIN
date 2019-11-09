@@ -23,6 +23,9 @@ public class StagePopUp : MonoBehaviour
     public Button winButton;
     public Button loseButton;
 
+    public bool isDebugBattleOn;
+
+
     /// <summary>
     /// 強さとレアリティの値に応じてイメージを生成する
     /// </summary>
@@ -70,7 +73,17 @@ public class StagePopUp : MonoBehaviour
 
     public void OnClickBattleButton()
     {
-        debugPanel.SetActive(true);
+        if (isDebugBattleOn)
+        {
+            Debug.Log("通ってる");
+            SceneStateManager.instance.MoveBattle();
+        }
+        else
+        {
+            Debug.Log("通ってない");
+            debugPanel.SetActive(true);
+        }
+        
 
     } 
 

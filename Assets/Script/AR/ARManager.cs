@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.UI;
 
 public class ARManager : MonoBehaviour
 {
     [SerializeField] GameObject objectPrefab; //生成するオブジェクト
     private ARRaycastManager raycastManager;
     private List<ARRaycastHit> raycastHitList = new List<ARRaycastHit>();
+
+    public Button returnBtn;
+    GameObject obj;
+    public Camera arCamera;
 
 
     void Start()
@@ -18,6 +23,8 @@ public class ARManager : MonoBehaviour
 
     void Update()
     {
+
+
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -30,7 +37,7 @@ public class ARManager : MonoBehaviour
             if (raycastManager.Raycast (touch.position, raycastHitList, TrackableType.All))
             {
                 Debug.Log("RayCast成功");
-                Instantiate(objectPrefab, raycastHitList[0].pose.position, raycastHitList[0].pose.rotation);
+                obj = Instantiate(objectPrefab, raycastHitList[0].pose.position, raycastHitList[0].pose.rotation);
             }
             else
             {
@@ -38,7 +45,18 @@ public class ARManager : MonoBehaviour
             }
 
         }
+        //objが入ったら下の処理が動く
+        if (obj != null)
+        {
+            obj.transform.LookAt(arCamera.transform);
+        }
 
         
     }
+
+    public void OnclickReturnHome()
+    {
+        SceneStateManager.instance.MoveHome();
+    }
+
 }

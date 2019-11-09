@@ -59,5 +59,10 @@ public class SceneStateManager : MonoBehaviour
        // Debug.Log(exp);
     //}
 
+    public void MoveBattle()
+    {
+        SceneManager.LoadScene("Battle");
+    }
+
 
 }

@@ -354,7 +354,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3054211000830910263}
-        m_MethodName: CloseDebugPanel
+        m_MethodName: OnClickBattleButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2210,6 +2210,7 @@ MonoBehaviour:
   battleDebug: {fileID: 0}
   winButton: {fileID: 1615709704}
   loseButton: {fileID: 2051020894}
+  isDebugBattleOn: 1
 --- !u!114 &7877061734168481444
 MonoBehaviour:
   m_ObjectHideFlags: 0
