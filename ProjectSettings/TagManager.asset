@@ -9,6 +9,7 @@ TagManager:
   - UICanvas
   - EXPGage
   - EXPSlider
+  - Bullet
   layers:
   - Default
   - TransparentFX

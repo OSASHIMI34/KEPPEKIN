@@ -19,10 +19,12 @@
 		<type fullname="UnityEditor.Physics2DSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.Component" preserve="nothing"/>
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
+		<type fullname="UnityEngine.Rigidbody" preserve="nothing"/>
 		<type fullname="UnityEngine.Mesh" preserve="nothing"/>
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture2D" preserve="nothing"/>
+		<type fullname="UnityEngine.Collider" preserve="nothing"/>
 		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
@@ -36,10 +38,13 @@
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
 		<type fullname="UnityEngine.Font" preserve="nothing"/>
+		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Motion" preserve="nothing"/>
 		<type fullname="UnityEditor.Animations.AnimatorController" preserve="nothing"/>
 		<type fullname="UnityEngine.LightmapSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.SphereCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
@@ -52,10 +57,8 @@
 		<type fullname="UnityEngine.LineRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.ParticleSystem" preserve="nothing"/>
 		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="nothing"/>
-		<type fullname="UnityEngine.Collider" preserve="nothing"/>
-		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
-		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ARManager" preserve="nothing"/>
@@ -64,6 +67,7 @@
 		<type fullname="BattleUIManager" preserve="nothing"/>
 		<type fullname="Baum2.Cache" preserve="nothing"/>
 		<type fullname="Baum2.UIRoot" preserve="nothing"/>
+		<type fullname="DamaedInk" preserve="nothing"/>
 		<type fullname="EnemyManager" preserve="nothing"/>
 		<type fullname="FancyScrollView.Example02.Cell" preserve="nothing"/>
 		<type fullname="FancyScrollView.Example02.Example02" preserve="nothing"/>
@@ -71,12 +75,15 @@
 		<type fullname="FancyScrollView.Scroller" preserve="nothing"/>
 		<type fullname="GoBattleMenu" preserve="nothing"/>
 		<type fullname="JyunbiPopUp" preserve="nothing"/>
+		<type fullname="KinBullet" preserve="nothing"/>
 		<type fullname="KinData" preserve="nothing"/>
 		<type fullname="ObjCtrl" preserve="nothing"/>
 		<type fullname="ReturnHome" preserve="nothing"/>
 		<type fullname="SceneStateManager" preserve="nothing"/>
+		<type fullname="ShotManager" preserve="nothing"/>
 		<type fullname="Silhouette" preserve="nothing"/>
 		<type fullname="StagePopUp" preserve="nothing"/>
+		<type fullname="Stain" preserve="nothing"/>
 		<type fullname="UIManager" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="DOTween">
@@ -110,10 +117,8 @@
 	<assembly fullname="UnityEditor.Graphs">
 		<type fullname="UnityEditor.Graphs.AnimationBlendTree.Graph" preserve="nothing"/>
 		<type fullname="UnityEditor.Graphs.AnimationBlendTree.GraphGUI" preserve="nothing"/>
-		<type fullname="UnityEditor.Graphs.AnimationStateMachine.AnyStateNode" preserve="nothing"/>
 		<type fullname="UnityEditor.Graphs.AnimationStateMachine.Graph" preserve="nothing"/>
 		<type fullname="UnityEditor.Graphs.AnimationStateMachine.GraphGUI" preserve="nothing"/>
-		<type fullname="UnityEditor.Graphs.AnimationStateMachine.StateNode" preserve="nothing"/>
 		<type fullname="UnityEditor.Graphs.AnimatorControllerTool" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEditor.TestRunner">
@@ -124,6 +129,7 @@
 	</assembly>
 	<assembly fullname="UnityEngine.UI">
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
+		<type fullname="UnityEngine.EventSystems.EventTrigger" preserve="nothing"/>
 		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
