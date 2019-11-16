@@ -804,7 +804,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676368615}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ab0e80cee9cc1d44928bfe488dd1e2d, type: 3}
   m_Name: 
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e520e4f64784e4a9c6803b56e46025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 4787932731322431405, guid: e3b533073bdd94cb2ae032f84bfd5693,
+  objectPrefab: {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000,
     type: 3}
   arCamera: {fileID: 475725101}
 --- !u!114 &1676368621
@@ -833,7 +833,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676368615}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ReferenceLibrary: {fileID: 11400000, guid: 66e4084647730485d9513c66f201c826, type: 2}
   m_MaxNumberOfMovingImages: 3
-  m_TrackedImagePrefab: {fileID: 4787932731322431405, guid: e3b533073bdd94cb2ae032f84bfd5693,
+  m_TrackedImagePrefab: {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000,
     type: 3}
 --- !u!1 &1735633924
 GameObject:
@@ -957,6 +957,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: hokori_fix
       objectReference: {fileID: 0}
+    - target: {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1345819717817087367, guid: 15237900f32204cf9815f8718044d000,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1011,6 +1016,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -364
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144907088614033400, guid: 15237900f32204cf9815f8718044d000,
+        type: 3}
+      propertyPath: debugSwitch
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15237900f32204cf9815f8718044d000, type: 3}

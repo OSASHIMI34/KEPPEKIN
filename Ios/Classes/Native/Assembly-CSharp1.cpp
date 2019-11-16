@@ -9556,8 +9556,10 @@ public:
 	float ___speed_5;
 	// System.Single ShotManager::waitTime
 	float ___waitTime_6;
+	// System.Boolean ShotManager::debugSwitch
+	bool ___debugSwitch_7;
 	// System.Int32 ShotManager::count
-	int32_t ___count_7;
+	int32_t ___count_8;
 
 public:
 	inline static int32_t get_offset_of_kinBulletPrefab_4() { return static_cast<int32_t>(offsetof(ShotManager_t67FC826E971D7F375FF265F0DC5F0139C246BB81, ___kinBulletPrefab_4)); }
@@ -9585,12 +9587,20 @@ public:
 		___waitTime_6 = value;
 	}
 
-	inline static int32_t get_offset_of_count_7() { return static_cast<int32_t>(offsetof(ShotManager_t67FC826E971D7F375FF265F0DC5F0139C246BB81, ___count_7)); }
-	inline int32_t get_count_7() const { return ___count_7; }
-	inline int32_t* get_address_of_count_7() { return &___count_7; }
-	inline void set_count_7(int32_t value)
+	inline static int32_t get_offset_of_debugSwitch_7() { return static_cast<int32_t>(offsetof(ShotManager_t67FC826E971D7F375FF265F0DC5F0139C246BB81, ___debugSwitch_7)); }
+	inline bool get_debugSwitch_7() const { return ___debugSwitch_7; }
+	inline bool* get_address_of_debugSwitch_7() { return &___debugSwitch_7; }
+	inline void set_debugSwitch_7(bool value)
 	{
-		___count_7 = value;
+		___debugSwitch_7 = value;
+	}
+
+	inline static int32_t get_offset_of_count_8() { return static_cast<int32_t>(offsetof(ShotManager_t67FC826E971D7F375FF265F0DC5F0139C246BB81, ___count_8)); }
+	inline int32_t get_count_8() const { return ___count_8; }
+	inline int32_t* get_address_of_count_8() { return &___count_8; }
+	inline void set_count_8(int32_t value)
+	{
+		___count_8 = value;
 	}
 };
 
@@ -20392,31 +20402,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShotManager_Update_mA3D8236B0EC9344FC2ED
 	float V_0 = 0.0f;
 	float V_1 = 0.0f;
 	{
-		int32_t L_0 = __this->get_count_7();
-		__this->set_count_7(((int32_t)il2cpp_codegen_add((int32_t)L_0, (int32_t)1)));
-		int32_t L_1 = __this->get_count_7();
-		float L_2 = __this->get_waitTime_6();
-		if ((!(((float)(fmodf((((float)((float)L_1))), L_2))) == ((float)(0.0f)))))
+		bool L_0 = __this->get_debugSwitch_7();
+		if (L_0)
 		{
-			goto IL_0063;
+			goto IL_006b;
 		}
 	}
 	{
-		int32_t L_3 = Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780(((int32_t)-40), ((int32_t)40), /*hidden argument*/NULL);
-		V_0 = (((float)((float)L_3)));
-		int32_t L_4 = Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780(((int32_t)-140), ((int32_t)-180), /*hidden argument*/NULL);
-		V_1 = (((float)((float)L_4)));
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_5 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
-		float L_6 = V_0;
-		float L_7 = V_1;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_8;
-		memset((&L_8), 0, sizeof(L_8));
-		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_8), L_6, L_7, (0.0f), /*hidden argument*/NULL);
-		ShortcutExtensions_DORotate_mAD420F52C00CA0366E896FB93EA0252AF7A31021(L_5, L_8, (0.5f), 0, /*hidden argument*/NULL);
+		int32_t L_1 = __this->get_count_8();
+		__this->set_count_8(((int32_t)il2cpp_codegen_add((int32_t)L_1, (int32_t)1)));
+		int32_t L_2 = __this->get_count_8();
+		float L_3 = __this->get_waitTime_6();
+		if ((!(((float)(fmodf((((float)((float)L_2))), L_3))) == ((float)(0.0f)))))
+		{
+			goto IL_006b;
+		}
+	}
+	{
+		int32_t L_4 = Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780(((int32_t)-40), ((int32_t)40), /*hidden argument*/NULL);
+		V_0 = (((float)((float)L_4)));
+		int32_t L_5 = Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780(((int32_t)-140), ((int32_t)-180), /*hidden argument*/NULL);
+		V_1 = (((float)((float)L_5)));
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_6 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
+		float L_7 = V_0;
+		float L_8 = V_1;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_9), L_7, L_8, (0.0f), /*hidden argument*/NULL);
+		ShortcutExtensions_DORotate_mAD420F52C00CA0366E896FB93EA0252AF7A31021(L_6, L_9, (0.5f), 0, /*hidden argument*/NULL);
 		ShotManager_Kinshot_m763545377555A3F5236AB0F676B952362C9D7451(__this, /*hidden argument*/NULL);
 	}
 
-IL_0063:
+IL_006b:
 	{
 		return;
 	}
