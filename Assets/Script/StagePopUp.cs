@@ -25,24 +25,36 @@ public class StagePopUp : MonoBehaviour
 
     public bool isDebugBattleOn;
 
+    public KinStates battlekinStates;
+    public KinStates nakamaKinStates;
+
 
     /// <summary>
     /// 強さとレアリティの値に応じてイメージを生成する
     /// </summary>
-    public void SetUp(int level, int rarelity)
+    public void SetUp(KinStates states) 
     {
-        for (int i = 0; i<level; i++)
+        //Stageで選択されたバトルするキンの情報を取得
+        battlekinStates = states;
+
+        //JyunbiPopUpで処理していた画像イメージの取得をここで行う
+        kinImage.sprite = Resources.Load<Sprite>("Image/" + battlekinStates.kinName);
+        kinName.GetComponent<Text>().text = battlekinStates.kinName;
+        typeImage.sprite = Resources.Load<Sprite>("Type/" + battlekinStates.type);
+
+        //強さとレアリティの値に合わせてイメージを生成する
+        for (int i = 0; i<battlekinStates.level; i++)
         {
             Instantiate(levelImagePrefab, levelPlace, false);
         }
 
-        for (int i =0; i<rarelity; i++)
+        for (int i =0; i<battlekinStates.rarelity; i++)
         {
             Instantiate(rarelityImagePrefab, rarelityPlace, false);
         }
 
         //BattleDebugを探して紐付けする
-        battleDebug = GameObject.FindGameObjectWithTag("Stage").GetComponent<BattleDebug>();
+        //battleDebug = GameObject.FindGameObjectWithTag("Stage").GetComponent<BattleDebug>();
 
         //ボタンに外からメソッドを登録できるonClickのスクリプト版
         //AddListenerに登録できるメソッドは引数を持ってないメソッドだけ
@@ -50,8 +62,8 @@ public class StagePopUp : MonoBehaviour
         //private void Test () {    //  () => の部分
         //battleDebug.Win(level, rarelity);
         //}
-    winButton.onClick.AddListener(() => battleDebug.Win(level, rarelity));
-        loseButton.onClick.AddListener(battleDebug.Lose);
+    //winButton.onClick.AddListener(() => battleDebug.Win(battlekinStates.level, battlekinStates.rarelity));
+        //loseButton.onClick.AddListener(battleDebug.Lose);
     }
 
 
@@ -75,6 +87,9 @@ public class StagePopUp : MonoBehaviour
     {
         if (isDebugBattleOn)
         {
+            //バトルするキンのデータをGameDataに渡す
+            GameData.battleKinStates = battlekinStates;
+
             Debug.Log("通ってる");
             SceneStateManager.instance.MoveBattle();
         }
@@ -92,5 +107,6 @@ public class StagePopUp : MonoBehaviour
         debugPanel.SetActive(false);
         ClosePopUp();
     }
+
 
 }

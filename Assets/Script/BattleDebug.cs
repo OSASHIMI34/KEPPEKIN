@@ -55,56 +55,56 @@ public class BattleDebug : MonoBehaviour
 
         //EXPを加算してEXpゲージの表示を更新
         //一旦倒した分はchoshikuに貯めておく
-        SceneStateManager.chochiku += totalExp / 3;
+        GameData.chochiku += totalExp / 3;
         uiManager.UpdateGage();
 
         //Dirtyゲージが0以下になったらMaxに戻す(Debug用)
         if (currentDirtyPoint <= 0)
         {
             //貯蓄が一気に経験値に入るとともにリセットをかける
-            SceneStateManager.exp += SceneStateManager.chochiku;
-            SceneStateManager.chochiku = 0;
+            GameData.exp += GameData.chochiku;
+            GameData.chochiku = 0;
             currentDirtyPoint = 0;
             currentDirtyPoint = maxDirtyPoint;
         }
 
         //経験値が100以上になるとランクが1上がる
-        if (SceneStateManager.exp >= 100)
+        if (GameData.exp >= 100)
         {
             //100を超えた分だけ繰り越すようにしてEXpゲージを更新する
-            SceneStateManager.exp -= 100;
+            GameData.exp -= 100;
             uiManager.UpdateGage();
-            SceneStateManager.rank += 1;
+            GameData.rank += 1;
 
-            Debug.Log(SceneStateManager.rank);
+            Debug.Log(GameData.rank);
 
         }
 
         StartCoroutine(AnimateDirtyGauge());
 
-    //    //先頭に勝つたびダーティが-30
-    //    //最終的に0以下になると経験値が30増える
-    //    currentDirtyPoint -= 30f;
+        //先頭に勝つたびダーティが-30
+        //最終的に0以下になると経験値が30増える
+        currentDirtyPoint -= 30f;
 
-    //    if (currentDirtyPoint <= 0)
-    //    {
-    //        currentDirtyPoint = 0;
-    //        SceneStateManager.exp += 50;
-    //        SceneStateManager.instance.UpdateGage();
+        if (currentDirtyPoint <= 0)
+        {
+            currentDirtyPoint = 0;
+            GameData.exp += 50;
+            //SceneStateManager.instance.UpdateGage();
 
-    //        currentDirtyPoint = maxDirtyPoint;
+            currentDirtyPoint = maxDirtyPoint;
 
-    //        //経験値が100以上になるとランクが１上がる
-    //        if (SceneStateManager.exp >= 100)
-    //        {
-    //            SceneStateManager.exp = 0;
-    //            SceneStateManager.instance.UpdateGage();
-    //            SceneStateManager.rank += 1;
+            //経験値が100以上になるとランクが１上がる
+            if (GameData.exp >= 100)
+            {
+                GameData.exp = 0;
+               // SceneStateManager.instance.UpdateGage();
+                GameData.rank += 1;
 
-    //            Debug.Log(SceneStateManager.rank);
+                Debug.Log(GameData.rank);
 
-    //        }
-    //    }
+            }
+        }
 
     }
 

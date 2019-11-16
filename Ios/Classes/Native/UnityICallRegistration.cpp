@@ -720,6 +720,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Cursor
 
+	//Start Registrations for type : UnityEngine.Debug
+
+		//System.Void UnityEngine.Debug::DrawLine_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Color&,System.Single,System.Boolean)
+		void Register_UnityEngine_Debug_DrawLine_Injected();
+		Register_UnityEngine_Debug_DrawLine_Injected();
+
+	//End Registrations for type : UnityEngine.Debug
+
 	//Start Registrations for type : UnityEngine.DebugLogHandler
 
 		//System.Void UnityEngine.DebugLogHandler::Internal_Log(UnityEngine.LogType,UnityEngine.LogOption,System.String,UnityEngine.Object)

@@ -17,10 +17,10 @@ public class EnemyManager : MonoBehaviour
     public KinData kindata;
 
     [Header("生成したキンを管理する(入れておく)配列")]
-    public Silhouette[] silhouettesImageBox;
+    public KinStates[] silhouettesImageBox;
 
     [Header("生成するキンのプレファブ。クラスから生成")]
-    public Silhouette silhouettePrefab;
+    public KinStates silhouettePrefab;
 
     [Header("生成するキンの初期位置")]
     public Transform mainStageTransform;
@@ -50,7 +50,7 @@ public class EnemyManager : MonoBehaviour
         //SilhouetteImageBox(キンを入れる配列のパーテーション)をいくつ作るか決めないといけないのでまず
         //生成するenemyの数とSilhouetteImageboxの数を一致させる
         //new 初期化
-        silhouettesImageBox = new Silhouette[enemys];
+        silhouettesImageBox = new KinStates[enemys];
 
         //ランダムな値を代入しておくListを作成し、初期化
         List<int> randomNumbers_1 = new List<int>();
@@ -131,7 +131,7 @@ public class EnemyManager : MonoBehaviour
         {
             //クラスを使ってキンのオブジェクト(シルエット)をインスタンシエイトする。
             //生成位置はCanvas(mainStageTransform)内にする。
-            Silhouette silhouetteObj = Instantiate(silhouettePrefab, mainStageTransform, false);
+            KinStates silhouetteObj = Instantiate(silhouettePrefab, mainStageTransform, false);
 
             //全て同じ位置に生成されてしまうので、ランダムな位置に生成するため調整を加える
             initTran.x = Random.Range(minX, maxX);

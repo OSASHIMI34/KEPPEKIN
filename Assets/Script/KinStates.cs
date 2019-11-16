@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class Silhouette : MonoBehaviour
+public class KinStates : MonoBehaviour
 {
     [Header("キンのID番号 = データから参照するので始めは空")]
 　　public int rundomNum;
@@ -39,7 +39,7 @@ public class Silhouette : MonoBehaviour
     /// </summary>
     public void YobidashiCreatePop()
     {
-        jyunbi.CreatePopUp(kinName,type, level, rarelity);
+        jyunbi.CreatePopUp(this);
 
     }
 

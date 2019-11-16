@@ -482,11 +482,11 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<SphereCollider>("Physics");
 	//83. AudioListener
 	RegisterUnityClass<AudioListener>("Audio");
-	//84. Collider2D
-	RegisterUnityClass<Collider2D>("Physics2D");
-	//85. BoxCollider2D
-	RegisterUnityClass<BoxCollider2D>("Physics2D");
-	//86. BoxCollider
+	//84. BoxCollider
 	RegisterUnityClass<BoxCollider>("Physics");
+	//85. Collider2D
+	RegisterUnityClass<Collider2D>("Physics2D");
+	//86. BoxCollider2D
+	RegisterUnityClass<BoxCollider2D>("Physics2D");
 
 }

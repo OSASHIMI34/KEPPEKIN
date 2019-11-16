@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+
 
 public class SceneStateManager : MonoBehaviour
 {
 
-    //public Image expGage;
-    public static int rank;
-    public static int exp;
-    public static int chochiku;
-
-
+  
     //シングルトン...この作り方をするとシーン中に一個しか存在しない
     //staticはシーンをまたげる
     public static SceneStateManager instance;

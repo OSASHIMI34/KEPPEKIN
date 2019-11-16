@@ -228,6 +228,7 @@ MonoBehaviour:
     type: 3}
   speed: 10
   waitTime: 60
+  debugSwitch: 0
 --- !u!1 &3929028472745313932
 GameObject:
   m_ObjectHideFlags: 0

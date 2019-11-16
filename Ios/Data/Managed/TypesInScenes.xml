@@ -45,20 +45,20 @@
 		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.SphereCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.LineRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.ParticleSystem" preserve="nothing"/>
+		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
+		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
+		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderTexture" preserve="nothing"/>
 		<type fullname="UnityEngine.Rigidbody2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider2D" preserve="nothing"/>
-		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider2D" preserve="nothing"/>
-		<type fullname="UnityEngine.LineRenderer" preserve="nothing"/>
-		<type fullname="UnityEngine.ParticleSystem" preserve="nothing"/>
-		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="nothing"/>
-		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
-		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ARManager" preserve="nothing"/>
@@ -68,6 +68,7 @@
 		<type fullname="Baum2.Cache" preserve="nothing"/>
 		<type fullname="Baum2.UIRoot" preserve="nothing"/>
 		<type fullname="DamaedInk" preserve="nothing"/>
+		<type fullname="DestroyBullet" preserve="nothing"/>
 		<type fullname="EnemyManager" preserve="nothing"/>
 		<type fullname="FancyScrollView.Example02.Cell" preserve="nothing"/>
 		<type fullname="FancyScrollView.Example02.Example02" preserve="nothing"/>
@@ -130,6 +131,7 @@
 	<assembly fullname="UnityEngine.UI">
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
 		<type fullname="UnityEngine.EventSystems.EventTrigger" preserve="nothing"/>
+		<type fullname="UnityEngine.EventSystems.PhysicsRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>

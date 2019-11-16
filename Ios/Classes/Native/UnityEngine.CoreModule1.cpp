@@ -401,8 +401,6 @@ struct StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E;
 struct StringBuilder_t;
 // System.Threading.AsyncLocal`1<System.Globalization.CultureInfo>
 struct AsyncLocal_1_tD39651C2EDD14B144FF3D9B9C716F807EB57655A;
-// System.Threading.EventWaitHandle
-struct EventWaitHandle_t7603BF1D3D30FE42DD07A450C8D09E2684DC4D98;
 // System.Threading.ExecutionContext
 struct ExecutionContext_t0E11C30308A4CC964D8A2EA9132F9BDCE5362C70;
 // System.Threading.InternalThread
@@ -457,6 +455,12 @@ struct UnityAction_2_t77680359D738D69E578F3A74D50CD3FA8D775A60;
 struct UnityAction_2_t34FACA3D608984EE7CF1EE51BBFA450D2DB62305;
 // UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.Scene>
 struct UnityAction_2_t6FF15ABDB8C2C9E1BB0E5A79FEDA471C0679D51F;
+// UnityEngine.Events.UnityEvent`1<System.Int32>
+struct UnityEvent_1_t6DD758393B13FC2A58BE44E647D9EBEA4F27D914;
+// UnityEngine.Events.UnityEvent`1<System.Object>
+struct UnityEvent_1_t9E897A46A46C78F7104A831E63BB081546EFFF0D;
+// UnityEngine.Events.UnityEvent`1<UnityEngine.Networking.PlayerConnection.MessageEventArgs>
+struct UnityEvent_1_t74D81F82F43FEE6D3592CADCB4D7253AFFC12332;
 // UnityEngine.GUIElement
 struct GUIElement_t7509096A8399BAB91367BBDD2F90EB2BACB1C4C4;
 // UnityEngine.GUILayer
@@ -469,6 +473,10 @@ struct Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598;
 struct MaterialU5BU5D_tD2350F98F2A1BB6C7A5FBFE1474DFC47331AB398;
 // UnityEngine.Mesh
 struct Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C;
+// UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/<UnregisterManagedCallback>c__AnonStorey2
+struct U3CUnregisterManagedCallbackU3Ec__AnonStorey2_tBF8E6B433970276A827260CA19563B32D2D1D801;
+// UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/ConnectionChangeEvent
+struct ConnectionChangeEvent_t88A3E76467566DB9813DF5BD2DABD20D523D4681;
 // UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/MessageEvent
 struct MessageEvent_t62B5B1B04FCC5843790EE008D585B006E82E08FC;
 // UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/MessageTypeSubscribers
@@ -825,6 +833,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* UnityAPICompatibilityVersionAttribute__ctor
 IL2CPP_EXTERN_C const RuntimeMethod* UnityAction_1_Invoke_m28278C6E83173B3BC3CBC240F14DD94D721E78C2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityAction_2_Invoke_m3F07731E46F777E93F9D08DD46CEB7BDE625238A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityAction_2_Invoke_m4E5A5335E63C942B335D047296080EB8DA73FB99_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1__ctor_m1EF01690E1F8F81E7C190F8D9610573D5E59490C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1__ctor_m6D8F4CF41AA6B95A6B73C30361071C32438F85EC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_0_0_0_var;
 IL2CPP_EXTERN_C const uint32_t BatchRendererGroup_Dispose_m3DBD9AF82BE7C8C9284E714150E15D5EE2402835_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t BatchRendererGroup_InvokeOnPerformCulling_mE7F3139F1032B8B6160F5601BB55410609D0EF6E_MetadataUsageId;
@@ -832,6 +842,7 @@ IL2CPP_EXTERN_C const uint32_t BatchRendererGroup_t26EB53BB0E5946B7615284C6701D8
 IL2CPP_EXTERN_C const uint32_t BatchRendererGroup_t26EB53BB0E5946B7615284C6701D82C64B77425F_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t CommandBuffer_Dispose_m8DC3E2F8552CCCFE67C139585E88F5BC1735BF1C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t CommandBuffer_Dispose_m960A52C79A8B46920A321C0636F4EBED21E8AF68_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t ConnectionChangeEvent__ctor_m3F04C39FD710BF0F25416A61F479CBA1B9021F18_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t CreateOutputMethod_BeginInvoke_m4FC768B14DF77F9DB8847F3FAF1CBFD11048030D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GraphicsSettings_get_renderPipelineAsset_mDDAD0B2B6E87A299B5F7B19F8BDE3C1EF6287B31_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t HitInfo_Compare_mC384070B712CA297173CE07100F51F843F569702_MetadataUsageId;
@@ -839,6 +850,7 @@ IL2CPP_EXTERN_C const uint32_t HitInfo_op_Implicit_m71B30D67B83FAF0C9FA3662F0A94
 IL2CPP_EXTERN_C const uint32_t LODParameters_Equals_m03754D13F85184E596AFBBCF6DA1EDB06CA58F6B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t MemoryProfiler_FinalizeSnapshot_m48FD62744888BBF0A9B13826622041226C8B9AD7_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t MemoryProfiler_PrepareMetadata_mDFBA7A9960E5B4DF4500092638CD59EB558DD42C_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t MessageEvent__ctor_m700B679037ED52893F092843EE603DBCD6EB8386_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t MessageTypeSubscribers__ctor_mD26A2485EA3ECACFA2CB35D08A48256CE9DFE825_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Object_CheckNullArgument_m8D42F516655D770DFEEAA13CF86A2612214AAA9B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Object_CompareBaseObjects_mE918232D595FB366CE5FAD4411C5FBD86809CC04_MetadataUsageId;
@@ -1037,6 +1049,7 @@ IL2CPP_EXTERN_C const uint32_t Transform_get_up_m3E443F6EB278D547946E80D77065A87
 IL2CPP_EXTERN_C const uint32_t Transform_set_forward_m02858E8B3313B27174B19E9113F24EF25FBCEC7F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transform_set_localEulerAngles_mC5E92A989DD8B2E7B854F9D84B528A34AEAA1A17_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t U3CUnregisterManagedCallbackU3Ec__AnonStorey2_U3CU3Em__0_mD582BCF419AFA0D9F2DF2F7847933C570A8B9C2A_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnhandledExceptionHandler_HandleUnhandledException_m09FC7ACFE0E555A5815A790856FBF5B0CA50819E_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnhandledExceptionHandler_PrintException_m4CBE36F17C3F2B72205DB96B6D1377E4B3D11C77_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnhandledExceptionHandler_RegisterUECatcher_mE45C6A0301C35F6193F5774B7683683EF78D21DA_MetadataUsageId;
@@ -1054,7 +1067,6 @@ IL2CPP_EXTERN_C const uint32_t UnitySynchronizationContext_Post_mB4E900B6E9350E8
 IL2CPP_EXTERN_C const uint32_t UnitySynchronizationContext_Send_m25CDC5B5ABF8D55B70EB314AA46923E3CF2AD4B9_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnitySynchronizationContext__ctor_m9D104656F4EAE96CB3A40DDA6EDCEBA752664612_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t UnitySynchronizationContext__ctor_mCABD0C784640450930DF24FAD73E8AD6D1B52037_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t WorkRequest_Invoke_m67D71A48794EEBB6B9793E6F1E015DE90C03C1ED_MetadataUsageId;
 struct CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_com;
 struct CultureData_tF43B080FFA6EB278F4F289BCDA3FB74B6C208ECD_marshaled_pinvoke;
 struct CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_marshaled_com;
@@ -3908,6 +3920,25 @@ public:
 };
 
 
+// UnityEngine.Events.UnityEvent`1<System.Int32>
+struct  UnityEvent_1_t6DD758393B13FC2A58BE44E647D9EBEA4F27D914  : public UnityEventBase_t6E0F7823762EE94BB8489B5AE41C7802A266D3D5
+{
+public:
+	// System.Object[] UnityEngine.Events.UnityEvent`1::m_InvokeArray
+	ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ___m_InvokeArray_4;
+
+public:
+	inline static int32_t get_offset_of_m_InvokeArray_4() { return static_cast<int32_t>(offsetof(UnityEvent_1_t6DD758393B13FC2A58BE44E647D9EBEA4F27D914, ___m_InvokeArray_4)); }
+	inline ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* get_m_InvokeArray_4() const { return ___m_InvokeArray_4; }
+	inline ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A** get_address_of_m_InvokeArray_4() { return &___m_InvokeArray_4; }
+	inline void set_m_InvokeArray_4(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* value)
+	{
+		___m_InvokeArray_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___m_InvokeArray_4), (void*)value);
+	}
+};
+
+
 // UnityEngine.Events.UnityEvent`1<UnityEngine.Networking.PlayerConnection.MessageEventArgs>
 struct  UnityEvent_1_t74D81F82F43FEE6D3592CADCB4D7253AFFC12332  : public UnityEventBase_t6E0F7823762EE94BB8489B5AE41C7802A266D3D5
 {
@@ -6411,6 +6442,33 @@ public:
 	{
 		___value___2 = value;
 	}
+};
+
+
+// UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents_<UnregisterManagedCallback>c__AnonStorey2
+struct  U3CUnregisterManagedCallbackU3Ec__AnonStorey2_tBF8E6B433970276A827260CA19563B32D2D1D801  : public RuntimeObject
+{
+public:
+	// System.Guid UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents_<UnregisterManagedCallback>c__AnonStorey2::messageId
+	Guid_t  ___messageId_0;
+
+public:
+	inline static int32_t get_offset_of_messageId_0() { return static_cast<int32_t>(offsetof(U3CUnregisterManagedCallbackU3Ec__AnonStorey2_tBF8E6B433970276A827260CA19563B32D2D1D801, ___messageId_0)); }
+	inline Guid_t  get_messageId_0() const { return ___messageId_0; }
+	inline Guid_t * get_address_of_messageId_0() { return &___messageId_0; }
+	inline void set_messageId_0(Guid_t  value)
+	{
+		___messageId_0 = value;
+	}
+};
+
+
+// UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents_ConnectionChangeEvent
+struct  ConnectionChangeEvent_t88A3E76467566DB9813DF5BD2DABD20D523D4681  : public UnityEvent_1_t6DD758393B13FC2A58BE44E647D9EBEA4F27D914
+{
+public:
+
+public:
 };
 
 
@@ -10844,6 +10902,10 @@ IL2CPP_EXTERN_C void Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshal_co
 IL2CPP_EXTERN_C void Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshal_com_back(const Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshaled_com& marshaled, Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0& unmarshaled);
 IL2CPP_EXTERN_C void Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshal_com_cleanup(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshaled_com& marshaled);
 
+// System.Void UnityEngine.Events.UnityEvent`1<System.Int32>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1__ctor_m1EF01690E1F8F81E7C190F8D9610573D5E59490C_gshared (UnityEvent_1_t6DD758393B13FC2A58BE44E647D9EBEA4F27D914 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Events.UnityEvent`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1__ctor_m38CD236F782AA440F6DDB5D90B4C9DA24CDBA3A7_gshared (UnityEvent_1_t9E897A46A46C78F7104A831E63BB081546EFFF0D * __this, const RuntimeMethod* method);
 // System.Void System.Action`1<System.Object>::Invoke(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mB86FC1B303E77C41ED0E94FC3592A9CF8DA571D5_gshared (Action_1_t551A279CEADCF6EEAE8FA2B1E1E757D0D15290D0 * __this, RuntimeObject * p0, const RuntimeMethod* method);
 // System.Void System.Action`2<System.Object,System.Boolean>::Invoke(!0,!1)
@@ -10885,10 +10947,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mDAE79B8091C9F551A73
 // System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.UnitySynchronizationContext/WorkRequest>::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m5A7755FBAC1089756F6E71C4FFDAC30F3F8C1B35_gshared (Enumerator_t94D816309F3FD251DEB3C5965B4AF0E87C0AF4C5 * __this, const RuntimeMethod* method);
 
-// System.Void UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/MessageEvent::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MessageEvent__ctor_m700B679037ED52893F092843EE603DBCD6EB8386 (MessageEvent_t62B5B1B04FCC5843790EE008D585B006E82E08FC * __this, const RuntimeMethod* method);
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m925ECA5E85CA100E3FB86A4F9E15C120E9A184C0 (RuntimeObject * __this, const RuntimeMethod* method);
+// System.Guid UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/MessageTypeSubscribers::get_MessageTypeId()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Guid_t  MessageTypeSubscribers_get_MessageTypeId_mE7DD7E800436C92A325A1080AF60663AE1100D25 (MessageTypeSubscribers_t2B83CF84645921BDEF2A06A3CCCC0F9ECDC107FE * __this, const RuntimeMethod* method);
+// System.Boolean System.Guid::op_Equality(System.Guid,System.Guid)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Guid_op_Equality_m3D98BA18CDAF0C6C329F86720B5CD61A170A3E52 (Guid_t  p0, Guid_t  p1, const RuntimeMethod* method);
+// System.Void UnityEngine.Events.UnityEvent`1<System.Int32>::.ctor()
+inline void UnityEvent_1__ctor_m1EF01690E1F8F81E7C190F8D9610573D5E59490C (UnityEvent_1_t6DD758393B13FC2A58BE44E647D9EBEA4F27D914 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (UnityEvent_1_t6DD758393B13FC2A58BE44E647D9EBEA4F27D914 *, const RuntimeMethod*))UnityEvent_1__ctor_m1EF01690E1F8F81E7C190F8D9610573D5E59490C_gshared)(__this, method);
+}
+// System.Void UnityEngine.Events.UnityEvent`1<UnityEngine.Networking.PlayerConnection.MessageEventArgs>::.ctor()
+inline void UnityEvent_1__ctor_m6D8F4CF41AA6B95A6B73C30361071C32438F85EC (UnityEvent_1_t74D81F82F43FEE6D3592CADCB4D7253AFFC12332 * __this, const RuntimeMethod* method)
+{
+	((  void (*) (UnityEvent_1_t74D81F82F43FEE6D3592CADCB4D7253AFFC12332 *, const RuntimeMethod*))UnityEvent_1__ctor_m38CD236F782AA440F6DDB5D90B4C9DA24CDBA3A7_gshared)(__this, method);
+}
+// System.Void UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents/MessageEvent::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MessageEvent__ctor_m700B679037ED52893F092843EE603DBCD6EB8386 (MessageEvent_t62B5B1B04FCC5843790EE008D585B006E82E08FC * __this, const RuntimeMethod* method);
 // System.Void System.Guid::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Guid__ctor_mC668142577A40A77D13B78AADDEFFFC2E2705079 (Guid_t * __this, String_t* p0, const RuntimeMethod* method);
 // System.String System.Guid::ToString()
@@ -11035,8 +11111,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableOutputHandle_CompareVersion_m4DD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableOutputHandle_Equals_m1FCA747BC3F69DC784912A932557EB3B24DC3F18 (PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922 * __this, PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922  ___other0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Playables.PlayableOutputHandle::Equals(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableOutputHandle_Equals_m42558FEC083CC424CB4BD715FC1A6561A2E47EB2 (PlayableOutputHandle_t0D0C9D8ACC1A4061BD4EAEB61F3EE0357052F922 * __this, RuntimeObject * ___p0, const RuntimeMethod* method);
-// System.Boolean System.Guid::op_Equality(System.Guid,System.Guid)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Guid_op_Equality_m3D98BA18CDAF0C6C329F86720B5CD61A170A3E52 (Guid_t  p0, Guid_t  p1, const RuntimeMethod* method);
 // System.String System.Guid::ToString(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Guid_ToString_mE2E53BEF57397A8D04C1CEFC2627F64578FF638B (Guid_t * __this, String_t* p0, const RuntimeMethod* method);
 // System.Void UnityEngine.PlayerConnectionInternal::SendMessage(System.String,System.Byte[],System.Int32)
@@ -12173,8 +12247,93 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext__ctor_mCABD0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SynchronizationContext_SetSynchronizationContext_m41A5A4823E9F4B8961657834EAC44397EFE41D61 (SynchronizationContext_t06AEFE2C7CFCFC242D0A5729A74464AF18CF84E7 * p0, const RuntimeMethod* method);
 // System.Void UnityEngine.UnitySynchronizationContext::Exec()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySynchronizationContext_Exec_m07342201E337E047B73C8B3259710820EFF75A9C (UnitySynchronizationContext_t29A85681F976537109A84D2316E781568619F55F * __this, const RuntimeMethod* method);
-// System.Boolean System.Threading.EventWaitHandle::Set()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EventWaitHandle_Set_m7959A86A39735296FC949EC86FDA42A6CFAAB94C (EventWaitHandle_t7603BF1D3D30FE42DD07A450C8D09E2684DC4D98 * __this, const RuntimeMethod* method);
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents_<UnregisterManagedCallback>c__AnonStorey2::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUnregisterManagedCallbackU3Ec__AnonStorey2__ctor_m3EC9E62554E05C18A373059815832E3A5546E9C3 (U3CUnregisterManagedCallbackU3Ec__AnonStorey2_tBF8E6B433970276A827260CA19563B32D2D1D801 * __this, const RuntimeMethod* method)
+{
+	{
+		Object__ctor_m925ECA5E85CA100E3FB86A4F9E15C120E9A184C0(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents_<UnregisterManagedCallback>c__AnonStorey2::<>m__0(UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents_MessageTypeSubscribers)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CUnregisterManagedCallbackU3Ec__AnonStorey2_U3CU3Em__0_mD582BCF419AFA0D9F2DF2F7847933C570A8B9C2A (U3CUnregisterManagedCallbackU3Ec__AnonStorey2_tBF8E6B433970276A827260CA19563B32D2D1D801 * __this, MessageTypeSubscribers_t2B83CF84645921BDEF2A06A3CCCC0F9ECDC107FE * ___x0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (U3CUnregisterManagedCallbackU3Ec__AnonStorey2_U3CU3Em__0_mD582BCF419AFA0D9F2DF2F7847933C570A8B9C2A_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		MessageTypeSubscribers_t2B83CF84645921BDEF2A06A3CCCC0F9ECDC107FE * L_0 = ___x0;
+		NullCheck(L_0);
+		Guid_t  L_1 = MessageTypeSubscribers_get_MessageTypeId_mE7DD7E800436C92A325A1080AF60663AE1100D25(L_0, /*hidden argument*/NULL);
+		Guid_t  L_2 = __this->get_messageId_0();
+		IL2CPP_RUNTIME_CLASS_INIT(Guid_t_il2cpp_TypeInfo_var);
+		bool L_3 = Guid_op_Equality_m3D98BA18CDAF0C6C329F86720B5CD61A170A3E52(L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		bool L_4 = V_0;
+		return L_4;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents_ConnectionChangeEvent::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConnectionChangeEvent__ctor_m3F04C39FD710BF0F25416A61F479CBA1B9021F18 (ConnectionChangeEvent_t88A3E76467566DB9813DF5BD2DABD20D523D4681 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ConnectionChangeEvent__ctor_m3F04C39FD710BF0F25416A61F479CBA1B9021F18_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		UnityEvent_1__ctor_m1EF01690E1F8F81E7C190F8D9610573D5E59490C(__this, /*hidden argument*/UnityEvent_1__ctor_m1EF01690E1F8F81E7C190F8D9610573D5E59490C_RuntimeMethod_var);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents_MessageEvent::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MessageEvent__ctor_m700B679037ED52893F092843EE603DBCD6EB8386 (MessageEvent_t62B5B1B04FCC5843790EE008D585B006E82E08FC * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MessageEvent__ctor_m700B679037ED52893F092843EE603DBCD6EB8386_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		UnityEvent_1__ctor_m6D8F4CF41AA6B95A6B73C30361071C32438F85EC(__this, /*hidden argument*/UnityEvent_1__ctor_m6D8F4CF41AA6B95A6B73C30361071C32438F85EC_RuntimeMethod_var);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -32302,132 +32461,6 @@ IL_0018:
 	{
 		return;
 	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Conversion methods for marshalling of: UnityEngine.UnitySynchronizationContext/WorkRequest
-IL2CPP_EXTERN_C void WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshal_pinvoke(const WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94& unmarshaled, WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshaled_pinvoke& marshaled)
-{
-	Exception_t* ___m_WaitHandle_2Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_WaitHandle' of type 'WorkRequest': Reference type field marshaling is not supported.");
-	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_WaitHandle_2Exception, NULL, NULL);
-}
-IL2CPP_EXTERN_C void WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshal_pinvoke_back(const WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshaled_pinvoke& marshaled, WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94& unmarshaled)
-{
-	Exception_t* ___m_WaitHandle_2Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_WaitHandle' of type 'WorkRequest': Reference type field marshaling is not supported.");
-	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_WaitHandle_2Exception, NULL, NULL);
-}
-// Conversion method for clean up from marshalling of: UnityEngine.UnitySynchronizationContext/WorkRequest
-IL2CPP_EXTERN_C void WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshal_pinvoke_cleanup(WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshaled_pinvoke& marshaled)
-{
-}
-// Conversion methods for marshalling of: UnityEngine.UnitySynchronizationContext/WorkRequest
-IL2CPP_EXTERN_C void WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshal_com(const WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94& unmarshaled, WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshaled_com& marshaled)
-{
-	Exception_t* ___m_WaitHandle_2Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_WaitHandle' of type 'WorkRequest': Reference type field marshaling is not supported.");
-	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_WaitHandle_2Exception, NULL, NULL);
-}
-IL2CPP_EXTERN_C void WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshal_com_back(const WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshaled_com& marshaled, WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94& unmarshaled)
-{
-	Exception_t* ___m_WaitHandle_2Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_WaitHandle' of type 'WorkRequest': Reference type field marshaling is not supported.");
-	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_WaitHandle_2Exception, NULL, NULL);
-}
-// Conversion method for clean up from marshalling of: UnityEngine.UnitySynchronizationContext/WorkRequest
-IL2CPP_EXTERN_C void WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshal_com_cleanup(WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94_marshaled_com& marshaled)
-{
-}
-// System.Void UnityEngine.UnitySynchronizationContext_WorkRequest::.ctor(System.Threading.SendOrPostCallback,System.Object,System.Threading.ManualResetEvent)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkRequest__ctor_mE19AE1779B544378C8CB488F1576BDE618548599 (WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94 * __this, SendOrPostCallback_t3F9C0164860E4AA5138DF8B4488DFB0D33147F01 * ___callback0, RuntimeObject * ___state1, ManualResetEvent_tDFAF117B200ECA4CCF4FD09593F949A016D55408 * ___waitHandle2, const RuntimeMethod* method)
-{
-	{
-		SendOrPostCallback_t3F9C0164860E4AA5138DF8B4488DFB0D33147F01 * L_0 = ___callback0;
-		__this->set_m_DelagateCallback_0(L_0);
-		RuntimeObject * L_1 = ___state1;
-		__this->set_m_DelagateState_1(L_1);
-		ManualResetEvent_tDFAF117B200ECA4CCF4FD09593F949A016D55408 * L_2 = ___waitHandle2;
-		__this->set_m_WaitHandle_2(L_2);
-		return;
-	}
-}
-IL2CPP_EXTERN_C  void WorkRequest__ctor_mE19AE1779B544378C8CB488F1576BDE618548599_AdjustorThunk (RuntimeObject * __this, SendOrPostCallback_t3F9C0164860E4AA5138DF8B4488DFB0D33147F01 * ___callback0, RuntimeObject * ___state1, ManualResetEvent_tDFAF117B200ECA4CCF4FD09593F949A016D55408 * ___waitHandle2, const RuntimeMethod* method)
-{
-	WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94 * _thisAdjusted = reinterpret_cast<WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94 *>(__this + 1);
-	WorkRequest__ctor_mE19AE1779B544378C8CB488F1576BDE618548599(_thisAdjusted, ___callback0, ___state1, ___waitHandle2, method);
-}
-// System.Void UnityEngine.UnitySynchronizationContext_WorkRequest::Invoke()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WorkRequest_Invoke_m67D71A48794EEBB6B9793E6F1E015DE90C03C1ED (WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94 * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (WorkRequest_Invoke_m67D71A48794EEBB6B9793E6F1E015DE90C03C1ED_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Exception_t * V_0 = NULL;
-	Exception_t * __last_unhandled_exception = 0;
-	NO_UNUSED_WARNING (__last_unhandled_exception);
-	Exception_t * __exception_local = 0;
-	NO_UNUSED_WARNING (__exception_local);
-	void* __leave_targets_storage = alloca(sizeof(int32_t) * 2);
-	il2cpp::utils::LeaveTargetStack __leave_targets(__leave_targets_storage);
-	NO_UNUSED_WARNING (__leave_targets);
-	{
-	}
-
-IL_0001:
-	try
-	{ // begin try (depth: 1)
-		SendOrPostCallback_t3F9C0164860E4AA5138DF8B4488DFB0D33147F01 * L_0 = __this->get_m_DelagateCallback_0();
-		RuntimeObject * L_1 = __this->get_m_DelagateState_1();
-		NullCheck(L_0);
-		SendOrPostCallback_Invoke_m10442BF6A452A4408C3DDD1885D6809C4549C2AC(L_0, L_1, /*hidden argument*/NULL);
-		goto IL_0027;
-	} // end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		__exception_local = (Exception_t *)e.ex;
-		if(il2cpp_codegen_class_is_assignable_from (Exception_t_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
-			goto CATCH_0019;
-		throw e;
-	}
-
-CATCH_0019:
-	{ // begin catch(System.Exception)
-		V_0 = ((Exception_t *)__exception_local);
-		Exception_t * L_2 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_LogException_mBAA6702C240E37B2A834AA74E4FDC15A3A5589A9(L_2, /*hidden argument*/NULL);
-		goto IL_0027;
-	} // end catch (depth: 1)
-
-IL_0027:
-	{
-		ManualResetEvent_tDFAF117B200ECA4CCF4FD09593F949A016D55408 * L_3 = __this->get_m_WaitHandle_2();
-		if (!L_3)
-		{
-			goto IL_003e;
-		}
-	}
-	{
-		ManualResetEvent_tDFAF117B200ECA4CCF4FD09593F949A016D55408 * L_4 = __this->get_m_WaitHandle_2();
-		NullCheck(L_4);
-		EventWaitHandle_Set_m7959A86A39735296FC949EC86FDA42A6CFAAB94C(L_4, /*hidden argument*/NULL);
-	}
-
-IL_003e:
-	{
-		return;
-	}
-}
-IL2CPP_EXTERN_C  void WorkRequest_Invoke_m67D71A48794EEBB6B9793E6F1E015DE90C03C1ED_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94 * _thisAdjusted = reinterpret_cast<WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94 *>(__this + 1);
-	WorkRequest_Invoke_m67D71A48794EEBB6B9793E6F1E015DE90C03C1ED(_thisAdjusted, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
