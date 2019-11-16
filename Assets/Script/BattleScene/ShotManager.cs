@@ -21,6 +21,9 @@ public class ShotManager : MonoBehaviour
 
     private int count = 0;
 
+    public KinStateManager kinStateManager; //スクリプトで取得するのでアサインはしない
+
+
     void Update()
     {
         if (!debugSwitch)
@@ -33,9 +36,9 @@ public class ShotManager : MonoBehaviour
             if (count % waitTime == 0)
             {
                 //キンをランダムに回転させる
-                float value_x = Random.Range(-40, 40);
-                float value_y = Random.Range(-140, -180);
-                transform.DORotate(new Vector3(value_x, value_y, 0), 0.5f);
+                //float value_x = Random.Range(-40, 40);
+                //float value_y = Random.Range(-140, -180);
+                //transform.DORotate(new Vector3(value_x, value_y, 0), 0.5f);
                 Kinshot();
             }
 
@@ -46,6 +49,17 @@ public class ShotManager : MonoBehaviour
     {
         KinBullet kinBullet = Instantiate(kinBulletPrefab, transform.position, transform.rotation);
         kinBullet.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * speed);
+    }
+
+    //戻ってきた弾に当たったらHPを減少させる
+    public void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "ReturnBullet")
+        {
+            kinStateManager.ProcDamage(col.gameObject.GetComponent<KinBullet>().damage);
+            Debug.Log("ダメージ通ってるよ");
+            Destroy(col.gameObject, 0.2f);
+        }
     }
 
 }

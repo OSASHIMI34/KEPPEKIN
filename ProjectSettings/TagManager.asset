@@ -10,6 +10,7 @@ TagManager:
   - EXPGage
   - EXPSlider
   - Bullet
+  - ReturnBullet
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - 
   - 
   - Bullet
-  - 
-  - 
+  - Kin
+  - ReturnBullet
   - 
   - 
   - 

@@ -8,7 +8,7 @@ using UnityEngine;
 public class DestroyBullet : MonoBehaviour
 {
     [Header("Rayを飛ばした際の、キンの弾の判定用")]
-    public LayerMask layer; //インスペクターでBulletを指定する
+    public LayerMask bulletLayer; //インスペクターでBulletを指定する
 
     [Header("Rayを飛ばす距離")]
     public float distance;　//インスペクターで。100くらい
@@ -20,6 +20,14 @@ public class DestroyBullet : MonoBehaviour
     public Camera camera3d; //3DCameraオブジェクトをインスペクターで指定する
 
 
+    public KinStates nakamaKin; //まだ使わない
+    public float attackPower; //KinDataから取得するが、今は空にしておく
+
+
+    private void Start()
+    {
+        attackPower = 5; 
+    }
 
     void Update()
     {
@@ -44,21 +52,34 @@ public class DestroyBullet : MonoBehaviour
             //Physics.Raycastメソッドを使って、Rayの当たり判定を行う
             //引数は、(①Rayのスタート地点、②Rayの方向と距離、③もしも当たり判定が取れた場合にオブジェクトを代入する変数hit
             //④Rayを飛ばす最大距離=(Mathf.Infinity)は無制限、⑤Rayと当たり判定を行うLayer)
-            if (Physics.Raycast(ray.origin, ray.direction * distance, out hit, Mathf.Infinity, layer))
+            if (Physics.Raycast(ray.origin, ray.direction * distance, out hit, Mathf.Infinity, bulletLayer))
             {
                 Debug.Log(hit.collider.gameObject);
+                
 
                 //打ち返す場合、弾のRigidBodyを取得して画面の奥(transform.forward)に向かって力を加える
                 hit.collider.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * distance);
 
                 //hit変数に格納されたゲームオブジェクト(弾)を破壊する
                 //hit変数の型はRaycasthit型なのでそのまま書いても破壊できないが、(Raycasthitの変数).collider.gameobjectの書式で指定するとゲームオブジェクトを取得して破壊できる
-                Destroy(hit.collider.gameObject);
+                //Destroy(hit.collider.gameObject);
+
+                Damage(hit.collider.gameObject);
+               
 
             }
-
-
         }
-
     }
+
+    private void Damage(GameObject hitObj)
+    {
+        Debug.Log("タグの切り替わり通ってるよ");
+        hitObj.tag = "ReturnBullet";
+        
+        hitObj.layer = LayerMask.NameToLayer("ReturnBullet");
+        Debug.Log(hitObj.layer);
+
+        hitObj.GetComponent<KinBullet>().damage = attackPower;
+    }
+
 }

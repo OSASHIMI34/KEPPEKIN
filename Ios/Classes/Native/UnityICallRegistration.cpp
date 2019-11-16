@@ -90,14 +90,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Animator
 
-		//System.Boolean UnityEngine.Animator::GetBoolString(System.String)
-		void Register_UnityEngine_Animator_GetBoolString();
-		Register_UnityEngine_Animator_GetBoolString();
-
-		//System.Boolean UnityEngine.Animator::IsInTransition(System.Int32)
-		void Register_UnityEngine_Animator_IsInTransition();
-		Register_UnityEngine_Animator_IsInTransition();
-
 		//System.Boolean UnityEngine.Animator::get_hasBoundPlayables()
 		void Register_UnityEngine_Animator_get_hasBoundPlayables();
 		Register_UnityEngine_Animator_get_hasBoundPlayables();
@@ -106,14 +98,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animator_StringToHash();
 		Register_UnityEngine_Animator_StringToHash();
 
-		//System.Single UnityEngine.Animator::GetFloatString(System.String)
-		void Register_UnityEngine_Animator_GetFloatString();
-		Register_UnityEngine_Animator_GetFloatString();
-
-		//System.Void UnityEngine.Animator::GetAnimatorStateInfo(System.Int32,UnityEngine.StateInfoIndex,UnityEngine.AnimatorStateInfo&)
-		void Register_UnityEngine_Animator_GetAnimatorStateInfo();
-		Register_UnityEngine_Animator_GetAnimatorStateInfo();
-
 		//System.Void UnityEngine.Animator::Play(System.Int32,System.Int32,System.Single)
 		void Register_UnityEngine_Animator_Play();
 		Register_UnityEngine_Animator_Play();
@@ -121,18 +105,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Animator::ResetTriggerString(System.String)
 		void Register_UnityEngine_Animator_ResetTriggerString();
 		Register_UnityEngine_Animator_ResetTriggerString();
-
-		//System.Void UnityEngine.Animator::SetBoolString(System.String,System.Boolean)
-		void Register_UnityEngine_Animator_SetBoolString();
-		Register_UnityEngine_Animator_SetBoolString();
-
-		//System.Void UnityEngine.Animator::SetFloatString(System.String,System.Single)
-		void Register_UnityEngine_Animator_SetFloatString();
-		Register_UnityEngine_Animator_SetFloatString();
-
-		//System.Void UnityEngine.Animator::SetLayerWeight(System.Int32,System.Single)
-		void Register_UnityEngine_Animator_SetLayerWeight();
-		Register_UnityEngine_Animator_SetLayerWeight();
 
 		//System.Void UnityEngine.Animator::SetTriggerString(System.String)
 		void Register_UnityEngine_Animator_SetTriggerString();
@@ -595,26 +567,6 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_CanvasRenderer_GetMaterial();
 
 	//End Registrations for type : UnityEngine.CanvasRenderer
-
-	//Start Registrations for type : UnityEngine.CapsuleCollider
-
-		//System.Single UnityEngine.CapsuleCollider::get_height()
-		void Register_UnityEngine_CapsuleCollider_get_height();
-		Register_UnityEngine_CapsuleCollider_get_height();
-
-		//System.Void UnityEngine.CapsuleCollider::get_center_Injected(UnityEngine.Vector3&)
-		void Register_UnityEngine_CapsuleCollider_get_center_Injected();
-		Register_UnityEngine_CapsuleCollider_get_center_Injected();
-
-		//System.Void UnityEngine.CapsuleCollider::set_center_Injected(UnityEngine.Vector3&)
-		void Register_UnityEngine_CapsuleCollider_set_center_Injected();
-		Register_UnityEngine_CapsuleCollider_set_center_Injected();
-
-		//System.Void UnityEngine.CapsuleCollider::set_height(System.Single)
-		void Register_UnityEngine_CapsuleCollider_set_height();
-		Register_UnityEngine_CapsuleCollider_set_height();
-
-	//End Registrations for type : UnityEngine.CapsuleCollider
 
 	//Start Registrations for type : UnityEngine.Collider
 
@@ -1112,14 +1064,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.GUI
 
-	//Start Registrations for type : UnityEngine.GUIClip
-
-		//System.Void UnityEngine.GUIClip::get_visibleRect_Injected(UnityEngine.Rect&)
-		void Register_UnityEngine_GUIClip_get_visibleRect_Injected();
-		Register_UnityEngine_GUIClip_get_visibleRect_Injected();
-
-	//End Registrations for type : UnityEngine.GUIClip
-
 	//Start Registrations for type : UnityEngine.GUILayer
 
 		//UnityEngine.GUIElement UnityEngine.GUILayer::HitTest_Injected(UnityEngine.Vector2&)
@@ -1206,10 +1150,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GUIStyle_SetDefaultFont();
 		Register_UnityEngine_GUIStyle_SetDefaultFont();
 
-		//System.Void UnityEngine.GUIStyle::SetMouseTooltip_Injected(System.String,UnityEngine.Rect&)
-		void Register_UnityEngine_GUIStyle_SetMouseTooltip_Injected();
-		Register_UnityEngine_GUIStyle_SetMouseTooltip_Injected();
-
 		//System.Void UnityEngine.GUIStyle::set_name(System.String)
 		void Register_UnityEngine_GUIStyle_set_name();
 		Register_UnityEngine_GUIStyle_set_name();
@@ -1278,10 +1218,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Input
 
-		//System.Boolean UnityEngine.Input::GetButton(System.String)
-		void Register_UnityEngine_Input_GetButton();
-		Register_UnityEngine_Input_GetButton();
-
 		//System.Boolean UnityEngine.Input::GetButtonDown(System.String)
 		void Register_UnityEngine_Input_GetButtonDown();
 		Register_UnityEngine_Input_GetButtonDown();
@@ -1289,10 +1225,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.Input::GetKeyDownInt(UnityEngine.KeyCode)
 		void Register_UnityEngine_Input_GetKeyDownInt();
 		Register_UnityEngine_Input_GetKeyDownInt();
-
-		//System.Boolean UnityEngine.Input::GetKeyDownString(System.String)
-		void Register_UnityEngine_Input_GetKeyDownString();
-		Register_UnityEngine_Input_GetKeyDownString();
 
 		//System.Boolean UnityEngine.Input::GetKeyInt(UnityEngine.KeyCode)
 		void Register_UnityEngine_Input_GetKeyInt();
@@ -2374,10 +2306,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rigidbody_set_rotation_Injected();
 		Register_UnityEngine_Rigidbody_set_rotation_Injected();
 
-		//System.Void UnityEngine.Rigidbody::set_useGravity(System.Boolean)
-		void Register_UnityEngine_Rigidbody_set_useGravity();
-		Register_UnityEngine_Rigidbody_set_useGravity();
-
 	//End Registrations for type : UnityEngine.Rigidbody
 
 	//Start Registrations for type : UnityEngine.Rigidbody2D
@@ -2404,27 +2332,11 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Rigidbody2D
 
-	//Start Registrations for type : UnityEngine.SceneManagement.Scene
-
-		//System.Int32 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal(System.Int32)
-		void Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
-		Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
-
-	//End Registrations for type : UnityEngine.SceneManagement.Scene
-
 	//Start Registrations for type : UnityEngine.SceneManagement.SceneManager
 
 		//System.Int32 UnityEngine.SceneManagement.SceneManager::get_sceneCount()
 		void Register_UnityEngine_SceneManagement_SceneManager_get_sceneCount();
 		Register_UnityEngine_SceneManagement_SceneManager_get_sceneCount();
-
-		//System.Int32 UnityEngine.SceneManagement.SceneManager::get_sceneCountInBuildSettings()
-		void Register_UnityEngine_SceneManagement_SceneManager_get_sceneCountInBuildSettings();
-		Register_UnityEngine_SceneManagement_SceneManager_get_sceneCountInBuildSettings();
-
-		//System.Void UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected(UnityEngine.SceneManagement.Scene&)
-		void Register_UnityEngine_SceneManagement_SceneManager_GetActiveScene_Injected();
-		Register_UnityEngine_SceneManagement_SceneManager_GetActiveScene_Injected();
 
 		//System.Void UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected(System.Int32,UnityEngine.SceneManagement.Scene&)
 		void Register_UnityEngine_SceneManagement_SceneManager_GetSceneAt_Injected();
@@ -2917,10 +2829,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Time::get_deltaTime()
 		void Register_UnityEngine_Time_get_deltaTime();
 		Register_UnityEngine_Time_get_deltaTime();
-
-		//System.Single UnityEngine.Time::get_fixedDeltaTime()
-		void Register_UnityEngine_Time_get_fixedDeltaTime();
-		Register_UnityEngine_Time_get_fixedDeltaTime();
 
 		//System.Single UnityEngine.Time::get_realtimeSinceStartup()
 		void Register_UnityEngine_Time_get_realtimeSinceStartup();
