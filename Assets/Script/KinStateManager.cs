@@ -54,8 +54,7 @@ public class KinStateManager : MonoBehaviour
         //ARRayCastを取得し、AR空間にRayを飛ばして当たり判定を取れるようにしておく
         raycastManager = GetComponent<ARRaycastManager>();
 
-        //モデルのサイズを取得しておく
-        tempScale = battleKinObj.transform.localScale.x;
+        
 
     }
 
@@ -78,6 +77,8 @@ public class KinStateManager : MonoBehaviour
                     Debug.Log("Raycast成功");
                     battleKinObj = Instantiate(setKinPrefab, raycastHitList[0].pose.position, raycastHitList[0].pose.rotation);
                     battleKinObj.GetComponent<ShotManager>().kinStateManager = this;
+                    //モデルのサイズを取得しておく
+                    tempScale = battleKinObj.transform.localScale.x;
                 }
                 else
                 {

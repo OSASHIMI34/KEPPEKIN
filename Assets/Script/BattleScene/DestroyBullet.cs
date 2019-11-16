@@ -17,7 +17,7 @@ public class DestroyBullet : MonoBehaviour
     public float duration;
 
     [Header("Rayを飛ばすカメラ")]
-    public Camera camera3d; //3DCameraオブジェクトをインスペクターで指定する
+    public Camera arCamera; //3DCameraオブジェクトをインスペクターで指定する
 
 
     public KinStates nakamaKin; //まだ使わない
@@ -43,7 +43,7 @@ public class DestroyBullet : MonoBehaviour
             RaycastHit hit = new RaycastHit();
 
             //カメラをスタート地点とし、画面のタップ地点に向けてRayを発射する
-            ray = camera3d.ScreenPointToRay(Input.mousePosition);
+            ray = arCamera.ScreenPointToRay(Input.mousePosition);
 
             //ゲームビューではRayは見えないので、シーンビューにRayを可視化して表示する
             //引数は(①Rayのスタート地点、②Rayの方向と距離、③Rayの色、④カメラの深度表示をするかどうか)

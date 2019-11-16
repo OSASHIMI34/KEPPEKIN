@@ -79,6 +79,7 @@
 		<type fullname="JyunbiPopUp" preserve="nothing"/>
 		<type fullname="KinBullet" preserve="nothing"/>
 		<type fullname="KinData" preserve="nothing"/>
+		<type fullname="KinStateManager" preserve="nothing"/>
 		<type fullname="KinStates" preserve="nothing"/>
 		<type fullname="ObjCtrl" preserve="nothing"/>
 		<type fullname="ReturnHome" preserve="nothing"/>

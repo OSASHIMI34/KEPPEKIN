@@ -279,7 +279,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 253280748}
-  - component: {fileID: 253280749}
   m_Layer: 0
   m_Name: KinStateManager
   m_TagString: Untagged
@@ -299,30 +298,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &253280749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253280747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24add122c09fc4c6994abda1ccc6167e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletTypeName: 
-  kinStates: {fileID: 0}
-  maxHp: 100
-  currnetHp: 0
-  kinModelPrefabs:
-  - {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000, type: 3}
-  setKinPrefab: {fileID: 0}
-  arCamera: {fileID: 475725101}
-  isDebugOn: 1
-  battleKinObj: {fileID: 82548344}
 --- !u!1 &361943098
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +373,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &361943102
 MonoBehaviour:
@@ -415,7 +392,7 @@ MonoBehaviour:
     m_Bits: 256
   distance: 100
   duration: 5
-  camera3d: {fileID: 2077333371}
+  arCamera: {fileID: 475725101}
   nakamaKin: {fileID: 0}
   attackPower: 0
 --- !u!1 &475725100
@@ -707,7 +684,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1129901357
 GameObject:
@@ -753,7 +730,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1377009751
 GameObject:
@@ -828,6 +805,7 @@ GameObject:
   - component: {fileID: 1676368621}
   - component: {fileID: 1676368620}
   - component: {fileID: 1676368622}
+  - component: {fileID: 1676368623}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -933,6 +911,28 @@ MonoBehaviour:
   m_ReferenceLibrary: {fileID: 11400000, guid: 66e4084647730485d9513c66f201c826, type: 2}
   m_MaxNumberOfMovingImages: 3
   m_TrackedImagePrefab: {fileID: 82548344}
+--- !u!114 &1676368623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676368615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24add122c09fc4c6994abda1ccc6167e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletTypeName: 
+  kinStates: {fileID: 0}
+  maxHp: 100
+  currnetHp: 0
+  kinModelPrefabs:
+  - {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000, type: 3}
+  setKinPrefab: {fileID: 0}
+  arCamera: {fileID: 475725101}
+  isDebugOn: 1
+  battleKinObj: {fileID: 0}
 --- !u!1 &1735633924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,7 +1113,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3690018023801167210
 PrefabInstance:
@@ -1126,6 +1126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: hokori_fix
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1345819717817087367, guid: 15237900f32204cf9815f8718044d000,
         type: 3}
@@ -1165,7 +1170,7 @@ PrefabInstance:
     - target: {fileID: 1345819717817087367, guid: 15237900f32204cf9815f8718044d000,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1345819717817087367, guid: 15237900f32204cf9815f8718044d000,
         type: 3}
@@ -1182,11 +1187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -364
       objectReference: {fileID: 0}
-    - target: {fileID: 6144907088614033400, guid: 15237900f32204cf9815f8718044d000,
-        type: 3}
-      propertyPath: kinStateManager
-      value: 
-      objectReference: {fileID: 253280749}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15237900f32204cf9815f8718044d000, type: 3}
 --- !u!1001 &8641420280052896161
