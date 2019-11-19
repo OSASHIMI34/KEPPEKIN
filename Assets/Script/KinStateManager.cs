@@ -75,7 +75,10 @@ public class KinStateManager : MonoBehaviour
                 if (raycastManager.Raycast(touch.position, raycastHitList, TrackableType.All))
                 {
                     Debug.Log("Raycast成功");
-                    battleKinObj = Instantiate(setKinPrefab, raycastHitList[0].pose.position, raycastHitList[0].pose.rotation);
+                    Vector3 posY = new Vector3(raycastHitList[0].pose.position.x, raycastHitList[0].pose.position.y + 0.8f, raycastHitList[0].pose.position.z + 1f);
+                 
+
+                    battleKinObj = Instantiate(setKinPrefab, posY, raycastHitList[0].pose.rotation);
                     battleKinObj.GetComponent<ShotManager>().kinStateManager = this;
                     //モデルのサイズを取得しておく
                     tempScale = battleKinObj.transform.localScale.x;
