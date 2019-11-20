@@ -155,6 +155,7 @@ public class EnemyManager : MonoBehaviour
                     silhouetteObj.kinMaskImage.sprite = Resources.Load<Sprite>("Image/" + data.kinName);
                     silhouetteObj.level = data.level;
                     silhouetteObj.rarelity = data.rarerity;
+                    silhouetteObj.inkColor = data.inkImage;
 
 
                     //キンをリストに追加する

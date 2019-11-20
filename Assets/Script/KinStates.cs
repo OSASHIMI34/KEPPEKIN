@@ -24,6 +24,9 @@ public class KinStates : MonoBehaviour
     [Header("キンの珍しさ")]
     public int rarelity;
 
+    [Header("インクのファイル名")]
+    public string inkColor;
+
 
     private JyunbiPopUp jyunbi; //StagePopUpを開くための紐付け
 

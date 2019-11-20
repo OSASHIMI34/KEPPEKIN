@@ -87,9 +87,22 @@ public class StagePopUp : MonoBehaviour
     {
         if (isDebugBattleOn)
         {
-            //バトルするキンのデータをGameDataに渡す
-            GameData.battleKinStates = battlekinStates;
+            //SetUpメソッドで渡された変数statesをbattlekinstatesにいれ、
+            //バトルボタンが押されるとbattlekinstateの各データがGameDataクラスに渡される
+            //Gamedataクラスはシングルトンでシーンを遷移しても破壊されないので、バトルシーンにタップしたきんのデータが持っていける
 
+            //バトルするキンのデータをGameDataに渡す
+            GameData.BattleKinData saveEnemyKindata = new GameData.BattleKinData();
+            saveEnemyKindata.kinNum = battlekinStates.rundomNum;
+            saveEnemyKindata.kinName = battlekinStates.kinName;
+            saveEnemyKindata.kinRarelity = battlekinStates.rarelity;
+            saveEnemyKindata.kinLebel = battlekinStates.level;
+            saveEnemyKindata.kinType = battlekinStates.type;
+            saveEnemyKindata.inkImage = battlekinStates.inkColor;
+
+
+            GameData.instance.enemyDatas = saveEnemyKindata; //stagepopupで宣言した変数たちをenemydataというGameDataクラスで新しく作った変数に移植した
+            
             Debug.Log("通ってる");
             SceneStateManager.instance.MoveBattle();
         }

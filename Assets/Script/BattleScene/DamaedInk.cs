@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 ///画面に被弾用の”汚れ”を生成するクラス 
@@ -19,14 +20,23 @@ public class DamaedInk : MonoBehaviour
     [Header("インクの大きさ")]
     public float mimScale;
     public float maxScale;
+
+
     
     private void OnCollisionEnter(Collision col) //col == 弾(当たったオブジェクトの情報が入る)
     {
+        
+        
+
         //Vector3 pos = Camera.main.WorldToScreenPoint(col.gameObject.transform.position);
         GameObject stain = Instantiate(stainPrefab, canvasTran, false);
         stain.transform.localPosition = new Vector3(Random.Range(-300, 300), Random.Range(-600, 600), 0);
         float value = Random.Range(mimScale, maxScale);
         stain.transform.localScale = new Vector3(value, value, 1);
+
+        Image stainImage = stain.GetComponent<Image>();
+        //stainImage.sprite = Resources.Load<Sprite>("InkImage/" + GameData.instance.kindata.kinDataList.);
+
         stainList.Add(stain);
         Destroy(col.gameObject, 0.5f);
 

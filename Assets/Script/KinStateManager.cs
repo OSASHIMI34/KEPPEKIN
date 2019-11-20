@@ -25,12 +25,16 @@ public class KinStateManager : MonoBehaviour
 
     private float tempScale;
 
+    public GameData.BattleKinData loadEnemyData = new GameData.BattleKinData(); //初期化してる
+
+
 
     void Awake()
     {
 
         //変数を用意しておいて、GameDataから必要な情報をもらう
-        kinStates = GameData.battleKinStates;
+        loadEnemyData = GameData.instance.enemyDatas; //enemydatasにはStagePopUpクラスのsaveenemykindata入っとる
+
 
         if (isDebugOn)
         {
