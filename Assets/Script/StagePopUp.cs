@@ -100,8 +100,20 @@ public class StagePopUp : MonoBehaviour
             saveEnemyKindata.kinType = battlekinStates.type;
             saveEnemyKindata.inkImage = battlekinStates.inkColor;
 
+            //仲間菌のデータをGameDataに渡す
+            //スクロールされて出てきた仲間(真ん中の子)の情報
+            GameData.BattleKinData saveNakamaKindata = new GameData.BattleKinData();
+            saveNakamaKindata.kinNum = nakamaKinStates.rundomNum;
+            saveNakamaKindata.kinName = nakamaKinStates.kinName;
+            saveNakamaKindata.kinRarelity = nakamaKinStates.rarelity;
+            saveNakamaKindata.kinLebel = nakamaKinStates.level;
+            saveNakamaKindata.kinType = nakamaKinStates.type;
+            saveNakamaKindata.inkImage = nakamaKinStates.inkColor;
+
+
 
             GameData.instance.enemyDatas = saveEnemyKindata; //stagepopupで宣言した変数たちをenemydataというGameDataクラスで新しく作った変数に移植した
+            GameData.instance.nakamaDates = saveNakamaKindata; 
             
             Debug.Log("通ってる");
             SceneStateManager.instance.MoveBattle();

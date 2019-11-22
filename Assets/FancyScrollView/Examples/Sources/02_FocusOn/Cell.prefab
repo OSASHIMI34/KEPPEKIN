@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 114212530390307856}
   - component: {fileID: 225474622916379966}
   - component: {fileID: 1580521217280112370}
+  - component: {fileID: 1925996565121918081}
   m_Layer: 5
   m_Name: Cell
   m_TagString: Untagged
@@ -290,7 +291,10 @@ MonoBehaviour:
     rarerity: 0
     level: 0
     kinType: 0
+    bulletSpeed: 0
+    inkImage: 
   cellKinName: {fileID: 114088381846444308}
+  mochiKinStates: {fileID: 1925996565121918081}
 --- !u!225 &225474622916379966
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -329,3 +333,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1925996565121918081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901728338085442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ddfb599385c42d7b84c0c5f2614938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rundomNum: 0
+  kinName: 
+  type: 0
+  kinMaskImage: {fileID: 0}
+  level: 0
+  rarelity: 0
+  inkColor: 

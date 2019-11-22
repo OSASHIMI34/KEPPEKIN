@@ -2211,6 +2211,8 @@ MonoBehaviour:
   winButton: {fileID: 1615709704}
   loseButton: {fileID: 2051020894}
   isDebugBattleOn: 1
+  battlekinStates: {fileID: 0}
+  nakamaKinStates: {fileID: 0}
 --- !u!114 &7877061734168481444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2239,13 +2241,14 @@ GameObject:
   - component: {fileID: 4770932755010248928}
   - component: {fileID: 6613676678755682581}
   - component: {fileID: 4756516409352095009}
+  - component: {fileID: 4145502120418352447}
   m_Layer: 0
   m_Name: Choice_Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4520228779455951231
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2349,3 +2352,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &4145502120418352447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853027269366477947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ddd9e049994645b4bd93c86b3751502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stagePopUp: {fileID: 3054211000830910263}

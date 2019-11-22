@@ -36,6 +36,8 @@ public class GameData : MonoBehaviour
 
     public BattleKinData enemyDatas = new BattleKinData(); //BattleKinDataで作った変数が引数としていれられる。初期化してすぐに引数として使える状態にしている
 
+    public BattleKinData nakamaDates = new BattleKinData();
+
 //初期化...普段は省略してかける
 //int x = new int();
 //x = 5;

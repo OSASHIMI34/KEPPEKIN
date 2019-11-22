@@ -11,6 +11,7 @@ namespace FancyScrollView.Example02
         [SerializeField] Button button = default;
         public KinData.KinDataList kindata;
         public Text cellKinName;
+        public KinStates mochiKinStates;
 
         static class AnimatorHash
         {
@@ -29,9 +30,18 @@ namespace FancyScrollView.Example02
 
             var selected = Context.SelectedIndex == Index;
             image.color = selected
-                ? new Color32(255, 255, 255, 255)
-                : new Color32(255, 255, 255, 100);
+                ? new Color32(255, 255, 255, 255) //true
+                : new Color32(255, 255, 255, 100); //false
             image.sprite = Resources.Load<Sprite>("Image/" + kindata.kinName);
+
+            //mochiKinStatesにkindata(スクリプタブルオブジェクトのデータ)を移植
+            mochiKinStates.kinName = kindata.kinName;
+            mochiKinStates.rarelity = kindata.rarerity;
+            mochiKinStates.level = kindata.level;
+            mochiKinStates.rundomNum = kindata.kinNum;
+            mochiKinStates.inkColor = kindata.inkImage;
+            mochiKinStates.type = kindata.kinType;
+
         }
 
         public override void UpdatePosition(float position)

@@ -23,9 +23,11 @@ public class DestroyBullet : MonoBehaviour
     public KinStates nakamaKin; //まだ使わない
     public float attackPower; //KinDataから取得するが、今は空にしておく
 
+    public GameData.BattleKinData nakamas;
 
     private void Start()
     {
+        nakamas = GameData.instance.nakamaDates;
         attackPower = 5; 
     }
 
