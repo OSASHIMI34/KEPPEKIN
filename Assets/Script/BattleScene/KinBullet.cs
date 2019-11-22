@@ -14,6 +14,7 @@ public class KinBullet : MonoBehaviour
 
     public float damage;
 
+    public string inkImageName;
 
     void Update()
     {

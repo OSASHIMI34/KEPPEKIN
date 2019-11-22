@@ -21,21 +21,31 @@ public class DamaedInk : MonoBehaviour
     public float mimScale;
     public float maxScale;
 
+    private Sprite ink;
+
 
     
-    private void OnCollisionEnter(Collision col) //col == 弾(当たったオブジェクトの情報が入る)
+    private void OnCollisionEnter(Collision col) //col == 弾(当たったオブジェクトの情報が入る) KinBulletクラスを持っている弾
     {
-        
-        
+
+        KinBullet kinBullet = col.gameObject.GetComponent<KinBullet>();
+
+        //inkの中身はからなので必ずif文に入り、inkImageフォルダの画像を読み込む
+        if (ink == null) {
+
+            ink = Resources.Load<Sprite>("InkImage/" + kinBullet.inkImageName);
+        }
 
         //Vector3 pos = Camera.main.WorldToScreenPoint(col.gameObject.transform.position);
         GameObject stain = Instantiate(stainPrefab, canvasTran, false);
+
         stain.transform.localPosition = new Vector3(Random.Range(-300, 300), Random.Range(-600, 600), 0);
         float value = Random.Range(mimScale, maxScale);
         stain.transform.localScale = new Vector3(value, value, 1);
 
         Image stainImage = stain.GetComponent<Image>();
-        //stainImage.sprite = Resources.Load<Sprite>("InkImage/" + GameData.instance.kindata.kinDataList.);
+
+        stainImage.sprite = ink;
 
         stainList.Add(stain);
         Destroy(col.gameObject, 0.5f);

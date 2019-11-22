@@ -23,6 +23,21 @@ public class ShotManager : MonoBehaviour
 
     public KinStateManager kinStateManager; //スクリプトで取得するのでアサインはしない
 
+    public string inkImageName;
+
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public void SetUp(KinStateManager kinState)
+    {
+        kinStateManager = kinState;
+        inkImageName = kinStateManager.loadEnemyData.inkImage;
+
+    }
+
+
+
 
     void Update()
     {
@@ -48,6 +63,8 @@ public class ShotManager : MonoBehaviour
     public void Kinshot()
     {
         KinBullet kinBullet = Instantiate(kinBulletPrefab, transform.position, transform.rotation);
+        //KinBulletクラスで作ったinkImageName変数にこのクラスで作ったinkImageNameを入れる
+        kinBullet.inkImageName = inkImageName;
         kinBullet.gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * speed);
     }
 
