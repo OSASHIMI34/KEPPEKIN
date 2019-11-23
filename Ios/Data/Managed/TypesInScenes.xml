@@ -81,6 +81,7 @@
 		<type fullname="KinData" preserve="nothing"/>
 		<type fullname="KinStateManager" preserve="nothing"/>
 		<type fullname="KinStates" preserve="nothing"/>
+		<type fullname="NakamaKinCheckArea" preserve="nothing"/>
 		<type fullname="ObjCtrl" preserve="nothing"/>
 		<type fullname="ReturnHome" preserve="nothing"/>
 		<type fullname="SceneStateManager" preserve="nothing"/>
@@ -123,9 +124,6 @@
 		<type fullname="UnityEditor.Graphs.AnimationStateMachine.Graph" preserve="nothing"/>
 		<type fullname="UnityEditor.Graphs.AnimationStateMachine.GraphGUI" preserve="nothing"/>
 		<type fullname="UnityEditor.Graphs.AnimatorControllerTool" preserve="nothing"/>
-	</assembly>
-	<assembly fullname="UnityEditor.TestRunner">
-		<type fullname="UnityEditor.TestTools.TestRunner.TestListCacheData" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.SpatialTracking">
 		<type fullname="UnityEngine.SpatialTracking.TrackedPoseDriver" preserve="nothing"/>

@@ -430,60 +430,60 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<UI::CanvasGroup>("UI");
 	//57. UI::CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
-	//58. MonoScript
-	RegisterUnityClass<MonoScript>("Core");
-	//59. UnityConnectSettings
-	RegisterUnityClass<UnityConnectSettings>("UnityConnect");
-	//60. AudioManager
-	RegisterUnityClass<AudioManager>("Audio");
-	//61. PhysicsManager
-	RegisterUnityClass<PhysicsManager>("Physics");
-	//62. PlayerSettings
-	RegisterUnityClass<PlayerSettings>("Core");
-	//63. TimeManager
-	RegisterUnityClass<TimeManager>("Core");
-	//64. InputManager
-	RegisterUnityClass<InputManager>("Core");
-	//65. TagManager
-	RegisterUnityClass<TagManager>("Core");
-	//66. MonoManager
-	RegisterUnityClass<MonoManager>("Core");
-	//67. DelayedCallManager
-	RegisterUnityClass<DelayedCallManager>("Core");
-	//68. BuildSettings
-	RegisterUnityClass<BuildSettings>("Core");
-	//69. RuntimeInitializeOnLoadManager
-	RegisterUnityClass<RuntimeInitializeOnLoadManager>("Core");
-	//70. ResourceManager
-	RegisterUnityClass<ResourceManager>("Core");
-	//71. ScriptMapper
-	RegisterUnityClass<ScriptMapper>("Core");
-	//72. Physics2DSettings
-	RegisterUnityClass<Physics2DSettings>("Physics2D");
-	//73. AnimationClip
-	RegisterUnityClass<AnimationClip>("Animation");
-	//74. Motion
-	RegisterUnityClass<Motion>("Animation");
-	//75. Avatar
-	RegisterUnityClass<Avatar>("Animation");
-	//76. LevelGameManager
-	RegisterUnityClass<LevelGameManager>("Core");
-	//77. AnimatorController
-	RegisterUnityClass<AnimatorController>("Animation");
-	//78. LightmapSettings
-	RegisterUnityClass<LightmapSettings>("Core");
-	//79. CGProgram
-	RegisterUnityClass<CGProgram>("Core");
-	//80. RenderSettings
-	RegisterUnityClass<RenderSettings>("Core");
-	//81. SphereCollider
-	RegisterUnityClass<SphereCollider>("Physics");
-	//82. BoxCollider
-	RegisterUnityClass<BoxCollider>("Physics");
-	//83. AudioListener
-	RegisterUnityClass<AudioListener>("Audio");
-	//84. Collider2D
+	//58. Collider2D
 	RegisterUnityClass<Collider2D>("Physics2D");
+	//59. MonoScript
+	RegisterUnityClass<MonoScript>("Core");
+	//60. UnityConnectSettings
+	RegisterUnityClass<UnityConnectSettings>("UnityConnect");
+	//61. AudioManager
+	RegisterUnityClass<AudioManager>("Audio");
+	//62. PhysicsManager
+	RegisterUnityClass<PhysicsManager>("Physics");
+	//63. PlayerSettings
+	RegisterUnityClass<PlayerSettings>("Core");
+	//64. TimeManager
+	RegisterUnityClass<TimeManager>("Core");
+	//65. InputManager
+	RegisterUnityClass<InputManager>("Core");
+	//66. TagManager
+	RegisterUnityClass<TagManager>("Core");
+	//67. MonoManager
+	RegisterUnityClass<MonoManager>("Core");
+	//68. DelayedCallManager
+	RegisterUnityClass<DelayedCallManager>("Core");
+	//69. BuildSettings
+	RegisterUnityClass<BuildSettings>("Core");
+	//70. RuntimeInitializeOnLoadManager
+	RegisterUnityClass<RuntimeInitializeOnLoadManager>("Core");
+	//71. ResourceManager
+	RegisterUnityClass<ResourceManager>("Core");
+	//72. ScriptMapper
+	RegisterUnityClass<ScriptMapper>("Core");
+	//73. Physics2DSettings
+	RegisterUnityClass<Physics2DSettings>("Physics2D");
+	//74. AnimationClip
+	RegisterUnityClass<AnimationClip>("Animation");
+	//75. Motion
+	RegisterUnityClass<Motion>("Animation");
+	//76. Avatar
+	RegisterUnityClass<Avatar>("Animation");
+	//77. LevelGameManager
+	RegisterUnityClass<LevelGameManager>("Core");
+	//78. AnimatorController
+	RegisterUnityClass<AnimatorController>("Animation");
+	//79. LightmapSettings
+	RegisterUnityClass<LightmapSettings>("Core");
+	//80. CGProgram
+	RegisterUnityClass<CGProgram>("Core");
+	//81. RenderSettings
+	RegisterUnityClass<RenderSettings>("Core");
+	//82. SphereCollider
+	RegisterUnityClass<SphereCollider>("Physics");
+	//83. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//84. AudioListener
+	RegisterUnityClass<AudioListener>("Audio");
 	//85. BoxCollider2D
 	RegisterUnityClass<BoxCollider2D>("Physics2D");
 

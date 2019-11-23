@@ -1399,6 +1399,7 @@ IL2CPP_EXTERN_C const uint32_t DOTweenModuleUtils_Preserver_mE88FFEE9E520275AC0F
 IL2CPP_EXTERN_C const uint32_t DamaedInk_OnCollisionEnter_m2580F3BD69EA0204663DA14D8A198C7BD5AA9CFE_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DamaedInk__ctor_m0DFD8454DB1FCB09C65A27126DE1BD9EF54FB2C2_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DestroyBullet_Damage_m7A82EF0655A9EF3FEC250878FB2233FB790C226E_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t DestroyBullet_Start_mFB4DA574FD0B75F74585AF5EBF3FA1E00F55A087_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DestroyBullet_Update_mDA9173E9BC1629CDA5099E0DDA38E96DDCAD83E2_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EasingFunction_Get_m16888B3E1BFEF801F7A7EB96BDDDCC048461CE51_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EasingFunction_InBack_m4FD414DE49CB6AC4D0FC3DFB8C0384AFD2344BFE_MetadataUsageId;
@@ -9690,6 +9691,96 @@ public:
 };
 
 
+// GameData_BattleKinData
+struct  BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16  : public RuntimeObject
+{
+public:
+	// System.Int32 GameData_BattleKinData::kinNum
+	int32_t ___kinNum_0;
+	// System.String GameData_BattleKinData::kinName
+	String_t* ___kinName_1;
+	// System.Int32 GameData_BattleKinData::kinRarelity
+	int32_t ___kinRarelity_2;
+	// System.Int32 GameData_BattleKinData::kinLebel
+	int32_t ___kinLebel_3;
+	// System.Int32 GameData_BattleKinData::kinPower
+	int32_t ___kinPower_4;
+	// KIN_TYPE GameData_BattleKinData::kinType
+	int32_t ___kinType_5;
+	// System.Single GameData_BattleKinData::bulletSpeed
+	float ___bulletSpeed_6;
+	// System.String GameData_BattleKinData::inkImage
+	String_t* ___inkImage_7;
+
+public:
+	inline static int32_t get_offset_of_kinNum_0() { return static_cast<int32_t>(offsetof(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16, ___kinNum_0)); }
+	inline int32_t get_kinNum_0() const { return ___kinNum_0; }
+	inline int32_t* get_address_of_kinNum_0() { return &___kinNum_0; }
+	inline void set_kinNum_0(int32_t value)
+	{
+		___kinNum_0 = value;
+	}
+
+	inline static int32_t get_offset_of_kinName_1() { return static_cast<int32_t>(offsetof(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16, ___kinName_1)); }
+	inline String_t* get_kinName_1() const { return ___kinName_1; }
+	inline String_t** get_address_of_kinName_1() { return &___kinName_1; }
+	inline void set_kinName_1(String_t* value)
+	{
+		___kinName_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___kinName_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_kinRarelity_2() { return static_cast<int32_t>(offsetof(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16, ___kinRarelity_2)); }
+	inline int32_t get_kinRarelity_2() const { return ___kinRarelity_2; }
+	inline int32_t* get_address_of_kinRarelity_2() { return &___kinRarelity_2; }
+	inline void set_kinRarelity_2(int32_t value)
+	{
+		___kinRarelity_2 = value;
+	}
+
+	inline static int32_t get_offset_of_kinLebel_3() { return static_cast<int32_t>(offsetof(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16, ___kinLebel_3)); }
+	inline int32_t get_kinLebel_3() const { return ___kinLebel_3; }
+	inline int32_t* get_address_of_kinLebel_3() { return &___kinLebel_3; }
+	inline void set_kinLebel_3(int32_t value)
+	{
+		___kinLebel_3 = value;
+	}
+
+	inline static int32_t get_offset_of_kinPower_4() { return static_cast<int32_t>(offsetof(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16, ___kinPower_4)); }
+	inline int32_t get_kinPower_4() const { return ___kinPower_4; }
+	inline int32_t* get_address_of_kinPower_4() { return &___kinPower_4; }
+	inline void set_kinPower_4(int32_t value)
+	{
+		___kinPower_4 = value;
+	}
+
+	inline static int32_t get_offset_of_kinType_5() { return static_cast<int32_t>(offsetof(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16, ___kinType_5)); }
+	inline int32_t get_kinType_5() const { return ___kinType_5; }
+	inline int32_t* get_address_of_kinType_5() { return &___kinType_5; }
+	inline void set_kinType_5(int32_t value)
+	{
+		___kinType_5 = value;
+	}
+
+	inline static int32_t get_offset_of_bulletSpeed_6() { return static_cast<int32_t>(offsetof(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16, ___bulletSpeed_6)); }
+	inline float get_bulletSpeed_6() const { return ___bulletSpeed_6; }
+	inline float* get_address_of_bulletSpeed_6() { return &___bulletSpeed_6; }
+	inline void set_bulletSpeed_6(float value)
+	{
+		___bulletSpeed_6 = value;
+	}
+
+	inline static int32_t get_offset_of_inkImage_7() { return static_cast<int32_t>(offsetof(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16, ___inkImage_7)); }
+	inline String_t* get_inkImage_7() const { return ___inkImage_7; }
+	inline String_t** get_address_of_inkImage_7() { return &___inkImage_7; }
+	inline void set_inkImage_7(String_t* value)
+	{
+		___inkImage_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___inkImage_7), (void*)value);
+	}
+};
+
+
 // KinData_KinDataList
 struct  KinDataList_t6C27F9567657BE2C836304862F08A084327A17A7  : public RuntimeObject
 {
@@ -12639,6 +12730,8 @@ public:
 	KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * ___nakamaKin_8;
 	// System.Single DestroyBullet::attackPower
 	float ___attackPower_9;
+	// GameData_BattleKinData DestroyBullet::nakamas
+	BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * ___nakamas_10;
 
 public:
 	inline static int32_t get_offset_of_bulletLayer_4() { return static_cast<int32_t>(offsetof(DestroyBullet_t8FC516CFF5CBD643DC3490A6E2E5EAAE9907374A, ___bulletLayer_4)); }
@@ -12689,6 +12782,15 @@ public:
 	inline void set_attackPower_9(float value)
 	{
 		___attackPower_9 = value;
+	}
+
+	inline static int32_t get_offset_of_nakamas_10() { return static_cast<int32_t>(offsetof(DestroyBullet_t8FC516CFF5CBD643DC3490A6E2E5EAAE9907374A, ___nakamas_10)); }
+	inline BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * get_nakamas_10() const { return ___nakamas_10; }
+	inline BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 ** get_address_of_nakamas_10() { return &___nakamas_10; }
+	inline void set_nakamas_10(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * value)
+	{
+		___nakamas_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___nakamas_10), (void*)value);
 	}
 };
 
@@ -13345,6 +13447,8 @@ public:
 	KinData_t71191D32A6C94070F2A7FE472C1FB99701CA7EC2 * ___kindata_8;
 	// GameData_BattleKinData GameData::enemyDatas
 	BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * ___enemyDatas_9;
+	// GameData_BattleKinData GameData::nakamaDates
+	BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * ___nakamaDates_10;
 
 public:
 	inline static int32_t get_offset_of_kindata_8() { return static_cast<int32_t>(offsetof(GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408, ___kindata_8)); }
@@ -13364,6 +13468,15 @@ public:
 		___enemyDatas_9 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___enemyDatas_9), (void*)value);
 	}
+
+	inline static int32_t get_offset_of_nakamaDates_10() { return static_cast<int32_t>(offsetof(GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408, ___nakamaDates_10)); }
+	inline BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * get_nakamaDates_10() const { return ___nakamaDates_10; }
+	inline BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 ** get_address_of_nakamaDates_10() { return &___nakamaDates_10; }
+	inline void set_nakamaDates_10(BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * value)
+	{
+		___nakamaDates_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___nakamaDates_10), (void*)value);
+	}
 };
 
 struct GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_StaticFields
@@ -13378,9 +13491,9 @@ public:
 	// System.Int32 GameData::chochiku
 	int32_t ___chochiku_7;
 	// KinStates GameData::battleKinStates
-	KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * ___battleKinStates_10;
+	KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * ___battleKinStates_11;
 	// KinStates GameData::nakamaKinStates
-	KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * ___nakamaKinStates_11;
+	KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * ___nakamaKinStates_12;
 
 public:
 	inline static int32_t get_offset_of_instance_4() { return static_cast<int32_t>(offsetof(GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_StaticFields, ___instance_4)); }
@@ -13416,22 +13529,22 @@ public:
 		___chochiku_7 = value;
 	}
 
-	inline static int32_t get_offset_of_battleKinStates_10() { return static_cast<int32_t>(offsetof(GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_StaticFields, ___battleKinStates_10)); }
-	inline KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * get_battleKinStates_10() const { return ___battleKinStates_10; }
-	inline KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF ** get_address_of_battleKinStates_10() { return &___battleKinStates_10; }
-	inline void set_battleKinStates_10(KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * value)
+	inline static int32_t get_offset_of_battleKinStates_11() { return static_cast<int32_t>(offsetof(GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_StaticFields, ___battleKinStates_11)); }
+	inline KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * get_battleKinStates_11() const { return ___battleKinStates_11; }
+	inline KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF ** get_address_of_battleKinStates_11() { return &___battleKinStates_11; }
+	inline void set_battleKinStates_11(KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * value)
 	{
-		___battleKinStates_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___battleKinStates_10), (void*)value);
+		___battleKinStates_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___battleKinStates_11), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_nakamaKinStates_11() { return static_cast<int32_t>(offsetof(GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_StaticFields, ___nakamaKinStates_11)); }
-	inline KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * get_nakamaKinStates_11() const { return ___nakamaKinStates_11; }
-	inline KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF ** get_address_of_nakamaKinStates_11() { return &___nakamaKinStates_11; }
-	inline void set_nakamaKinStates_11(KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * value)
+	inline static int32_t get_offset_of_nakamaKinStates_12() { return static_cast<int32_t>(offsetof(GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_StaticFields, ___nakamaKinStates_12)); }
+	inline KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * get_nakamaKinStates_12() const { return ___nakamaKinStates_12; }
+	inline KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF ** get_address_of_nakamaKinStates_12() { return &___nakamaKinStates_12; }
+	inline void set_nakamaKinStates_12(KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * value)
 	{
-		___nakamaKinStates_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___nakamaKinStates_11), (void*)value);
+		___nakamaKinStates_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___nakamaKinStates_12), (void*)value);
 	}
 };
 
@@ -28571,7 +28684,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DamaedInk__ctor_m0DFD8454DB1FCB09C65A271
 // System.Void DestroyBullet::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DestroyBullet_Start_mFB4DA574FD0B75F74585AF5EBF3FA1E00F55A087 (DestroyBullet_t8FC516CFF5CBD643DC3490A6E2E5EAAE9907374A * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_method (DestroyBullet_Start_mFB4DA574FD0B75F74585AF5EBF3FA1E00F55A087_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408 * L_0 = ((GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_StaticFields*)il2cpp_codegen_static_fields_for(GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_il2cpp_TypeInfo_var))->get_instance_4();
+		NullCheck(L_0);
+		BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * L_1 = L_0->get_nakamaDates_10();
+		__this->set_nakamas_10(L_1);
 		__this->set_attackPower_9((5.0f));
 		return;
 	}
