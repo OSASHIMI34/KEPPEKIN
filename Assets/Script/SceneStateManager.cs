@@ -30,34 +30,44 @@ public class SceneStateManager : MonoBehaviour
 
     private void Start()
     {
-        SceneManager.LoadScene("Home", LoadSceneMode.Additive);
+        StartCoroutine(MoveScene(SCENE_TYPE.HOME));
     }
 
-    public void MoveStage()
+    public IEnumerator MoveScene(SCENE_TYPE sceneType)
     {
-        SceneManager.LoadScene("Stage_1");
-        SceneManager.LoadScene("UI", LoadSceneMode.Additive);
-        //SceneManager.LoadScene(1..., 2...一緒に他のシーンを読み込む場合に使う);
-        //Additive...第一引数にしたものが一番上になるようにレイヤー構造にしてくれる
+        StartCoroutine(TransitionManager.instance.FadeOut());
+        yield return new WaitForSeconds(1.0f);
 
+        SceneManager.LoadScene(sceneType.ToString());
+        if (sceneType != SCENE_TYPE.BATTLE)
+        {
+            SceneManager.LoadScene(SCENE_TYPE.UI.ToString(), LoadSceneMode.Additive);
+
+            //SceneManager.LoadScene(1..., 2...一緒に他のシーンを読み込む場合に使う);
+            //Additive...第一引数にしたものが一番上になるようにレイヤー構造にしてくれる
+
+        }
     }
 
-    public void MoveHome()
-    {
-        SceneManager.LoadScene("Home");
-        SceneManager.LoadScene("UI", LoadSceneMode.Additive);
-    }
 
-    //public void UpdateGage()
+
+
+    //public void MoveHome()
     //{
-       // expGage.fillAmount = (float) exp / 100;
-       // Debug.Log(exp);
+    //    SceneManager.LoadScene("Home");
+    //    SceneManager.LoadScene("UI", LoadSceneMode.Additive);
     //}
 
-    public void MoveBattle()
-    {
-        SceneManager.LoadScene("Battle");
-    }
+    ////public void UpdateGage()
+    ////{
+    //   // expGage.fillAmount = (float) exp / 100;
+    //   // Debug.Log(exp);
+    ////}
+
+    //public void MoveBattle()
+    //{
+    //    SceneManager.LoadScene("Battle");
+    //}
 
 
 }

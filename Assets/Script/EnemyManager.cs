@@ -41,9 +41,12 @@ public class EnemyManager : MonoBehaviour
 
     void Awake()
     {
+        StartCoroutine(TransitionManager.instance.FadeIn());
+
         StartCoroutine(CreateKinMaskImage());
 
     }
+
 
     private IEnumerator CreateKinMaskImage()
     {

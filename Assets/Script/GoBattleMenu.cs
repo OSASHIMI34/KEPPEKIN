@@ -8,6 +8,6 @@ public class GoBattleMenu : MonoBehaviour
    public void MoveBattleMenu()
     {
         //SceneManager.LoadScene("Stage_1");
-        SceneStateManager.instance.MoveStage();
+        StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.STAGE));
     }
 }

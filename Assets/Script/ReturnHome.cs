@@ -8,7 +8,7 @@ public class ReturnHome : MonoBehaviour
     public void MoveHome()
     {
         //SceneManager.LoadScene("Home");
-        SceneStateManager.instance.MoveHome();
+        StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.HOME));
     }
 
 }

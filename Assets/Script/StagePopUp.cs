@@ -116,7 +116,7 @@ public class StagePopUp : MonoBehaviour
             GameData.instance.nakamaDates = saveNakamaKindata; 
             
             Debug.Log("通ってる");
-            SceneStateManager.instance.MoveBattle();
+            StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.BATTLE));
         }
         else
         {

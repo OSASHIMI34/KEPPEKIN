@@ -27,7 +27,7 @@ public class BattleMenuPopUp : MonoBehaviour
 
     public void ReturnStage()
     {
-        SceneStateManager.instance.MoveStage();
+        StartCoroutine(SceneStateManager.instance.MoveScene(SCENE_TYPE.BATTLE));
     }
 
 }

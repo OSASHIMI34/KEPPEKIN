@@ -17,6 +17,7 @@ public class KinData : ScriptableObject
 
         public float bulletSpeed; //KinBulletクラスへ渡す
         public string inkImage; //イメージの設定のないインク用のイメージをインスタンスし、名前からデータを参照して付着するイメージを変更する。
+        public int removeCount;
 
     }
 }
