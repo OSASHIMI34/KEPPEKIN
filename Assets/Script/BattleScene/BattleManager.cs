@@ -53,6 +53,8 @@ public class BattleManager : MonoBehaviour
     
     void Start()
     {
+        StartCoroutine(TransitionManager.instance.FadeIn());
+
         //currentTimeにbattleTimeを設定する
         currentTime = battleTime;
 

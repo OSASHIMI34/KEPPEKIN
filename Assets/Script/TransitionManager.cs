@@ -36,8 +36,8 @@ public class TransitionManager : MonoBehaviour
     public IEnumerator FadeIn()
     {
         fadeMaskImage.enabled = true;
-        //マスクイメージを縮小する
-        fadeMaskImage.transform.DOScale(new Vector3(0.1f, 0, 1f), 1.0f).SetEase(Ease.InQuart);
+        //マスクイメージをアニメで縮小する
+        fadeMaskImage.transform.DOScale(new Vector3(0.1f, 0.1f), 1.0f).SetEase(Ease.InQuart);
         yield return new WaitForSeconds(1.0f);
         fadeMaskImage.enabled = false;
 
