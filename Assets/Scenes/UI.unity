@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeMaskImage: {fileID: 258040284}
+  duration: 1
 --- !u!1 &258040282
 GameObject:
   m_ObjectHideFlags: 0

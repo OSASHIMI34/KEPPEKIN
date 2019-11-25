@@ -15,6 +15,9 @@ public class TransitionManager : MonoBehaviour
     [Header("フェイド用マスクイメージ")]
     public Image fadeMaskImage;
 
+    [Header("フェイド処理の時間")]
+    public float duration;
+
     private void Awake()
     {
         //nullは初めてゲームが実行された場合のこと
@@ -38,7 +41,7 @@ public class TransitionManager : MonoBehaviour
         fadeMaskImage.enabled = true;
         //マスクイメージをアニメで縮小する
         fadeMaskImage.transform.DOScale(new Vector3(0.1f, 0.1f), 1.0f).SetEase(Ease.InQuart);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(duration);
         fadeMaskImage.enabled = false;
 
     }
@@ -55,7 +58,7 @@ public class TransitionManager : MonoBehaviour
         fadeMaskImage.enabled = true;
         //マスクイメージをアニメで拡大する
         fadeMaskImage.transform.DOScale(new Vector3(20f, 20f), 1.0f).SetEase(Ease.InQuart);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(duration);
     }
 
 
