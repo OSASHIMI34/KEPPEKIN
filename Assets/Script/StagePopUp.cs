@@ -10,8 +10,8 @@ public class StagePopUp : MonoBehaviour
     public Image kinImage;
     public Image typeImage;
     public GameObject kinName;
-    public GameObject levelImagePrefab;
-    public GameObject rarelityImagePrefab;
+    //public GameObject levelImagePrefab;
+    //public GameObject rarelityImagePrefab;
 
     public Transform levelPlace;
     public Transform rarelityPlace;
@@ -27,6 +27,12 @@ public class StagePopUp : MonoBehaviour
 
     public KinStates battlekinStates;
     public KinStates nakamaKinStates;
+
+
+    //初めからイメージ3個置いておく
+    //レアリティの数だけ表示する
+    public Image[] levelImages;
+    public Image[] rarelityImages;
 
 
     /// <summary>
@@ -45,12 +51,16 @@ public class StagePopUp : MonoBehaviour
         //強さとレアリティの値に合わせてイメージを生成する
         for (int i = 0; i<battlekinStates.level; i++)
         {
-            Instantiate(levelImagePrefab, levelPlace, false);
+            //コンポーネントのチェックがtrueにすると入る
+            levelImages[i].enabled = true;
+
         }
 
         for (int i =0; i<battlekinStates.rarelity; i++)
         {
-            Instantiate(rarelityImagePrefab, rarelityPlace, false);
+            //コンポーネントのチェックがtrueにすると入る
+            rarelityImages[i].enabled = true;
+           
         }
 
         //BattleDebugを探して紐付けする
@@ -65,6 +75,8 @@ public class StagePopUp : MonoBehaviour
     //winButton.onClick.AddListener(() => battleDebug.Win(battlekinStates.level, battlekinStates.rarelity));
         //loseButton.onClick.AddListener(battleDebug.Lose);
     }
+
+
 
 
 

@@ -13,6 +13,8 @@ namespace FancyScrollView.Example02
         public Text cellKinName;
         public KinStates mochiKinStates;
 
+        public Image typeImage;
+
         static class AnimatorHash
         {
             public static readonly int Scroll = Animator.StringToHash("scroll");
@@ -27,6 +29,7 @@ namespace FancyScrollView.Example02
         {
             kindata = itemData.Kindata;
             cellKinName.text = kindata.kinName;
+            typeImage.sprite = Resources.Load<Sprite>("Type/" + kindata.kinType);
 
             var selected = Context.SelectedIndex == Index;
             image.color = selected
