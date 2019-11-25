@@ -1367,7 +1367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56f1da0ed0c4e244182dffa658d69315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cellInterval: 1e-45
+  cellInterval: 0.2
   scrollOffset: 0.5
   loop: 1
   cellContainer: {fileID: 5744700825443704235}
