@@ -25,6 +25,7 @@
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider" preserve="nothing"/>
+		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
@@ -48,7 +49,6 @@
 		<type fullname="UnityEngine.LineRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.ParticleSystem" preserve="nothing"/>
 		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="nothing"/>
-		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
@@ -63,10 +63,12 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ARManager" preserve="nothing"/>
 		<type fullname="BattleDebug" preserve="nothing"/>
+		<type fullname="BattleManager" preserve="nothing"/>
 		<type fullname="BattleMenuPopUp" preserve="nothing"/>
 		<type fullname="BattleUIManager" preserve="nothing"/>
 		<type fullname="Baum2.Cache" preserve="nothing"/>
 		<type fullname="Baum2.UIRoot" preserve="nothing"/>
+		<type fullname="CreateRandomHomeKins" preserve="nothing"/>
 		<type fullname="DamaedInk" preserve="nothing"/>
 		<type fullname="DestroyBullet" preserve="nothing"/>
 		<type fullname="EnemyManager" preserve="nothing"/>
@@ -88,6 +90,7 @@
 		<type fullname="ShotManager" preserve="nothing"/>
 		<type fullname="StagePopUp" preserve="nothing"/>
 		<type fullname="Stain" preserve="nothing"/>
+		<type fullname="TransitionManager" preserve="nothing"/>
 		<type fullname="UIManager" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="DOTween">
@@ -124,6 +127,9 @@
 		<type fullname="UnityEditor.Graphs.AnimationStateMachine.Graph" preserve="nothing"/>
 		<type fullname="UnityEditor.Graphs.AnimationStateMachine.GraphGUI" preserve="nothing"/>
 		<type fullname="UnityEditor.Graphs.AnimatorControllerTool" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="UnityEditor.TestRunner">
+		<type fullname="UnityEditor.TestTools.TestRunner.TestListCacheData" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.SpatialTracking">
 		<type fullname="UnityEngine.SpatialTracking.TrackedPoseDriver" preserve="nothing"/>

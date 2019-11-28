@@ -6710,7 +6710,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double DOGetter_1_EndInvoke_m992DBF872C722699
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void DG.Tweening.Core.DOGetter`1<System.Int32>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DOGetter_1__ctor_mBD618786B290D6F02B745D270D356256762B657D_gshared (DOGetter_1_tB864E79B94CAC83A3A07BB8B5DDCEFAC1F9A32B3 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DOGetter_1__ctor_mD1D6338ED03318F46CC219DF936A2BC8C84C2E44_gshared (DOGetter_1_tB864E79B94CAC83A3A07BB8B5DDCEFAC1F9A32B3 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
@@ -8148,7 +8148,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DOSetter_1_EndInvoke_mA2905190212B02883E
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void DG.Tweening.Core.DOSetter`1<System.Int32>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DOSetter_1__ctor_m7B81A3E869C4BCE7386DC941CF18DC98CA553C7D_gshared (DOSetter_1_tCE0C9EFA39447FF4141C0D46A357A2262FF7040A * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DOSetter_1__ctor_mC9F273726E0E9A139A9CD57797F4CDC3143934E1_gshared (DOSetter_1_tCE0C9EFA39447FF4141C0D46A357A2262FF7040A * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
