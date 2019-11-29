@@ -476,7 +476,7 @@ MonoBehaviour:
   maxHp: 0
   currnetHp: 0
   kinModelPrefabs:
-  - {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000, type: 3}
+  - {fileID: 4400737871851646980, guid: ec57b13839c27407fa3cd510e9ce62e8, type: 3}
   - {fileID: 203811607821145401, guid: 345c1f8e9a96646cf8d4b1ca1c927fb6, type: 3}
   - {fileID: 203811607821145401, guid: 345c1f8e9a96646cf8d4b1ca1c927fb6, type: 3}
   - {fileID: 5148688619286189677, guid: 8dc8fc1d3e05e4934a7e03c54f4f6a92, type: 3}
