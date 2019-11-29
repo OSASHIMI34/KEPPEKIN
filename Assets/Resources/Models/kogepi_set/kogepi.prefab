@@ -241,6 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 510367943999008705}
   - component: {fileID: 7610858182048088763}
+  - component: {fileID: 3294853753457757518}
   m_Layer: 0
   m_Name: kogepi
   m_TagString: Untagged
@@ -289,6 +290,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3294853753457757518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552892776718294482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c25be16a8b145e6861a75698268e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kinBulletPrefab: {fileID: 6633198825311391333, guid: c51bfab24a5a04350b33fa55709cc825,
+    type: 3}
+  speed: 0
+  waitTime: 0
+  debugSwitch: 0
+  kinStateManager: {fileID: 0}
+  inkImageName: Small_Dirty
 --- !u!1 &3630292687898092073
 GameObject:
   m_ObjectHideFlags: 0

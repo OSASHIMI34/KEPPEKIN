@@ -165,6 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1544212142255685119}
   - component: {fileID: 8927303253766049925}
+  - component: {fileID: 4269134314298808335}
   m_Layer: 0
   m_Name: poosun
   m_TagString: Untagged
@@ -207,6 +208,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4269134314298808335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537071523960213484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c25be16a8b145e6861a75698268e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kinBulletPrefab: {fileID: 1480810335374679906, guid: 4c26233b2562f4cfdbb350484fa91d9b,
+    type: 3}
+  speed: 0
+  waitTime: 0
+  debugSwitch: 0
+  kinStateManager: {fileID: 0}
+  inkImageName: Small_neut
 --- !u!1 &3175069483676963106
 GameObject:
   m_ObjectHideFlags: 0

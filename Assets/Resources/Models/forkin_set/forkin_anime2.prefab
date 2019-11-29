@@ -103,6 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4122458772426876032}
   - component: {fileID: 6323029312931285498}
+  - component: {fileID: 3532129030649057096}
   m_Layer: 0
   m_Name: forkin_anime2
   m_TagString: Untagged
@@ -119,7 +120,7 @@ Transform:
   m_GameObject: {fileID: 1112023733014664851}
   m_LocalRotation: {x: -0, y: -0.99144495, z: 0, w: -0.13052607}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.7, y: 2.7, z: 2.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7858434240404169264}
   - {fileID: 3780828483876621970}
@@ -145,6 +146,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3532129030649057096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112023733014664851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c25be16a8b145e6861a75698268e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kinBulletPrefab: {fileID: 1480810335374679906, guid: 4c26233b2562f4cfdbb350484fa91d9b,
+    type: 3}
+  speed: 0
+  waitTime: 0
+  debugSwitch: 0
+  kinStateManager: {fileID: 0}
+  inkImageName: Small_neut
 --- !u!1 &1367572423161178723
 GameObject:
   m_ObjectHideFlags: 0

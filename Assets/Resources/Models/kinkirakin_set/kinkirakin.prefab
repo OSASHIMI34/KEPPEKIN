@@ -223,6 +223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 883956567965222688}
   - component: {fileID: 7119753478265924186}
+  - component: {fileID: 2008351116307996260}
   m_Layer: 0
   m_Name: kinkirakin
   m_TagString: Untagged
@@ -265,6 +266,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2008351116307996260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4188110194408305971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c25be16a8b145e6861a75698268e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kinBulletPrefab: {fileID: 3624081429234989111, guid: a659d7d22801f4d35a0898bf25140647,
+    type: 3}
+  speed: 0
+  waitTime: 0
+  debugSwitch: 0
+  kinStateManager: {fileID: 0}
+  inkImageName: Big_C;ean
 --- !u!1 &4623917891973504289
 GameObject:
   m_ObjectHideFlags: 0

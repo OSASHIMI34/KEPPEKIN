@@ -479,8 +479,13 @@ MonoBehaviour:
   - {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000, type: 3}
   - {fileID: 203811607821145401, guid: 345c1f8e9a96646cf8d4b1ca1c927fb6, type: 3}
   - {fileID: 203811607821145401, guid: 345c1f8e9a96646cf8d4b1ca1c927fb6, type: 3}
+  - {fileID: 5148688619286189677, guid: 8dc8fc1d3e05e4934a7e03c54f4f6a92, type: 3}
   - {fileID: 203811607821145401, guid: 345c1f8e9a96646cf8d4b1ca1c927fb6, type: 3}
+  - {fileID: 3934977714420553202, guid: b60a7d14c5d36410284fe4caea7ac1cd, type: 3}
   - {fileID: 203811607821145401, guid: 345c1f8e9a96646cf8d4b1ca1c927fb6, type: 3}
+  - {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000, type: 3}
+  - {fileID: 2537071523960213484, guid: 536469237fe81459c8def55de74090c1, type: 3}
+  - {fileID: 2952226574312794635, guid: 29847ca1192f644e393b9ff942363a65, type: 3}
   setKinPrefab: {fileID: 0}
   arCamera: {fileID: 475725101}
   isDebugOn: 1
@@ -1057,6 +1062,30 @@ MonoBehaviour:
   canvasTran: {fileID: 0}
   kinStateManager: {fileID: 0}
   isWin: 0
+  nakamaData:
+    kinNum: 0
+    kinName: 
+    kinRarelity: 0
+    kinLebel: 0
+    kinPower: 0
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: 
+    removeCount: 0
+  enemyData:
+    kinNum: 0
+    kinName: 
+    kinRarelity: 0
+    kinLebel: 0
+    kinPower: 0
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: 
+    removeCount: 0
+  attackPower: 0
+  maxHp: 0
+  resistRate: 0
+  weakRate: 0
 --- !u!4 &754676061
 Transform:
   m_ObjectHideFlags: 0
