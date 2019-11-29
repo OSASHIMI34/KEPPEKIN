@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 8
   damage: 10
+  inkImageName: 
 --- !u!54 &5531081066641424996
 Rigidbody:
   m_ObjectHideFlags: 0

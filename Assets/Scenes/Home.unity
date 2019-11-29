@@ -473,7 +473,7 @@ MonoBehaviour:
   - {fileID: 3934977714420553202, guid: b60a7d14c5d36410284fe4caea7ac1cd, type: 3}
   - {fileID: 5148688619286189677, guid: 8dc8fc1d3e05e4934a7e03c54f4f6a92, type: 3}
   - {fileID: 2537071523960213484, guid: 536469237fe81459c8def55de74090c1, type: 3}
-  - {fileID: 2904408151332849116, guid: 84376cb8c4fe94a5c8c493e3bbd8d4cc, type: 3}
+  - {fileID: 872143056893937286, guid: 18e6194d80eb4488189a9c50bf276f6c, type: 3}
   objCtrl: {fileID: 1552115003}
   setPos: {fileID: 1678431705}
 --- !u!4 &677788302
