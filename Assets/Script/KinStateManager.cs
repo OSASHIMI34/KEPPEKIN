@@ -27,6 +27,20 @@ public class KinStateManager : MonoBehaviour
 
     public GameData.BattleKinData loadEnemyData = new GameData.BattleKinData(); //初期化してる
 
+    [Header("BattleManagerへの紐付け")]
+    public BattleManager battleManager;
+
+    private bool isKinCreate;
+    private float timer;
+
+    [Header("Timerの生成位置")]
+    public Transform timerTran;
+
+    public BattleTimer battleTimerPrefab;
+
+
+
+
 
 
     void Awake()
@@ -86,6 +100,9 @@ public class KinStateManager : MonoBehaviour
                     battleKinObj.GetComponent<ShotManager>().SetUp(this);
                     //モデルのサイズを取得しておく
                     tempScale = battleKinObj.transform.localScale.x;
+
+                    isKinCreate = true;
+                    
                 }
                 else
                 {
@@ -100,6 +117,21 @@ public class KinStateManager : MonoBehaviour
         {
             battleKinObj.transform.LookAt(arCamera.transform);
         }
+
+        //キンが出たフラグがたち、１フレームごとにカウントが足されて3秒経ったら残り時間を表示する
+        //if (isKinCreate == true)
+        //{
+            timer += Time.deltaTime;
+            if (timer >= 3.0f)
+            {
+                isKinCreate = false;　//生成されるのは一回だけ
+               BattleTimer battleTimer = Instantiate(battleTimerPrefab, timerTran, false);
+                //BattleTimerクラスにもBattleManagerクラスをもたせたいのでこのクラスが持っているBattleManagerの
+                //紐付けをそのまま渡してあげる
+                battleTimer.battleManager = battleManager;
+            }
+        //}
+
     }
 
 

@@ -25,6 +25,16 @@ public class ResultPopUp : MonoBehaviour
     [Header("敗北イメージ")]
     public Image loseImage;
 
+    [Header("閉じるボタン")]
+    public Button closeBut;
+
+    [Header("染領完了")]
+    public Image[] winMesImage;
+
+    [Header("染領失敗")]
+    public Image[] loseMesImage;
+
+
 
 
     /// <summary>
@@ -45,6 +55,11 @@ public class ResultPopUp : MonoBehaviour
             //勝利　勝利イメージを表示
             winImage.enabled = true;
 
+            for (int i = 0; i < winMesImage.Length; i++)
+            {
+                winMesImage[i].enabled = true;
+            }
+
             //除菌回数をアニメ付きで加算する
             DOTween.To(() => kinState.loadEnemyData.removeCount, (x) =>
             kinState.loadEnemyData.removeCount = x,
@@ -54,6 +69,11 @@ public class ResultPopUp : MonoBehaviour
         {
             //敗北　敗北イメージ表示
             loseImage.enabled = true;
+
+            for (int i = 0; i < loseMesImage.Length; i++)
+            {
+                loseMesImage[i].enabled = true;
+            }
 
         }
         }

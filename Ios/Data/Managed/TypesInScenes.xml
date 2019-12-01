@@ -65,6 +65,7 @@
 		<type fullname="BattleDebug" preserve="nothing"/>
 		<type fullname="BattleManager" preserve="nothing"/>
 		<type fullname="BattleMenuPopUp" preserve="nothing"/>
+		<type fullname="BattleTimer" preserve="nothing"/>
 		<type fullname="BattleUIManager" preserve="nothing"/>
 		<type fullname="Baum2.Cache" preserve="nothing"/>
 		<type fullname="Baum2.UIRoot" preserve="nothing"/>
@@ -85,6 +86,7 @@
 		<type fullname="KinStates" preserve="nothing"/>
 		<type fullname="NakamaKinCheckArea" preserve="nothing"/>
 		<type fullname="ObjCtrl" preserve="nothing"/>
+		<type fullname="ResultPopUp" preserve="nothing"/>
 		<type fullname="ReturnHome" preserve="nothing"/>
 		<type fullname="SceneStateManager" preserve="nothing"/>
 		<type fullname="ShotManager" preserve="nothing"/>
@@ -101,6 +103,7 @@
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
+		<type fullname="TMPro.TMP_SubMeshUI" preserve="nothing"/>
 		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.XR.ARFoundation">

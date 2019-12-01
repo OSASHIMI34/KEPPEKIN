@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1339891059226537187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hoot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2982625299369341599}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hoot2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4842681077983276976}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shitae_mae
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7044037243851397750}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6556759491774056030}
   - component: {fileID: 2046229316168454060}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: koge_big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 905048270333335579}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 510367943999008705}
   - component: {fileID: 7610858182048088763}
   - component: {fileID: 3294853753457757518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: kogepi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3673600417715848431}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eye_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6187626014023890812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4037106713522057160}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hoot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5759666221226974143}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 745602890895836627}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "\u30A2\u30FC\u30DE\u30C1\u30E5\u30A2"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7611382297721866174}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4425912428027576662}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shitae_yoko
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8592292584487463245}
   - component: {fileID: 1994663325366025101}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: kogeToge_Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 705888182223746771}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1873303835097562284}
   - component: {fileID: 4661899998886123757}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: kogeToge_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2643750011873195370}
   - component: {fileID: 9126965844772260466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: koge_small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -807,7 +807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6014858085543486688}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hoot2_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 359839887561857162}
   - component: {fileID: 3222430718181552460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: karada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
