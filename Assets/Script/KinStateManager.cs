@@ -19,7 +19,7 @@ public class KinStateManager : MonoBehaviour
     public Camera arCamera;
     public bool isDebugOn;
 
-    private ARRaycastManager raycastManager;
+    public ARRaycastManager raycastManager;
     private List<ARRaycastHit> raycastHitList = new List<ARRaycastHit>();
     public GameObject battleKinObj;
 
@@ -43,7 +43,7 @@ public class KinStateManager : MonoBehaviour
 
 
 
-    void Awake()
+    public void SetUpEnemyKinData()
     {
 
         //変数を用意しておいて、GameDataから必要な情報をもらう
@@ -62,7 +62,7 @@ public class KinStateManager : MonoBehaviour
             foreach(KinData.KinDataList data in GameData.instance.kindata.kinDataList)
             {
                 //KinDataに登録されているキンの名前とバトルのキンの名前を照合する
-                if (data.kinNum == kinStates.rundomNum)
+                if (data.kinNum == loadEnemyData.kinNum)
                 {
                     setKinPrefab = kinModelPrefabs[data.kinNum];
                 }
@@ -70,7 +70,7 @@ public class KinStateManager : MonoBehaviour
         }
 
         //ARRayCastを取得し、AR空間にRayを飛ばして当たり判定を取れるようにしておく
-        raycastManager = GetComponent<ARRaycastManager>();
+        //raycastManager = GetComponent<ARRaycastManager>();
 
         
 
@@ -119,8 +119,8 @@ public class KinStateManager : MonoBehaviour
         }
 
         //キンが出たフラグがたち、１フレームごとにカウントが足されて3秒経ったら残り時間を表示する
-        //if (isKinCreate == true)
-        //{
+        if (isKinCreate == true)
+        {
             timer += Time.deltaTime;
             if (timer >= 3.0f)
             {
@@ -130,7 +130,7 @@ public class KinStateManager : MonoBehaviour
                 //紐付けをそのまま渡してあげる
                 battleTimer.battleManager = battleManager;
             }
-        //}
+        }
 
     }
 

@@ -661,7 +661,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* Action_1__ctor_m93BC6BFB2BFC2874D2A27724F28
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1__ctor_m9D74B224384A84EA79A8F4DAA21D7627FC2C38C0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisGUILayoutOption_t27A0221AC2F6F53E7B89310FD19F51C565D835A6_m88E55351140AB39BE4B8A54049DBD85D467A8C66_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Cell_U3CStartU3Eb__9_0_mF7D694E7D45258F6E24ACF2CF66BE4981D69A00C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisARRaycastManager_t81A9513150BA5BE536DF064F1C6DE73349A60BE7_m71DCE7466C02DBA59A1618314D7FA98D931BD522_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCamera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34_mB090F51A34716700C0F4F1B08F9330C6F503DB9E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisInkCanvas_t1D37ED53C5DE3A663B7730378EAA955A75F40E16_m062AF1EB60703849F11599A449281A8B8E24701C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_mC449C73F107E3711492A2950958258EA357E447D_RuntimeMethod_var;
@@ -771,7 +770,7 @@ IL2CPP_EXTERN_C const uint32_t JyunbiPopUp_CreatePopUp_m5EDB64E43B4ED27F6DED1AD3
 IL2CPP_EXTERN_C const uint32_t KinBullet_DestroyBullet_mA464B83D90C2E4C34CE709AAB7306FCF37A939D9_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t KinBullet_Update_m023E5B33931C61CD3ED0929FB6CBB2EA4E36CADC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t KinData__ctor_mDD2FAE30507216FEBEC4BF5778C34A9B012CE8AF_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t KinStateManager_Awake_mDC1B245FEA79C51085B32FB323F338A44EBC4C60_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t KinStateManager_SetUpEnemyKinData_mB2EB004E73C125AEB9A0F8D13A38365623072898_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t KinStateManager_Update_mD9B07CA4DEDC0A7EBAC410EA08439B6D6FCDF79F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t KinStateManager__ctor_mC6994AFDDCE3AFC9F43FD7299EB8C661195F0EF5_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t KinStates_IdleAnimeImage_mEA452EC546B7EA669F277398650F623F28DB31F4_MetadataUsageId;
@@ -17680,11 +17679,6 @@ inline void Enumerator_Dispose_mF4F6A405E9F87C654CCC13B193BA7AC1D76DC11C (Enumer
 {
 	((  void (*) (Enumerator_t7A2AC47EDFB0CA310FC84C2887FC9FCD5D55BE03 *, const RuntimeMethod*))Enumerator_Dispose_m94D0DAE031619503CDA6E53C5C3CC78AF3139472_gshared)(__this, method);
 }
-// !!0 UnityEngine.Component::GetComponent<UnityEngine.XR.ARFoundation.ARRaycastManager>()
-inline ARRaycastManager_t81A9513150BA5BE536DF064F1C6DE73349A60BE7 * Component_GetComponent_TisARRaycastManager_t81A9513150BA5BE536DF064F1C6DE73349A60BE7_m71DCE7466C02DBA59A1618314D7FA98D931BD522 (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method)
-{
-	return ((  ARRaycastManager_t81A9513150BA5BE536DF064F1C6DE73349A60BE7 * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m3FED1FF44F93EF1C3A07526800331B638EF4105B_gshared)(__this, method);
-}
 // System.Int32 UnityEngine.Input::get_touchCount()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m2A22A8E963E14F1221F768412663C8D11F806CD6 (const RuntimeMethod* method);
 // UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
@@ -24239,13 +24233,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KinDataList__ctor_m4B5269F110BFDF4BF4CD7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void KinStateManager::Awake()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KinStateManager_Awake_mDC1B245FEA79C51085B32FB323F338A44EBC4C60 (KinStateManager_t118E19C85D09CC0B9B5B61EC6E601DAD1B9127A8 * __this, const RuntimeMethod* method)
+// System.Void KinStateManager::SetUpEnemyKinData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KinStateManager_SetUpEnemyKinData_mB2EB004E73C125AEB9A0F8D13A38365623072898 (KinStateManager_t118E19C85D09CC0B9B5B61EC6E601DAD1B9127A8 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (KinStateManager_Awake_mDC1B245FEA79C51085B32FB323F338A44EBC4C60_MetadataUsageId);
+		il2cpp_codegen_initialize_method (KinStateManager_SetUpEnemyKinData_mB2EB004E73C125AEB9A0F8D13A38365623072898_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	Enumerator_t7A2AC47EDFB0CA310FC84C2887FC9FCD5D55BE03  V_0;
@@ -24266,7 +24260,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KinStateManager_Awake_mDC1B245FEA79C5108
 		bool L_2 = __this->get_isDebugOn_11();
 		if (!L_2)
 		{
-			goto IL_003f;
+			goto IL_003e;
 		}
 	}
 	{
@@ -24278,10 +24272,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KinStateManager_Awake_mDC1B245FEA79C5108
 		__this->set_maxHp_6((100.0f));
 		float L_6 = __this->get_maxHp_6();
 		__this->set_currnetHp_7(L_6);
-		goto IL_009d;
+		return;
 	}
 
-IL_003f:
+IL_003e:
 	{
 		GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408 * L_7 = ((GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_StaticFields*)il2cpp_codegen_static_fields_for(GameData_t99ACF3CAB2EA29546484E671BE6CFF259710A408_il2cpp_TypeInfo_var))->get_instance_4();
 		NullCheck(L_7);
@@ -24293,30 +24287,30 @@ IL_003f:
 		V_0 = L_10;
 	}
 
-IL_0054:
+IL_0053:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_0084;
+			goto IL_0083;
 		}
 
-IL_0056:
+IL_0055:
 		{
 			KinDataList_t6C27F9567657BE2C836304862F08A084327A17A7 * L_11 = Enumerator_get_Current_m88ACC7541FB89D878B3C1DA350E1FD485EDC16C7((Enumerator_t7A2AC47EDFB0CA310FC84C2887FC9FCD5D55BE03 *)(&V_0), /*hidden argument*/Enumerator_get_Current_m88ACC7541FB89D878B3C1DA350E1FD485EDC16C7_RuntimeMethod_var);
 			V_1 = L_11;
 			KinDataList_t6C27F9567657BE2C836304862F08A084327A17A7 * L_12 = V_1;
 			NullCheck(L_12);
 			int32_t L_13 = L_12->get_kinNum_0();
-			KinStates_tAEB7C27A5FBE354C31F820DB33950440FAA42FAF * L_14 = __this->get_kinStates_5();
+			BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * L_14 = __this->get_loadEnemyData_16();
 			NullCheck(L_14);
-			int32_t L_15 = L_14->get_rundomNum_4();
+			int32_t L_15 = L_14->get_kinNum_0();
 			if ((!(((uint32_t)L_13) == ((uint32_t)L_15))))
 			{
-				goto IL_0084;
+				goto IL_0083;
 			}
 		}
 
-IL_0071:
+IL_0070:
 		{
 			GameObjectU5BU5D_t30E337C5B5FBBCBAEDAF4093924D916CF2944067* L_16 = __this->get_kinModelPrefabs_8();
 			KinDataList_t6C27F9567657BE2C836304862F08A084327A17A7 * L_17 = V_1;
@@ -24328,41 +24322,39 @@ IL_0071:
 			__this->set_setKinPrefab_9(L_20);
 		}
 
-IL_0084:
+IL_0083:
 		{
 			bool L_21 = Enumerator_MoveNext_m9E25CAE3D6BC0A1A99BEED058CF59177652E110D((Enumerator_t7A2AC47EDFB0CA310FC84C2887FC9FCD5D55BE03 *)(&V_0), /*hidden argument*/Enumerator_MoveNext_m9E25CAE3D6BC0A1A99BEED058CF59177652E110D_RuntimeMethod_var);
 			if (L_21)
 			{
-				goto IL_0056;
+				goto IL_0055;
 			}
 		}
 
-IL_008d:
+IL_008c:
 		{
-			IL2CPP_LEAVE(0x9D, FINALLY_008f);
+			IL2CPP_LEAVE(0x9C, FINALLY_008e);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_008f;
+		goto FINALLY_008e;
 	}
 
-FINALLY_008f:
+FINALLY_008e:
 	{ // begin finally (depth: 1)
 		Enumerator_Dispose_mF4F6A405E9F87C654CCC13B193BA7AC1D76DC11C((Enumerator_t7A2AC47EDFB0CA310FC84C2887FC9FCD5D55BE03 *)(&V_0), /*hidden argument*/Enumerator_Dispose_mF4F6A405E9F87C654CCC13B193BA7AC1D76DC11C_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(143)
+		IL2CPP_END_FINALLY(142)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(143)
+	IL2CPP_CLEANUP(142)
 	{
-		IL2CPP_JUMP_TBL(0x9D, IL_009d)
+		IL2CPP_JUMP_TBL(0x9C, IL_009c)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
 	}
 
-IL_009d:
+IL_009c:
 	{
-		ARRaycastManager_t81A9513150BA5BE536DF064F1C6DE73349A60BE7 * L_22 = Component_GetComponent_TisARRaycastManager_t81A9513150BA5BE536DF064F1C6DE73349A60BE7_m71DCE7466C02DBA59A1618314D7FA98D931BD522(__this, /*hidden argument*/Component_GetComponent_TisARRaycastManager_t81A9513150BA5BE536DF064F1C6DE73349A60BE7_m71DCE7466C02DBA59A1618314D7FA98D931BD522_RuntimeMethod_var);
-		__this->set_raycastManager_12(L_22);
 		return;
 	}
 }

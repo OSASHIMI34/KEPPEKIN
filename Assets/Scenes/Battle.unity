@@ -274,6 +274,8 @@ GameObject:
   m_Component:
   - component: {fileID: 253280748}
   - component: {fileID: 253280749}
+  - component: {fileID: 253280751}
+  - component: {fileID: 253280750}
   m_Layer: 0
   m_Name: KinStateManager
   m_TagString: Untagged
@@ -324,7 +326,8 @@ MonoBehaviour:
   - {fileID: 2952226574312794635, guid: 29847ca1192f644e393b9ff942363a65, type: 3}
   setKinPrefab: {fileID: 0}
   arCamera: {fileID: 475725101}
-  isDebugOn: 1
+  isDebugOn: 0
+  raycastManager: {fileID: 253280750}
   battleKinObj: {fileID: 0}
   loadEnemyData:
     kinNum: 0
@@ -337,9 +340,34 @@ MonoBehaviour:
     inkImage: 
     removeCount: 0
   battleManager: {fileID: 754676060}
-  timerTran: {fileID: 544241809}
+  timerTran: {fileID: 1358849505}
   battleTimerPrefab: {fileID: 4135316017024445340, guid: c298e5383522a431495bc286bb38f0e3,
     type: 3}
+--- !u!114 &253280750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253280747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &253280751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253280747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520bb47c46cf8624fafb307b7d1b862a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 0}
 --- !u!1 &361943098
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,36 +599,6 @@ Transform:
   m_Father: {fileID: 1676368618}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &544241808
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 544241809}
-  m_Layer: 0
-  m_Name: BattleTimerPos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &544241809
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544241808}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 647, y: 1246, z: -883.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &556525255
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +690,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 246108808}
+  - {fileID: 1358849505}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -885,6 +884,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1358849504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358849505}
+  m_Layer: 5
+  m_Name: BattleTimerPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1358849505
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358849504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 556525259}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -84, y: -78}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1377009751
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,10 +989,8 @@ GameObject:
   - component: {fileID: 1676368617}
   - component: {fileID: 1676368616}
   - component: {fileID: 1676368619}
-  - component: {fileID: 1676368621}
   - component: {fileID: 1676368620}
   - component: {fileID: 1676368622}
-  - component: {fileID: 1676368623}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -1037,18 +1069,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 0}
   arCamera: {fileID: 475725101}
---- !u!114 &1676368621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676368615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1676368622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1064,41 +1084,6 @@ MonoBehaviour:
   m_ReferenceLibrary: {fileID: 11400000, guid: 66e4084647730485d9513c66f201c826, type: 2}
   m_MaxNumberOfMovingImages: 3
   m_TrackedImagePrefab: {fileID: 0}
---- !u!114 &1676368623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676368615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24add122c09fc4c6994abda1ccc6167e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletTypeName: 
-  kinStates: {fileID: 0}
-  maxHp: 100
-  currnetHp: 0
-  kinModelPrefabs:
-  - {fileID: 2663340692891420564, guid: 15237900f32204cf9815f8718044d000, type: 3}
-  setKinPrefab: {fileID: 0}
-  arCamera: {fileID: 475725101}
-  isDebugOn: 1
-  battleKinObj: {fileID: 0}
-  loadEnemyData:
-    kinNum: 0
-    kinName: 
-    kinRarelity: 0
-    kinLebel: 0
-    kinPower: 0
-    kinType: 0
-    bulletSpeed: 0
-    inkImage: 
-    removeCount: 0
-  battleManager: {fileID: 0}
-  timerTran: {fileID: 0}
-  battleTimerPrefab: {fileID: 0}
 --- !u!1 &1735633924
 GameObject:
   m_ObjectHideFlags: 0

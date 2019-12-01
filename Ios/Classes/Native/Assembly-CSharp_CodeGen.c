@@ -62,8 +62,8 @@ extern void BattleDebug_AnimateDirtyGauge_mB3811B8C24DD676AACD034AD04D8383792A84
 extern void BattleDebug_Lose_m82A4263E38DDD7CB89E90C085A76982F2F042B41 ();
 // 0x00000015 System.Void BattleDebug::.ctor()
 extern void BattleDebug__ctor_mA6C9A55CE2DA646B9AD148C52C914F3A6BBDB816 ();
-// 0x00000016 System.Void BattleManager::Start()
-extern void BattleManager_Start_m787E4C6F3AE95DD230D108E3992CC751D64E1EF4 ();
+// 0x00000016 System.Void BattleManager::Awake()
+extern void BattleManager_Awake_mE146F31D31177B8D7F91AE3B485C7908C52944FC ();
 // 0x00000017 System.Void BattleManager::SetUpAtackPowerAndHp()
 extern void BattleManager_SetUpAtackPowerAndHp_mE3712B43BFF823798FDB567E2959020FD8F8EAB7 ();
 // 0x00000018 System.Void BattleManager::Update()
@@ -154,8 +154,8 @@ extern void JyunbiPopUp_CreatePopUp_m5EDB64E43B4ED27F6DED1AD3C54ABD663B2EE112 ()
 extern void JyunbiPopUp__ctor_m8E417533C66F25522D2728F2BB77123F1B0FB925 ();
 // 0x00000043 System.Void KinData::.ctor()
 extern void KinData__ctor_mDD2FAE30507216FEBEC4BF5778C34A9B012CE8AF ();
-// 0x00000044 System.Void KinStateManager::Awake()
-extern void KinStateManager_Awake_mDC1B245FEA79C51085B32FB323F338A44EBC4C60 ();
+// 0x00000044 System.Void KinStateManager::SetUpEnemyKinData()
+extern void KinStateManager_SetUpEnemyKinData_mB2EB004E73C125AEB9A0F8D13A38365623072898 ();
 // 0x00000045 System.Void KinStateManager::Update()
 extern void KinStateManager_Update_mD9B07CA4DEDC0A7EBAC410EA08439B6D6FCDF79F ();
 // 0x00000046 System.Void KinStateManager::ProcDamage(System.Single)
@@ -1615,7 +1615,7 @@ static Il2CppMethodPointer s_methodPointers[800] =
 	BattleDebug_AnimateDirtyGauge_mB3811B8C24DD676AACD034AD04D8383792A84E02,
 	BattleDebug_Lose_m82A4263E38DDD7CB89E90C085A76982F2F042B41,
 	BattleDebug__ctor_mA6C9A55CE2DA646B9AD148C52C914F3A6BBDB816,
-	BattleManager_Start_m787E4C6F3AE95DD230D108E3992CC751D64E1EF4,
+	BattleManager_Awake_mE146F31D31177B8D7F91AE3B485C7908C52944FC,
 	BattleManager_SetUpAtackPowerAndHp_mE3712B43BFF823798FDB567E2959020FD8F8EAB7,
 	BattleManager_Update_m1C4BBE8D81FA08DC36A44913E376E5479D058753,
 	BattleManager_GameUp_mEE2DFA439883471334AD474E0DAD9A85F3A87867,
@@ -1661,7 +1661,7 @@ static Il2CppMethodPointer s_methodPointers[800] =
 	JyunbiPopUp_CreatePopUp_m5EDB64E43B4ED27F6DED1AD3C54ABD663B2EE112,
 	JyunbiPopUp__ctor_m8E417533C66F25522D2728F2BB77123F1B0FB925,
 	KinData__ctor_mDD2FAE30507216FEBEC4BF5778C34A9B012CE8AF,
-	KinStateManager_Awake_mDC1B245FEA79C51085B32FB323F338A44EBC4C60,
+	KinStateManager_SetUpEnemyKinData_mB2EB004E73C125AEB9A0F8D13A38365623072898,
 	KinStateManager_Update_mD9B07CA4DEDC0A7EBAC410EA08439B6D6FCDF79F,
 	KinStateManager_ProcDamage_m9BF9C4DF40696E3E062B438B49D0505DBDBEFFD6,
 	KinStateManager__ctor_mC6994AFDDCE3AFC9F43FD7299EB8C661195F0EF5,
@@ -3213,37 +3213,37 @@ static const Il2CppRGCTXDefinition s_rgctxValues[37] =
 	{ (Il2CppRGCTXDataType)3, 14232 },
 	{ (Il2CppRGCTXDataType)3, 14233 },
 	{ (Il2CppRGCTXDataType)3, 14234 },
-	{ (Il2CppRGCTXDataType)2, 18468 },
+	{ (Il2CppRGCTXDataType)2, 18469 },
 	{ (Il2CppRGCTXDataType)3, 14235 },
 	{ (Il2CppRGCTXDataType)3, 14236 },
 	{ (Il2CppRGCTXDataType)3, 14237 },
 	{ (Il2CppRGCTXDataType)3, 14238 },
-	{ (Il2CppRGCTXDataType)1, 17943 },
 	{ (Il2CppRGCTXDataType)1, 17944 },
+	{ (Il2CppRGCTXDataType)1, 17945 },
 	{ (Il2CppRGCTXDataType)3, 14239 },
 	{ (Il2CppRGCTXDataType)3, 14240 },
 	{ (Il2CppRGCTXDataType)3, 14241 },
 	{ (Il2CppRGCTXDataType)3, 14242 },
-	{ (Il2CppRGCTXDataType)2, 18469 },
-	{ (Il2CppRGCTXDataType)3, 14243 },
 	{ (Il2CppRGCTXDataType)2, 18470 },
+	{ (Il2CppRGCTXDataType)3, 14243 },
+	{ (Il2CppRGCTXDataType)2, 18471 },
 	{ (Il2CppRGCTXDataType)3, 14244 },
 	{ (Il2CppRGCTXDataType)3, 14245 },
 	{ (Il2CppRGCTXDataType)3, 14246 },
-	{ (Il2CppRGCTXDataType)2, 17942 },
+	{ (Il2CppRGCTXDataType)2, 17943 },
 	{ (Il2CppRGCTXDataType)3, 14247 },
 	{ (Il2CppRGCTXDataType)3, 14248 },
-	{ (Il2CppRGCTXDataType)2, 18471 },
-	{ (Il2CppRGCTXDataType)3, 14249 },
 	{ (Il2CppRGCTXDataType)2, 18472 },
+	{ (Il2CppRGCTXDataType)3, 14249 },
+	{ (Il2CppRGCTXDataType)2, 18473 },
 	{ (Il2CppRGCTXDataType)3, 14250 },
 	{ (Il2CppRGCTXDataType)3, 14251 },
 	{ (Il2CppRGCTXDataType)3, 14252 },
-	{ (Il2CppRGCTXDataType)2, 17952 },
+	{ (Il2CppRGCTXDataType)2, 17953 },
 	{ (Il2CppRGCTXDataType)3, 14253 },
 	{ (Il2CppRGCTXDataType)3, 14254 },
 	{ (Il2CppRGCTXDataType)3, 14255 },
-	{ (Il2CppRGCTXDataType)2, 17961 },
+	{ (Il2CppRGCTXDataType)2, 17962 },
 	{ (Il2CppRGCTXDataType)3, 14256 },
 	{ (Il2CppRGCTXDataType)3, 14257 },
 	{ (Il2CppRGCTXDataType)3, 14258 },

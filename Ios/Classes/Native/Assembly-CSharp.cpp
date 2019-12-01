@@ -1346,9 +1346,9 @@ IL2CPP_EXTERN_C const uint32_t ARManager__ctor_mDBE268E59AA21D1B7B6C74E2348CBB70
 IL2CPP_EXTERN_C const uint32_t BattleDebug_AnimateDirtyGauge_mB3811B8C24DD676AACD034AD04D8383792A84E02_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t BattleDebug_Start_m3023C6B701C52093C986BDF81DB0B2F0D6D8DCC0_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t BattleDebug_Win_m0E74F186665E54AAAD77A7BF509A7942AD7F8D59_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t BattleManager_Awake_mE146F31D31177B8D7F91AE3B485C7908C52944FC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t BattleManager_GameUp_mEE2DFA439883471334AD474E0DAD9A85F3A87867_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t BattleManager_SetUpAtackPowerAndHp_mE3712B43BFF823798FDB567E2959020FD8F8EAB7_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t BattleManager_Start_m787E4C6F3AE95DD230D108E3992CC751D64E1EF4_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t BattleMenuPopUp_ReturnBattle_m960D6E5197A8684F7D09362767EA056E6A7DB954_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t BattleMenuPopUp_ReturnStage_mDC987F6C962BC9D68E698A0DED3D8750D31D4E76_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t BattleTimer_Update_m47D52990374EA925DA53FFF7A5E06C60EB0E4F56_MetadataUsageId;
@@ -21131,6 +21131,8 @@ inline TweenerCore_3_t6A4E7F20811D0CB63AE8F43B7879680C2273EB71 * TweenSettingsEx
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_mA121DE1CAC8F25277DEB489DC7771209D91CAE33 (NotSupportedException_tE75B318D6590A02A5D9B29FD97409B1750FA0010 * __this, const RuntimeMethod* method);
 // System.Collections.IEnumerator TransitionManager::FadeIn()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TransitionManager_FadeIn_m410EEB9139BEBCF858C5E16E2A200E5F729AE640 (TransitionManager_t9036EC4C90D74C3766A028BBB6A5194FC184D4E3 * __this, const RuntimeMethod* method);
+// System.Void KinStateManager::SetUpEnemyKinData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KinStateManager_SetUpEnemyKinData_mB2EB004E73C125AEB9A0F8D13A38365623072898 (KinStateManager_t118E19C85D09CC0B9B5B61EC6E601DAD1B9127A8 * __this, const RuntimeMethod* method);
 // System.Void BattleManager::SetUpAtackPowerAndHp()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BattleManager_SetUpAtackPowerAndHp_mE3712B43BFF823798FDB567E2959020FD8F8EAB7 (BattleManager_tF17E85A1901975B9A32067EA58DCA4F0C666B1A4 * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Mathf::CeilToInt(System.Single)
@@ -23190,13 +23192,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * U3CAnimateDirtyGaugeU3Ed__7_S
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void BattleManager::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BattleManager_Start_m787E4C6F3AE95DD230D108E3992CC751D64E1EF4 (BattleManager_tF17E85A1901975B9A32067EA58DCA4F0C666B1A4 * __this, const RuntimeMethod* method)
+// System.Void BattleManager::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BattleManager_Awake_mE146F31D31177B8D7F91AE3B485C7908C52944FC (BattleManager_tF17E85A1901975B9A32067EA58DCA4F0C666B1A4 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (BattleManager_Start_m787E4C6F3AE95DD230D108E3992CC751D64E1EF4_MetadataUsageId);
+		il2cpp_codegen_initialize_method (BattleManager_Awake_mE146F31D31177B8D7F91AE3B485C7908C52944FC_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -23212,6 +23214,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BattleManager_Start_m787E4C6F3AE95DD230D
 		NullCheck(L_4);
 		BattleKinData_tDDB9305C9E2CA043FB7992C7966AA8FAABB81D16 * L_5 = L_4->get_enemyDatas_9();
 		__this->set_enemyData_10(L_5);
+		KinStateManager_t118E19C85D09CC0B9B5B61EC6E601DAD1B9127A8 * L_6 = __this->get_kinStateManager_6();
+		NullCheck(L_6);
+		KinStateManager_SetUpEnemyKinData_mB2EB004E73C125AEB9A0F8D13A38365623072898(L_6, /*hidden argument*/NULL);
 		BattleManager_SetUpAtackPowerAndHp_mE3712B43BFF823798FDB567E2959020FD8F8EAB7(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -23522,7 +23527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BattleMenuPopUp_ReturnStage_mDC987F6C962
 	{
 		SceneStateManager_tE59B659F0DCFF5F1A15D98A9D78F1A9D8B768B7D * L_0 = ((SceneStateManager_tE59B659F0DCFF5F1A15D98A9D78F1A9D8B768B7D_StaticFields*)il2cpp_codegen_static_fields_for(SceneStateManager_tE59B659F0DCFF5F1A15D98A9D78F1A9D8B768B7D_il2cpp_TypeInfo_var))->get_instance_4();
 		NullCheck(L_0);
-		RuntimeObject* L_1 = SceneStateManager_MoveScene_m2ADDB860AA320AB44975A8029CFCAC05A2A70A40(L_0, 3, /*hidden argument*/NULL);
+		RuntimeObject* L_1 = SceneStateManager_MoveScene_m2ADDB860AA320AB44975A8029CFCAC05A2A70A40(L_0, 2, /*hidden argument*/NULL);
 		MonoBehaviour_StartCoroutine_mBF8044CE06A35D76A69669ADD8977D05956616B7(__this, L_1, /*hidden argument*/NULL);
 		return;
 	}

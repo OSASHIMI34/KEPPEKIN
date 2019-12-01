@@ -47,7 +47,7 @@ public class BattleManager : MonoBehaviour
 
 
 
-    void Start()
+    void Awake()
     {
         StartCoroutine(TransitionManager.instance.FadeIn());
 
@@ -58,6 +58,7 @@ public class BattleManager : MonoBehaviour
         nakamaData = GameData.instance.nakamaDates;
         enemyData = GameData.instance.enemyDatas;
 
+        kinStateManager.SetUpEnemyKinData();
         SetUpAtackPowerAndHp();
 
     }
