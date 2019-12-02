@@ -242,6 +242,8 @@ GameObject:
   - component: {fileID: 510367943999008705}
   - component: {fileID: 7610858182048088763}
   - component: {fileID: 3294853753457757518}
+  - component: {fileID: 8432207329841477189}
+  - component: {fileID: 3024930663026836540}
   m_Layer: 9
   m_Name: kogepi
   m_TagString: Untagged
@@ -309,6 +311,36 @@ MonoBehaviour:
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_Dirty
+--- !u!54 &8432207329841477189
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552892776718294482}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!136 &3024930663026836540
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552892776718294482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.050000004
+  m_Height: 0.1044286
+  m_Direction: 1
+  m_Center: {x: -1.635528e-10, y: 0.053829487, z: -1.9458372e-10}
 --- !u!1 &3630292687898092073
 GameObject:
   m_ObjectHideFlags: 0

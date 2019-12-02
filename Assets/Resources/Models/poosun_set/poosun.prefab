@@ -166,6 +166,8 @@ GameObject:
   - component: {fileID: 1544212142255685119}
   - component: {fileID: 8927303253766049925}
   - component: {fileID: 4269134314298808335}
+  - component: {fileID: 2870793658286493656}
+  - component: {fileID: 2288414559379225225}
   m_Layer: 9
   m_Name: poosun
   m_TagString: Untagged
@@ -227,6 +229,36 @@ MonoBehaviour:
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_neut
+--- !u!136 &2870793658286493656
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537071523960213484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.016970668
+  m_Height: 0.0773988
+  m_Direction: 1
+  m_Center: {x: 0.000015083681, y: 0.048896383, z: 0.017962769}
+--- !u!54 &2288414559379225225
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537071523960213484}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &3175069483676963106
 GameObject:
   m_ObjectHideFlags: 0

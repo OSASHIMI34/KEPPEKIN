@@ -137,6 +137,8 @@ GameObject:
   - component: {fileID: 4197672223494534293}
   - component: {fileID: 6110016232046385647}
   - component: {fileID: 4489186545557603116}
+  - component: {fileID: 1407524292746267923}
+  - component: {fileID: 1292020461907583849}
   m_Layer: 9
   m_Name: obazi
   m_TagString: Untagged
@@ -198,6 +200,36 @@ MonoBehaviour:
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_Dirty
+--- !u!54 &1407524292746267923
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872143056893937286}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!136 &1292020461907583849
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872143056893937286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3311012
+  m_Height: 0.7914089
+  m_Direction: 1
+  m_Center: {x: 0.00979954, y: -0.025757132, z: 0.010053158}
 --- !u!1 &1441215021882957102
 GameObject:
   m_ObjectHideFlags: 0

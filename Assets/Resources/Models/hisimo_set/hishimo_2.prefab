@@ -783,6 +783,8 @@ GameObject:
   - component: {fileID: 7129488824710383067}
   - component: {fileID: 899325256528717985}
   - component: {fileID: 319289331343901945}
+  - component: {fileID: 5479539660255201496}
+  - component: {fileID: 4343888224808749864}
   m_Layer: 9
   m_Name: hishimo_2
   m_TagString: Untagged
@@ -846,6 +848,36 @@ MonoBehaviour:
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_Diety
+--- !u!54 &5479539660255201496
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6100778354568083400}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!136 &4343888224808749864
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6100778354568083400}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.10043189
+  m_Height: 0.6777837
+  m_Direction: 1
+  m_Center: {x: 0.014247805, y: -0.037801743, z: -0.009206079}
 --- !u!1 &6492508356808869325
 GameObject:
   m_ObjectHideFlags: 0

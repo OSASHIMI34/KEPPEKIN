@@ -495,6 +495,8 @@ GameObject:
   - component: {fileID: 54184735849277409}
   - component: {fileID: 7947309057870645915}
   - component: {fileID: 666535758}
+  - component: {fileID: 6358095591607813327}
+  - component: {fileID: 4980745305250517224}
   m_Layer: 9
   m_Name: momonzo
   m_TagString: Untagged
@@ -559,6 +561,35 @@ MonoBehaviour:
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_Clean
+--- !u!54 &6358095591607813327
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3934977714420553202}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &4980745305250517224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3934977714420553202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.089711875, y: 0.06343552, z: 0.022896556}
+  m_Center: {x: -0.00059388205, y: 0.045309663, z: 0.0013641185}
 --- !u!1 &3958872360558031443
 GameObject:
   m_ObjectHideFlags: 0

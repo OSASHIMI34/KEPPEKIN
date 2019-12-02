@@ -104,6 +104,8 @@ GameObject:
   - component: {fileID: 4122458772426876032}
   - component: {fileID: 6323029312931285498}
   - component: {fileID: 3532129030649057096}
+  - component: {fileID: 5906325701256725700}
+  - component: {fileID: 5473320877332567305}
   m_Layer: 9
   m_Name: forkin_anime2
   m_TagString: Untagged
@@ -165,6 +167,36 @@ MonoBehaviour:
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Small_neut
+--- !u!54 &5906325701256725700
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112023733014664851}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!136 &5473320877332567305
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112023733014664851}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.06926644
+  m_Height: 0.42431974
+  m_Direction: 1
+  m_Center: {x: 0.10000001, y: -0.021519914, z: 0.14}
 --- !u!1 &1367572423161178723
 GameObject:
   m_ObjectHideFlags: 0

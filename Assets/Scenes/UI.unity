@@ -298,26 +298,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeMaskImage: {fileID: 2127799853}
   duration: 1
---- !u!1 &371598397 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 525129053350738568, guid: 75acdde976da44757ab2395b455736ff,
-    type: 3}
-  m_PrefabInstance: {fileID: 525129052774285706}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &371598398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371598397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04480603f154940c1afa9edf60bd635a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  expGage: {fileID: 0}
-  expSlider: {fileID: 525129052774285707}
 --- !u!1 &406201443
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,21 +584,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'UI_Canvas '
       objectReference: {fileID: 0}
-    - target: {fileID: 525129053350738568, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_TagString
-      value: UICanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3876636356213375359, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_FillAmount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3876636356213375359, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_PreserveAspect
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 525129053350738572, guid: 75acdde976da44757ab2395b455736ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -724,32 +689,7 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 525129053350738575, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3169642511846997232, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.83000183
-      objectReference: {fileID: 0}
     - target: {fileID: 3719005899618667987, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3719005899618667987, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3719005899618667987, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8010118193283834727, guid: 75acdde976da44757ab2395b455736ff,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -759,37 +699,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 676661586840518726, guid: 75acdde976da44757ab2395b455736ff,
+    - target: {fileID: 8010118193283834727, guid: 75acdde976da44757ab2395b455736ff,
         type: 3}
-      propertyPath: m_TagString
-      value: EXPSlider
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939082533879918131, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_Value
+      propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939082533879918131, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1477601458452999439, guid: 75acdde976da44757ab2395b455736ff,
-        type: 3}
-      propertyPath: m_TagString
-      value: EXPGage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75acdde976da44757ab2395b455736ff, type: 3}
---- !u!114 &525129052774285707 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7939082533879918131, guid: 75acdde976da44757ab2395b455736ff,
-    type: 3}
-  m_PrefabInstance: {fileID: 525129052774285706}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

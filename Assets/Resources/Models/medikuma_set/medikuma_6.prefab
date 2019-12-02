@@ -105,6 +105,8 @@ GameObject:
   - component: {fileID: 2207665096668682264}
   - component: {fileID: 8082044284353885538}
   - component: {fileID: 5166806379664417627}
+  - component: {fileID: 2704583465596458216}
+  - component: {fileID: 4540915418914272819}
   m_Layer: 9
   m_Name: medikuma_6
   m_TagString: Untagged
@@ -167,6 +169,36 @@ MonoBehaviour:
   debugSwitch: 0
   kinStateManager: {fileID: 0}
   inkImageName: Big_Clean
+--- !u!136 &2704583465596458216
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952226574312794635}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.039541144
+  m_Height: 0.15617947
+  m_Direction: 1
+  m_Center: {x: -0, y: 0.008139124, z: -0.0006567687}
+--- !u!54 &4540915418914272819
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952226574312794635}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &5961758016647257311
 GameObject:
   m_ObjectHideFlags: 0
