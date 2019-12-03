@@ -282,11 +282,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kinBulletPrefab: {fileID: 3624081429234989111, guid: a659d7d22801f4d35a0898bf25140647,
     type: 3}
-  speed: 0
-  waitTime: 0
+  speed: 10
+  waitTime: 60
   debugSwitch: 0
   kinStateManager: {fileID: 0}
-  inkImageName: Big_C;ean
+  inkImageName: Big_Clean
 --- !u!136 &5850422007792581086
 CapsuleCollider:
   m_ObjectHideFlags: 0
