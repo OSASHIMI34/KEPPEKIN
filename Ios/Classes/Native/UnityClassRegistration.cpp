@@ -168,7 +168,7 @@ class WindZone;
 namespace UI { class CanvasRenderer; } template <> void RegisterUnityClass<UI::CanvasRenderer>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
 class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
-class CapsuleCollider; 
+class CapsuleCollider; template <> void RegisterUnityClass<CapsuleCollider>(const char*);
 class CharacterController; 
 class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
 class SphereCollider; template <> void RegisterUnityClass<SphereCollider>(const char*);
@@ -313,7 +313,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 86 non stripped classes
+	//Total: 87 non stripped classes
 	//0. Camera
 	RegisterUnityClass<Camera>("Core");
 	//1. Behaviour
@@ -478,13 +478,15 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<CGProgram>("Core");
 	//81. RenderSettings
 	RegisterUnityClass<RenderSettings>("Core");
-	//82. SphereCollider
-	RegisterUnityClass<SphereCollider>("Physics");
+	//82. CapsuleCollider
+	RegisterUnityClass<CapsuleCollider>("Physics");
 	//83. BoxCollider
 	RegisterUnityClass<BoxCollider>("Physics");
-	//84. AudioListener
+	//84. SphereCollider
+	RegisterUnityClass<SphereCollider>("Physics");
+	//85. AudioListener
 	RegisterUnityClass<AudioListener>("Audio");
-	//85. BoxCollider2D
+	//86. BoxCollider2D
 	RegisterUnityClass<BoxCollider2D>("Physics2D");
 
 }

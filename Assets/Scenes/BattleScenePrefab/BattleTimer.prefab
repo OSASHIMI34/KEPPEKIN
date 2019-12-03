@@ -171,8 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   battleManager: {fileID: 0}
-  battleTime: 60
-  limitTime: 15
+  battleTime: 20
+  limitTime: 10
   countText: {fileID: 6528545742303128568}
 --- !u!1 &6499100828531695213
 GameObject:
@@ -318,8 +318,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: aa4cd3f7c0be14f2cb0c39ad5721f553, type: 2}
-  m_sharedMaterial: {fileID: -6576634647024809276, guid: aa4cd3f7c0be14f2cb0c39ad5721f553,
+  m_fontAsset: {fileID: 11400000, guid: a666179bbdac646a9be2ae9e6a8e550f, type: 2}
+  m_sharedMaterial: {fileID: -1337922138556846366, guid: a666179bbdac646a9be2ae9e6a8e550f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
