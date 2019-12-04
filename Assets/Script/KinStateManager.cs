@@ -38,6 +38,9 @@ public class KinStateManager : MonoBehaviour
 
     public BattleTimer battleTimerPrefab;
 
+    //カメラではなくて見えない壁をTargetにしてLookAtしてみる
+    public Transform target;
+
 
 
 
@@ -115,7 +118,7 @@ public class KinStateManager : MonoBehaviour
         //objが入ったら下の処理が動く
         if (battleKinObj != null)
         {
-            battleKinObj.transform.LookAt(arCamera.transform);
+            battleKinObj.transform.LookAt(target);
         }
 
         //キンが出たフラグがたち、１フレームごとにカウントが足されて3秒経ったら残り時間を表示する

@@ -343,6 +343,7 @@ MonoBehaviour:
   timerTran: {fileID: 1358849505}
   battleTimerPrefab: {fileID: 4135316017024445340, guid: c298e5383522a431495bc286bb38f0e3,
     type: 3}
+  target: {fileID: 8641420280052896162}
 --- !u!114 &253280750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,6 +825,7 @@ MonoBehaviour:
   maxHp: 0
   resistRate: 0.75
   weakRate: 1.25
+  nakamaKinPrefabs: []
 --- !u!4 &754676061
 Transform:
   m_ObjectHideFlags: 0

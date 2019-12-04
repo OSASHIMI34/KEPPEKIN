@@ -93,3 +93,43 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Big_Clean
     removeCount: 0
+  - kinNum: 10
+    kinName: forkin
+    rarerity: 1
+    level: 1
+    kinType: 2
+    bulletSpeed: 0
+    inkImage: Small_neut
+    removeCount: 0
+  - kinNum: 11
+    kinName: kogepi
+    rarerity: 2
+    level: 3
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0
+  - kinNum: 12
+    kinName: hisimo
+    rarerity: 1
+    level: 1
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Snall_Dirty
+    removeCount: 0
+  - kinNum: 13
+    kinName: kinkirakin
+    rarerity: 2
+    level: 1
+    kinType: 1
+    bulletSpeed: 0
+    inkImage: Small_Clean
+    removeCount: 0
+  - kinNum: 14
+    kinName: rippers
+    rarerity: 2
+    level: 3
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0

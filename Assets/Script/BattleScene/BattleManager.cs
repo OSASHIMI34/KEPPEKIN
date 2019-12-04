@@ -40,6 +40,7 @@ public class BattleManager : MonoBehaviour
     [Header("有利属性のときの修正値")]
     public float weakRate;
 
+    public GameObject[] nakamaKinPrefabs;
     
 
    
@@ -59,9 +60,26 @@ public class BattleManager : MonoBehaviour
         enemyData = GameData.instance.enemyDatas;
 
         kinStateManager.SetUpEnemyKinData();
+
+        CreateNakamaKin();
+
         SetUpAtackPowerAndHp();
 
     }
+
+    private void CreateNakamaKin()
+    {
+        foreach(KinData.KinDataList data in GameData.instance.kindata.kinDataList)
+        {
+            if (data.kinNum == GameData.instance.nakamaDates.kinNum)
+            {
+                Instantiate(nakamaKinPrefabs[data.kinNum]);
+            }
+
+        }
+
+    }
+
 
 
     /// <summary>
