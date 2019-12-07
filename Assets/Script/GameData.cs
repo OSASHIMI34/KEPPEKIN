@@ -33,6 +33,8 @@ public class GameData : MonoBehaviour
         public float bulletSpeed;
         public string inkImage;
         public int removeCount;
+        public int nakamaKinNum;
+
     }
 
     public BattleKinData enemyDatas = new BattleKinData(); //BattleKinDataで作った変数が引数としていれられる。初期化してすぐに引数として使える状態にしている

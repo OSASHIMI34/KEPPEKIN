@@ -21,6 +21,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Big_Dirty
     removeCount: 0
+    nakamaKinNum: 1
   - kinNum: 1
     kinName: obasi
     rarerity: 2
@@ -29,6 +30,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Big_Dirty
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 2
     kinName: mokkiran
     rarerity: 3
@@ -37,6 +39,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Big_Clean
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 3
     kinName: musoku
     rarerity: 2
@@ -45,6 +48,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Small_Dirty
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 4
     kinName: petora
     rarerity: 3
@@ -53,6 +57,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Big_Dirty
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 5
     kinName: momonzo
     rarerity: 1
@@ -61,6 +66,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Small_Clean
     removeCount: 0
+    nakamaKinNum: 2
   - kinNum: 6
     kinName: pechoro
     rarerity: 2
@@ -69,6 +75,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Small_Dirty
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 7
     kinName: hokoriinu
     rarerity: 1
@@ -77,6 +84,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Big_Dirty
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 8
     kinName: poosun
     rarerity: 1
@@ -85,6 +93,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Small_neut
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 9
     kinName: medikuma
     rarerity: 3
@@ -93,6 +102,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Big_Clean
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 10
     kinName: forkin
     rarerity: 1
@@ -101,6 +111,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Small_neut
     removeCount: 0
+    nakamaKinNum: 3
   - kinNum: 11
     kinName: kogepi
     rarerity: 2
@@ -109,6 +120,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Big_Dirty
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 12
     kinName: hisimo
     rarerity: 1
@@ -117,6 +129,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Snall_Dirty
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 13
     kinName: kinkirakin
     rarerity: 2
@@ -125,6 +138,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Small_Clean
     removeCount: 0
+    nakamaKinNum: 0
   - kinNum: 14
     kinName: rippers
     rarerity: 2
@@ -133,3 +147,4 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: Big_Dirty
     removeCount: 0
+    nakamaKinNum: 0

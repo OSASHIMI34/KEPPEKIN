@@ -27,6 +27,8 @@ public class KinStates : MonoBehaviour
     [Header("インクのファイル名")]
     public string inkColor;
 
+    [Header("連れてく仲間キン用の番号")]
+    public int nakamaKinNum;
 
     private JyunbiPopUp jyunbi; //StagePopUpを開くための紐付け
 

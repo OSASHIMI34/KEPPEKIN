@@ -879,7 +879,10 @@ MonoBehaviour:
   maxHp: 0
   resistRate: 0.75
   weakRate: 1.25
-  nakamaKinPrefabs: []
+  nakamaKinPrefabs:
+  - {fileID: 4400737871851646980, guid: ec57b13839c27407fa3cd510e9ce62e8, type: 3}
+  - {fileID: 3934977714420553202, guid: b60a7d14c5d36410284fe4caea7ac1cd, type: 3}
+  - {fileID: 1112023733014664851, guid: dc32e077c221d43deb1ebfab830dee81, type: 3}
 --- !u!4 &754676061
 Transform:
   m_ObjectHideFlags: 0

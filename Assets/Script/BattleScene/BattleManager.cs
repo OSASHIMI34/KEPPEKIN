@@ -61,19 +61,23 @@ public class BattleManager : MonoBehaviour
 
         kinStateManager.SetUpEnemyKinData();
 
-        //CreateNakamaKin();
+        CreateNakamaKin();
 
         SetUpAtackPowerAndHp();
 
     }
 
+    //15体のきんを取り出す
+    //inの左側が型と変数、右側がリスト
+    //リストに登録されているキンのkinNumを照合(連れてきた仲間キンのkinNum)
+    //foreachは指定した値が出るまで回す(名前でも番号でも照合可能)
     private void CreateNakamaKin()
     {
         foreach(KinData.KinDataList data in GameData.instance.kindata.kinDataList)
         {
-            if (data.kinNum == GameData.instance.nakamaDates.kinNum)
+            if (data.nakamaKinNum == GameData.instance.nakamaDates.kinNum)
             {
-                Instantiate(nakamaKinPrefabs[data.kinNum]);
+                Instantiate(nakamaKinPrefabs[(data.nakamaKinNum -1)]);
             }
 
         }

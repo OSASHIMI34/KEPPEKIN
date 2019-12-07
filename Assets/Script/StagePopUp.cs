@@ -121,6 +121,7 @@ public class StagePopUp : MonoBehaviour
             saveNakamaKindata.kinLebel = nakamaKinStates.level;
             saveNakamaKindata.kinType = nakamaKinStates.type;
             saveNakamaKindata.inkImage = nakamaKinStates.inkColor;
+            saveNakamaKindata.nakamaKinNum = nakamaKinStates.nakamaKinNum;
 
 
 
