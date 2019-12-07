@@ -64,36 +64,36 @@ extern void BattleDebug_Lose_m82A4263E38DDD7CB89E90C085A76982F2F042B41 ();
 extern void BattleDebug__ctor_mA6C9A55CE2DA646B9AD148C52C914F3A6BBDB816 ();
 // 0x00000016 System.Void BattleManager::Awake()
 extern void BattleManager_Awake_mE146F31D31177B8D7F91AE3B485C7908C52944FC ();
-// 0x00000017 System.Void BattleManager::SetUpAtackPowerAndHp()
+// 0x00000017 System.Void BattleManager::CreateNakamaKin()
+extern void BattleManager_CreateNakamaKin_m2FB5EA9A5D0435D31C4B4FC1FF490BB2C6D6083E ();
+// 0x00000018 System.Void BattleManager::SetUpAtackPowerAndHp()
 extern void BattleManager_SetUpAtackPowerAndHp_mE3712B43BFF823798FDB567E2959020FD8F8EAB7 ();
-// 0x00000018 System.Void BattleManager::Update()
+// 0x00000019 System.Void BattleManager::Update()
 extern void BattleManager_Update_m1C4BBE8D81FA08DC36A44913E376E5479D058753 ();
-// 0x00000019 System.Void BattleManager::GameUp()
+// 0x0000001A System.Void BattleManager::GameUp()
 extern void BattleManager_GameUp_mEE2DFA439883471334AD474E0DAD9A85F3A87867 ();
-// 0x0000001A System.Void BattleManager::.ctor()
+// 0x0000001B System.Void BattleManager::.ctor()
 extern void BattleManager__ctor_m01834F548F67A8C82245DBAB1AE9704B8FC2F8BD ();
-// 0x0000001B System.Void BattleMenuPopUp::ReturnBattle()
+// 0x0000001C System.Void BattleMenuPopUp::ReturnBattle()
 extern void BattleMenuPopUp_ReturnBattle_m960D6E5197A8684F7D09362767EA056E6A7DB954 ();
-// 0x0000001C System.Void BattleMenuPopUp::ReturnStage()
+// 0x0000001D System.Void BattleMenuPopUp::ReturnStage()
 extern void BattleMenuPopUp_ReturnStage_mDC987F6C962BC9D68E698A0DED3D8750D31D4E76 ();
-// 0x0000001D System.Void BattleMenuPopUp::.ctor()
+// 0x0000001E System.Void BattleMenuPopUp::.ctor()
 extern void BattleMenuPopUp__ctor_m8FE092C8F8782748A30A753718631B46B62A837B ();
-// 0x0000001E System.Void BattleTimer::Start()
+// 0x0000001F System.Void BattleTimer::Start()
 extern void BattleTimer_Start_mF4E2F962F368A38D9B3BCA35D090BB7407920F14 ();
-// 0x0000001F System.Void BattleTimer::Update()
+// 0x00000020 System.Void BattleTimer::Update()
 extern void BattleTimer_Update_m47D52990374EA925DA53FFF7A5E06C60EB0E4F56 ();
-// 0x00000020 System.Void BattleTimer::.ctor()
+// 0x00000021 System.Void BattleTimer::.ctor()
 extern void BattleTimer__ctor_m7232F91822FCCCC2A649707CBB4F5BEE79771696 ();
-// 0x00000021 System.Void BattleUIManager::CreateBattleMenuPopUp()
+// 0x00000022 System.Void BattleUIManager::CreateBattleMenuPopUp()
 extern void BattleUIManager_CreateBattleMenuPopUp_m37AD61934D16559F323DE06FC665B4D507292486 ();
-// 0x00000022 System.Void BattleUIManager::.ctor()
+// 0x00000023 System.Void BattleUIManager::.ctor()
 extern void BattleUIManager__ctor_mFCC43F6FC6CB104E1B93F053D561324FF7E9C2F9 ();
-// 0x00000023 System.Void DamaedInk::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000024 System.Void DamaedInk::OnCollisionEnter(UnityEngine.Collision)
 extern void DamaedInk_OnCollisionEnter_m2580F3BD69EA0204663DA14D8A198C7BD5AA9CFE ();
-// 0x00000024 System.Void DamaedInk::.ctor()
+// 0x00000025 System.Void DamaedInk::.ctor()
 extern void DamaedInk__ctor_m0DFD8454DB1FCB09C65A27126DE1BD9EF54FB2C2 ();
-// 0x00000025 System.Void DestroyBullet::Start()
-extern void DestroyBullet_Start_mFB4DA574FD0B75F74585AF5EBF3FA1E00F55A087 ();
 // 0x00000026 System.Void DestroyBullet::Update()
 extern void DestroyBullet_Update_mDA9173E9BC1629CDA5099E0DDA38E96DDCAD83E2 ();
 // 0x00000027 System.Void DestroyBullet::Damage(UnityEngine.GameObject)
@@ -1616,6 +1616,7 @@ static Il2CppMethodPointer s_methodPointers[800] =
 	BattleDebug_Lose_m82A4263E38DDD7CB89E90C085A76982F2F042B41,
 	BattleDebug__ctor_mA6C9A55CE2DA646B9AD148C52C914F3A6BBDB816,
 	BattleManager_Awake_mE146F31D31177B8D7F91AE3B485C7908C52944FC,
+	BattleManager_CreateNakamaKin_m2FB5EA9A5D0435D31C4B4FC1FF490BB2C6D6083E,
 	BattleManager_SetUpAtackPowerAndHp_mE3712B43BFF823798FDB567E2959020FD8F8EAB7,
 	BattleManager_Update_m1C4BBE8D81FA08DC36A44913E376E5479D058753,
 	BattleManager_GameUp_mEE2DFA439883471334AD474E0DAD9A85F3A87867,
@@ -1630,7 +1631,6 @@ static Il2CppMethodPointer s_methodPointers[800] =
 	BattleUIManager__ctor_mFCC43F6FC6CB104E1B93F053D561324FF7E9C2F9,
 	DamaedInk_OnCollisionEnter_m2580F3BD69EA0204663DA14D8A198C7BD5AA9CFE,
 	DamaedInk__ctor_m0DFD8454DB1FCB09C65A27126DE1BD9EF54FB2C2,
-	DestroyBullet_Start_mFB4DA574FD0B75F74585AF5EBF3FA1E00F55A087,
 	DestroyBullet_Update_mDA9173E9BC1629CDA5099E0DDA38E96DDCAD83E2,
 	DestroyBullet_Damage_m7A82EF0655A9EF3FEC250878FB2233FB790C226E,
 	DestroyBullet__ctor_mAF6B2125C11A35D42EC3260545C8D1BF07D784C3,
@@ -2431,8 +2431,8 @@ static const int32_t s_InvokerIndices[800] =
 	13,
 	13,
 	13,
-	4,
 	13,
+	4,
 	13,
 	13,
 	4,
@@ -3213,37 +3213,37 @@ static const Il2CppRGCTXDefinition s_rgctxValues[37] =
 	{ (Il2CppRGCTXDataType)3, 14232 },
 	{ (Il2CppRGCTXDataType)3, 14233 },
 	{ (Il2CppRGCTXDataType)3, 14234 },
-	{ (Il2CppRGCTXDataType)2, 18469 },
+	{ (Il2CppRGCTXDataType)2, 18470 },
 	{ (Il2CppRGCTXDataType)3, 14235 },
 	{ (Il2CppRGCTXDataType)3, 14236 },
 	{ (Il2CppRGCTXDataType)3, 14237 },
 	{ (Il2CppRGCTXDataType)3, 14238 },
-	{ (Il2CppRGCTXDataType)1, 17944 },
 	{ (Il2CppRGCTXDataType)1, 17945 },
+	{ (Il2CppRGCTXDataType)1, 17946 },
 	{ (Il2CppRGCTXDataType)3, 14239 },
 	{ (Il2CppRGCTXDataType)3, 14240 },
 	{ (Il2CppRGCTXDataType)3, 14241 },
 	{ (Il2CppRGCTXDataType)3, 14242 },
-	{ (Il2CppRGCTXDataType)2, 18470 },
-	{ (Il2CppRGCTXDataType)3, 14243 },
 	{ (Il2CppRGCTXDataType)2, 18471 },
+	{ (Il2CppRGCTXDataType)3, 14243 },
+	{ (Il2CppRGCTXDataType)2, 18472 },
 	{ (Il2CppRGCTXDataType)3, 14244 },
 	{ (Il2CppRGCTXDataType)3, 14245 },
 	{ (Il2CppRGCTXDataType)3, 14246 },
-	{ (Il2CppRGCTXDataType)2, 17943 },
+	{ (Il2CppRGCTXDataType)2, 17944 },
 	{ (Il2CppRGCTXDataType)3, 14247 },
 	{ (Il2CppRGCTXDataType)3, 14248 },
-	{ (Il2CppRGCTXDataType)2, 18472 },
-	{ (Il2CppRGCTXDataType)3, 14249 },
 	{ (Il2CppRGCTXDataType)2, 18473 },
+	{ (Il2CppRGCTXDataType)3, 14249 },
+	{ (Il2CppRGCTXDataType)2, 18474 },
 	{ (Il2CppRGCTXDataType)3, 14250 },
 	{ (Il2CppRGCTXDataType)3, 14251 },
 	{ (Il2CppRGCTXDataType)3, 14252 },
-	{ (Il2CppRGCTXDataType)2, 17953 },
+	{ (Il2CppRGCTXDataType)2, 17954 },
 	{ (Il2CppRGCTXDataType)3, 14253 },
 	{ (Il2CppRGCTXDataType)3, 14254 },
 	{ (Il2CppRGCTXDataType)3, 14255 },
-	{ (Il2CppRGCTXDataType)2, 17962 },
+	{ (Il2CppRGCTXDataType)2, 17963 },
 	{ (Il2CppRGCTXDataType)3, 14256 },
 	{ (Il2CppRGCTXDataType)3, 14257 },
 	{ (Il2CppRGCTXDataType)3, 14258 },

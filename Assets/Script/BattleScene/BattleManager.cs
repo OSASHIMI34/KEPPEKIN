@@ -61,7 +61,7 @@ public class BattleManager : MonoBehaviour
 
         kinStateManager.SetUpEnemyKinData();
 
-        CreateNakamaKin();
+        //CreateNakamaKin();
 
         SetUpAtackPowerAndHp();
 

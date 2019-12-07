@@ -25,11 +25,11 @@ public class DestroyBullet : MonoBehaviour
 
     public GameData.BattleKinData nakamas;
 
-    private void Start()
-    {
-        nakamas = GameData.instance.nakamaDates;
-        attackPower = 5; 
-    }
+    ////private void Start()
+    //{
+    //    nakamas = GameData.instance.nakamaDates;
+    //    attackPower = 5; 
+    //}
 
     void Update()
     {

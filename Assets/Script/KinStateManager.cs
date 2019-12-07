@@ -43,6 +43,20 @@ public class KinStateManager : MonoBehaviour
 
 
 
+    [Header("出現プレファブ")]
+    public GameObject[] warningPrefabs;
+
+    [Header("出現させたい緑の位置情報")]
+    public RectTransform[] warningTransGreen;
+
+    [Header("出現させたい緑の位置情報")]
+    public RectTransform[] warningTransPink;
+
+    [Header("生成された緑の出現オブジェクトを入れる")]
+    public GameObject[] warningGreenImages;
+
+    [Header("生成されたピンクの出現オブジェクトを入れる")]
+    public GameObject[] warningPinkImages;
 
 
 
@@ -105,6 +119,24 @@ public class KinStateManager : MonoBehaviour
                     tempScale = battleKinObj.transform.localScale.x;
 
                     isKinCreate = true;
+
+
+                    //warningGreenImages = new GameObject[warningTransGreen.Length];
+                    //warningPinkImages = new GameObject[warningTransPink.Length];
+
+                    Debug.Log("for分入る");
+                    for (int i = 0; i < warningTransGreen.Length; i++)
+                    {
+                        warningGreenImages[i] = Instantiate(warningPrefabs[0], warningTransGreen[i], false);
+
+                    }
+
+                    for (int i = 0; i < warningTransPink.Length; i++)
+                    {
+                        warningPinkImages[i] = Instantiate(warningPrefabs[1], warningTransPink[i], false);
+                    }
+
+
                     
                 }
                 else
