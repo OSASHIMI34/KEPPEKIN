@@ -44,6 +44,8 @@ namespace FancyScrollView.Example02
             mochiKinStates.rundomNum = kindata.kinNum;
             mochiKinStates.inkColor = kindata.inkImage;
             mochiKinStates.type = kindata.kinType;
+            mochiKinStates.nakamaKinNum = kindata.nakamaKinNum;
+        
 
         }
 
