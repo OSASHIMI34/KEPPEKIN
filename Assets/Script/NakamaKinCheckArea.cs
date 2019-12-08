@@ -16,7 +16,8 @@ public class NakamaKinCheckArea : MonoBehaviour
     {
         //mochiKinStatesが入る
         //GameDataにも入ることになるので保存してくれるようになる
-        stagePopUp.nakamaKinStates = col.gameObject.GetComponent<Cell>().mochiKinStates; 
+        stagePopUp.nakamaKinStates = col.gameObject.transform.parent.gameObject.GetComponent<Cell>().mochiKinStates;
+        Debug.Log(col.gameObject.transform.parent.gameObject.GetComponent<Cell>().mochiKinStates.kinName);
     }
 
 }

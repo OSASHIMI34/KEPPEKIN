@@ -75,9 +75,15 @@ public class BattleManager : MonoBehaviour
     {
         foreach(KinData.KinDataList data in GameData.instance.kindata.kinDataList)
         {
+            
             if (data.nakamaKinNum == GameData.instance.nakamaDates.kinNum)
             {
-                Instantiate(nakamaKinPrefabs[(data.nakamaKinNum -1)]);
+                Debug.Log(data.nakamaKinNum);
+                GameObject nakamaKinObj = Instantiate(nakamaKinPrefabs[data.nakamaKinNum - 1]);
+                
+                //仲間のキンなので、Y軸の回転を変更し、画面の奥を向ける
+                nakamaKinObj.transform.localRotation = Quaternion.Euler(0, 0, 0);
+
             }
 
         }
