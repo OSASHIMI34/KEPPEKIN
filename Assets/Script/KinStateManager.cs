@@ -114,7 +114,11 @@ public class KinStateManager : MonoBehaviour
                  
 
                     battleKinObj = Instantiate(setKinPrefab, posY, raycastHitList[0].pose.rotation);
-                    battleKinObj.GetComponent<ShotManager>().SetUp(this);
+
+                    //ShotManagerクラスを取得しチェックを入れてSetUpメソッドを呼び出す
+                    ShotManager shotManager = battleKinObj.GetComponent<ShotManager>();
+                    shotManager.enabled = true;
+                    shotManager.SetUp(this);
                     //モデルのサイズを取得しておく
                     tempScale = battleKinObj.transform.localScale.x;
 

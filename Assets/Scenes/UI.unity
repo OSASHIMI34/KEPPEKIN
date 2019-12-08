@@ -160,6 +160,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: 
     removeCount: 0
+    nakamaKinNum: 0
   nakamaDates:
     kinNum: 0
     kinName: 
@@ -170,6 +171,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: 
     removeCount: 0
+    nakamaKinNum: 0
 --- !u!4 &222533000
 Transform:
   m_ObjectHideFlags: 0

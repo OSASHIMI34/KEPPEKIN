@@ -2463,6 +2463,34 @@ MonoBehaviour:
   scrollView: {fileID: 5744700825031284242}
   selectedItemInfo: {fileID: 5744700825767950595}
   kindata: {fileID: 11400000, guid: 71c7bc90adcf74b35a0c43924938f83a, type: 2}
+  nakamas:
+  - kinNum: 0
+    kinName: tegakin
+    rarerity: 1
+    level: 1
+    kinType: 0
+    bulletSpeed: 0
+    inkImage: Big_Dirty
+    removeCount: 0
+    nakamaKinNum: 1
+  - kinNum: 5
+    kinName: momonzo
+    rarerity: 1
+    level: 1
+    kinType: 1
+    bulletSpeed: 0
+    inkImage: Small_Clean
+    removeCount: 0
+    nakamaKinNum: 2
+  - kinNum: 10
+    kinName: forikin
+    rarerity: 1
+    level: 1
+    kinType: 2
+    bulletSpeed: 0
+    inkImage: Small_neut
+    removeCount: 0
+    nakamaKinNum: 3
 --- !u!1 &8853027269366477947
 GameObject:
   m_ObjectHideFlags: 0
