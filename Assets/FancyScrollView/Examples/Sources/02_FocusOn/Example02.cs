@@ -26,9 +26,11 @@ namespace FancyScrollView.Example02
             }
 
 
-
-            var items = Enumerable.Range(0, kindata.kinDataList.Count)
-                .Select(i => new ItemData(kindata.kinDataList[i]))
+            //Enumerable.Range(0, kindata.kinDataList.Count)
+            //0から第二引数までの値を全て使う
+            //forぶんとほぼ一緒
+            var items = Enumerable.Range(0, nakamas.Count)
+                .Select(i => new ItemData(nakamas[i]))
                 .ToArray();
 
             scrollView.UpdateData(items);

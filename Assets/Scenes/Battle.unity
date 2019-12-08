@@ -120,6 +120,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &100686762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 100686763}
+  m_Layer: 0
+  m_Name: NakamaKinPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &100686763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100686762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -50, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &242342305
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +404,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: 
     removeCount: 0
+    nakamaKinNum: 0
   battleManager: {fileID: 754676060}
   timerTran: {fileID: 1358849505}
   battleTimerPrefab: {fileID: 4135316017024445340, guid: c298e5383522a431495bc286bb38f0e3,
@@ -524,6 +555,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: 
     removeCount: 0
+    nakamaKinNum: 0
 --- !u!1 &475725100
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +897,7 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: 
     removeCount: 0
+    nakamaKinNum: 0
   enemyData:
     kinNum: 0
     kinName: 
@@ -875,14 +908,16 @@ MonoBehaviour:
     bulletSpeed: 0
     inkImage: 
     removeCount: 0
+    nakamaKinNum: 0
   attackPower: 0
   maxHp: 0
   resistRate: 0.75
   weakRate: 1.25
   nakamaKinPrefabs:
-  - {fileID: 4400737871851646980, guid: ec57b13839c27407fa3cd510e9ce62e8, type: 3}
-  - {fileID: 3934977714420553202, guid: b60a7d14c5d36410284fe4caea7ac1cd, type: 3}
-  - {fileID: 1112023733014664851, guid: dc32e077c221d43deb1ebfab830dee81, type: 3}
+  - {fileID: 2267547102923957915, guid: c34643483072d4b50bb61df280c8949e, type: 3}
+  - {fileID: 6020589757976693888, guid: 6fe2ae56516924f2193937890b796d33, type: 3}
+  - {fileID: 630756213133431423, guid: 1b56f12a4ad8d4c2ba640be5843deba1, type: 3}
+  nakamaKinPos: {fileID: 100686763}
 --- !u!4 &754676061
 Transform:
   m_ObjectHideFlags: 0
@@ -1356,7 +1391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!20 &2077333371
 Camera:
   m_ObjectHideFlags: 0
@@ -1366,7 +1401,7 @@ Camera:
   m_GameObject: {fileID: 2077333370}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 3
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1380,15 +1415,15 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0.01
+  far clip plane: 10
   field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1424,7 +1459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077333370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.12}
+  m_LocalPosition: {x: 0, y: -50, z: -0.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

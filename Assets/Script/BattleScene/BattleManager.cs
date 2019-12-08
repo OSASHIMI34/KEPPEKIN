@@ -41,6 +41,9 @@ public class BattleManager : MonoBehaviour
     public float weakRate;
 
     public GameObject[] nakamaKinPrefabs;
+
+    [Header("仲間キンをインスタンスする場所")]
+    public Transform nakamaKinPos;
     
 
    
@@ -76,14 +79,16 @@ public class BattleManager : MonoBehaviour
         foreach(KinData.KinDataList data in GameData.instance.kindata.kinDataList)
         {
             
-            if (data.nakamaKinNum == GameData.instance.nakamaDates.kinNum)
+            if (data.nakamaKinNum == GameData.instance.nakamaDates.nakamaKinNum)
             {
                 Debug.Log(data.nakamaKinNum);
-                GameObject nakamaKinObj = Instantiate(nakamaKinPrefabs[data.nakamaKinNum - 1]);
-                
-                //仲間のキンなので、Y軸の回転を変更し、画面の奥を向ける
-                nakamaKinObj.transform.localRotation = Quaternion.Euler(0, 0, 0);
 
+                //Instantiate(nakamaKinPrefabs[data.nakamaKinNum - 1], nakamaKinPos);
+                //Prefab第一引数だけだとPrefabの持ってる位置情報が利用できるけど、第二引数に位置情報を入れると第二引数の
+                //位置情報が優先される
+                Instantiate(nakamaKinPrefabs[data.nakamaKinNum - 1], nakamaKinPos);
+                
+              
             }
 
         }
