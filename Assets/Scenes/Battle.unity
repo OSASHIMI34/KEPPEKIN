@@ -964,6 +964,7 @@ MonoBehaviour:
   battleMenuPuPrefab: {fileID: 7240191171713910169, guid: 21dbd9f96dde44b0ba90557fc5fb8a09,
     type: 3}
   canvasTransform: {fileID: 556525259}
+  isStop: 0
 --- !u!4 &1129901359
 Transform:
   m_ObjectHideFlags: 0

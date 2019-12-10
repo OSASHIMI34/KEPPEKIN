@@ -2874,6 +2874,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Time_set_captureFramerate();
 		Register_UnityEngine_Time_set_captureFramerate();
 
+		//System.Void UnityEngine.Time::set_timeScale(System.Single)
+		void Register_UnityEngine_Time_set_timeScale();
+		Register_UnityEngine_Time_set_timeScale();
+
 	//End Registrations for type : UnityEngine.Time
 
 	//Start Registrations for type : UnityEngine.TouchScreenKeyboard

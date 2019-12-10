@@ -132,6 +132,9 @@
 		<type fullname="UnityEditor.Graphs.AnimationStateMachine.GraphGUI" preserve="nothing"/>
 		<type fullname="UnityEditor.Graphs.AnimatorControllerTool" preserve="nothing"/>
 	</assembly>
+	<assembly fullname="UnityEditor.TestRunner">
+		<type fullname="UnityEditor.TestTools.TestRunner.TestListCacheData" preserve="nothing"/>
+	</assembly>
 	<assembly fullname="UnityEngine.SpatialTracking">
 		<type fullname="UnityEngine.SpatialTracking.TrackedPoseDriver" preserve="nothing"/>
 	</assembly>

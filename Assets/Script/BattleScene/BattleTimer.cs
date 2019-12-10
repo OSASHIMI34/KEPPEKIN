@@ -21,6 +21,8 @@ public class BattleTimer : MonoBehaviour
     [Header("バトル時間の表示")]
     public TMP_Text countText;
 
+    public BattleUIManager battleUIManager;
+
     void Start()
     {
         //currentTimeにbattleTimeを設定する
@@ -30,6 +32,11 @@ public class BattleTimer : MonoBehaviour
 
     void Update()
     {
+        //if (battleUIManager.isStop)
+        //{
+        //    return;
+        //}
+
         //バトルが終了していないなら
         if (!battleManager.isGameUp)
         {
